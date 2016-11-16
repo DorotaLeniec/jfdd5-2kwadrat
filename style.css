@@ -198,3 +198,35 @@ p {
    }
 
 }
+
+/* style Macieja */
+
+.features {
+    background-color: chartreuse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.cecha {
+    background-image: url('FirstWeb/images/icon-checked.svg');
+    background-repeat: no-repeat;
+    background-position: center top 10px;
+    background-size: 100px auto;
+    background-color: antiquewhite;
+    padding-top: 150px;
+    display: inline-block;
+    height: 200px;
+    width: 24%;
+    min-width: 150px;
+    max-width: 200px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.icon-cross {
+    background-image: url('FirstWeb/images/icon-cross.svg');
+}
+
+/* koniec styli Macieja */
