@@ -81,7 +81,7 @@ section {
     background-color: #334455;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {                    /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 600px */
     header {
         flex-direction: column;
         height: 45px;
@@ -99,8 +99,7 @@ section {
 
 }
 
-
-@media (max-width: 420px) {
+@media (max-width: 420px) {                 /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 420px */
     header {
         height: 150px;
     }
