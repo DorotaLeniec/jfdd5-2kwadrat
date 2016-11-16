@@ -9,7 +9,6 @@ header {
     padding: 20px;
     z-index: 1;
     box-shadow: 0px 0.3px 10px 1px #000;
-    opacity: 0.7;
 }
 
 /*Adding Image for Zajawka*/
@@ -116,7 +115,6 @@ section {
     background: linear-gradient(to right, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
-
 }
 
 .submit:hover {
@@ -129,36 +127,14 @@ section {
     color: black;
     cursor:pointer;
 }
-
-/*css do button. Natalia.*/
-.click {
-    background-color:#00CCCC;
-    border-radius:100px;
-    color: black;
-    padding: 19px 19px;
-    text-align: center;
-    text-decoration: none;
-    font-family:Georgia;
-    display: inline;
-    font-size: 13px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-
-}
 /*Styl dla paragrafu.Natalia*/
 p {
     color: white;
-    font-family: verdana;
+    font-size: 13px;
 }
 
-.click:hover {
-    background-color: #006633;
-}
-
-.click.active {
-    background-color:#99FFCC;
+.wrapper {
+    margin-left: 100px;
 }
 
 .sectionFour {
