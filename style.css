@@ -62,6 +62,72 @@ section {
     background-color: #003344;
 }
 
+/*Natalia pisze, że wkleiła formularz css*/
+
+.form {
+    border-radius: 6px;
+    border-color: #66CCCC;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia;
+    padding: 5px;
+
+}
+
+/*css do przycisku'wyślij' , ktory jest przy formularz z e-mailem*/
+.submit {
+    border-radius: 6px;
+    background-color: #66CCCC;
+    color: black;
+    background: #feffff; /* Old browsers */
+    background: -moz-linear-gradient(left, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=1 ); /* IE6-9 */
+    cursor: pointer;
+
+}
+
+.submit:hover {
+    background: rgb(245,246,246);
+    background: -moz-linear-gradient(left, rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 */
+    color: black;
+    cursor:pointer;
+}
+
+/*css do button. Natalia.*/
+.click {
+    background-color:#CC9999;
+    border-radius: 120px;
+    color: black;
+    padding: 19px 19px;
+    text-align: center;
+    text-decoration: none;
+    font-family:Georgia;
+    display: inline;
+    font-size: 13px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+p {
+    color: white;
+}
+
+.click:hover {
+    background-color: #EEEEEE;
+}
+
+.click.active {
+    background-color:#99FFCC;
+}
+
 .sectionFour {
     background-color: #334455;
 }
