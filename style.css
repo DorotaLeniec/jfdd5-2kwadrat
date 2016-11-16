@@ -9,7 +9,6 @@ header {
     padding: 20px;
     z-index: 1;
     box-shadow: 0px 0.3px 10px 1px #000;
-    opacity: 0.7;
 }
 
 
@@ -101,7 +100,7 @@ section {
 
 }
 
-/*css do przycisku'wyślij' , ktory jest przy formularz z e-mailem*/
+/*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
     border-radius: 6px;
     background-color: #66CCCC;
@@ -112,47 +111,28 @@ section {
     background: linear-gradient(to right, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
-
 }
 
 .submit:hover {
-    background: rgb(245,246,246);
-    background: -moz-linear-gradient(left, rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 */
+    background: #b4e391; /* Old browsers */
+    background: -moz-linear-gradient(top, #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+    copyntType:1;); /* IE6-9 */
     color: black;
     cursor:pointer;
 }
-
-/*css do button. Natalia.*/
-.click {
-    background-color:#CC9999;
-    border-radius: 120px;
-    color: black;
-    padding: 19px 19px;
-    text-align: center;
-    text-decoration: none;
-    font-family:Georgia;
-    display: inline;
-    font-size: 13px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-
-}
-
+/*Styl dla paragrafu.Natalia*/
 p {
     color: white;
+    font-size: 13px;
 }
 
-.click:hover {
-    background-color: #EEEEEE;
-}
+.wrapper {
+  text-align: center;
+    padding:300px 300px 300px 300px;
 
-.click.active {
-    background-color:#99FFCC;
 }
 
 .sectionFour {
@@ -192,3 +172,36 @@ p {
    }
 
 }
+
+/* style Macieja */
+
+.features {
+    background-color: chartreuse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cecha {
+    background-image: url('FirstWeb/images/icon-checked.svg');
+    background-repeat: no-repeat;
+    background-position: center top 10px;
+    background-size: 100px auto;
+    background-color: antiquewhite;
+    padding-top: 200px;
+    display: inline-block;
+    height: 150px;
+    width: 24%;
+    min-width: 150px;
+    max-width: 200px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.icon-cross {
+    background-image: url('FirstWeb/images/icon-cross.svg');
+}
+
+/* koniec styli Macieja */
