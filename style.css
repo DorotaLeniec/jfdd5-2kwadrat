@@ -184,6 +184,7 @@ p {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
+    margin-top: 60px;
 }
 
 .cecha {
@@ -192,9 +193,9 @@ p {
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: antiquewhite;
-    padding-top: 150px;
+    padding-top: 200px;
     display: inline-block;
-    height: 200px;
+    height: 150px;
     width: 24%;
     min-width: 150px;
     max-width: 200px;
