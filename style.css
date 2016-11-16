@@ -9,7 +9,7 @@ header {
     padding: 20px;
     z-index: 1;
     box-shadow: 0px 0.3px 10px 1px #000;
-    opacity: 0.7;
+
 }
 
 /*Adding Image for Zajawka*/
@@ -21,8 +21,8 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 800px;
-    border-radius: 8px;
+    height: 100vw;
+    /*border-radius: 8px;*/
     position: relative;
     top: 60px;
 }
@@ -78,7 +78,7 @@ nav ul li:hover {
 }
 
 section {
-    height: 800px;
+    height: 100vw;
 }
 
 .sectionOne {
