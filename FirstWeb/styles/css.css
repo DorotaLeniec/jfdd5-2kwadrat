@@ -1,0 +1,102 @@
+#Header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: auto;
+    display: inline-block;
+
+
+}
+.Logo {
+    /*height: 80px;*/
+    width: 10%;
+    float: left;
+    background-color: aliceblue;
+    opacity: 0.8;
+    display:block;
+
+
+
+}
+.NavBars {
+    display: block;
+    /*height: 80px;*/
+    width: 90%;
+    float: right;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 3%;
+
+}
+#Face {
+    /*margin-top: 80px;*/
+    clear: both;
+    background-image: url("../images/empty-plate.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    border-radius: 8px;
+}
+
+.nav{
+    display: inline-block;
+    list-style-type: none;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+
+}
+
+.nav:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+/*.NavBars ul li a:hover {*/
+    /*background-color: black;*/
+    /*opacity: 1;*/
+    /*cursor: pointer;*/
+
+/*}*/
+
+.NavBars ul li a {
+   text-decoration:  none;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
