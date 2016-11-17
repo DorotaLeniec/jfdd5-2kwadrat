@@ -190,8 +190,7 @@ section {
 }
 /*Styl dla paragrafu dotyczacy formularzu.Natalia*/
 p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans', 'sans-serif';
     font-weight: 300;
     color: white;
     font-size: 25px;
