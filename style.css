@@ -29,23 +29,25 @@ header {
 
 .section-banner h1 {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-weight: 500;
-    font-size: 80px;
+    font-size: 100px;
     text-shadow: 1px 4px black ;
     position: absolute;
     top:50%;
     left: 40%;
-    transform: translateX(-40%) translateY(-40%);
+    transform: translateX(-85%) translateY(-91%);
 }
 .button-to-form {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Indie Flower', cursive;;
     font-weight: 500;
-    font-size: 65px;
+    font-size: 80px;
     text-shadow: 1px 4px black ;
     position: absolute;
     top:65%;
     left: 40%;
-    transform: translateX(-30%) translateY(-40%);
+    transform: translateX(-89%) translateY(-98%);
     border-radius: 5%;
 }
 .button-to-form:hover {
