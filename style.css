@@ -258,7 +258,7 @@ p {
     width: 180px;
     /*min-width: 150px;*/
     /*!*max-width: 200px;*!*/
-    /*margin: 5px 5px;*/
+    margin: 5px 5px;
     border: 1px solid black;
     border-radius: 10px;
     /*font: Calibri;*/
@@ -290,6 +290,7 @@ p {
 .best-in-class {
     background-image: url('FirstWeb/images/best-in-class.svg');
 }
+
 
 /* koniec styli Macieja */
 
