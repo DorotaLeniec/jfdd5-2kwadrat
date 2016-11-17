@@ -95,6 +95,7 @@ section {
     justify-content: center;
     margin: auto;
     flex-direction: column;
+
 }
 /*Natalia pisze, że wkleiła formularz css*/
 
@@ -104,7 +105,7 @@ section {
     padding: 10px;
     text-align: center;
     font-family: Georgia;
-    padding: 5px;
+    align-items:center;
 
 }
  /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
@@ -123,6 +124,8 @@ section {
     background: linear-gradient(to right, #feffff  0%,#ddf1f9  35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff ', endColorstr='#a0d8ef ',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
+   padding: 8px 15px 8px 15px;
+    margin: 3px;
 }
 
 .submit:hover {
@@ -140,7 +143,7 @@ section {
     color: black;
     cursor:pointer;
 }
-/*Styl dla paragrafu.Natalia*/
+/*Styl dla paragrafu dotyczacy formularzu.Natalia*/
 p {
     color: white;
     font-size: 13px;
@@ -187,16 +190,17 @@ p {
 /* style Macieja */
 
 .features {
-    background-color: chartreuse;
+    background-color: #77a777;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     margin-top: 60px;
-
+    width: 800px;
     display: flex;
     justify-content: center;
     margin: auto;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .cecha {
@@ -205,17 +209,36 @@ p {
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: antiquewhite;
-    padding-top: 200px;
+    padding: 180px 3px 3px 3px;
     display: inline-block;
     height: 150px;
-    width: 24%;
-    min-width: 150px;
-    max-width: 200px;
-    margin: 5px 0;
+    width: 180px;
+    /*min-width: 150px;*/
+    /*max-width: 200px;*/
+    margin: 5px 5px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    font: Arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.cecha:hover {
+    background-color: burlywood;
 }
 
 .icon-cross {
     background-image: url('FirstWeb/images/icon-cross.svg');
+}
+
+/* koniec styli Macieja */
+
+
+/*Natalia wprowadziła styl paragrafu odnosnie bezpieczenstwa strony*/
+p.security1 {
+    font-size:14px;
+    color: black;
+    text-align:center;
 }
