@@ -26,10 +26,11 @@ header {
 
 
 .section-banner h1 {
+    color: #55acee;
     font-family: 'Open Sans', 'sans-serif';
     font-weight: 500;
-    font-size: 120px;
-    text-shadow: 1px 4px black ;
+    font-size: 40px;
+    /*text-shadow: 1px 1px black ;*/
     position: absolute;
     top:50%;
     left: 40%;
@@ -40,7 +41,7 @@ header {
     position: absolute;
     top:50%;
     left: 40%;
-    transform: translateX(-85%) translateY(75%);
+    transform: translateX(-85%) translateY(30%);
     cursor: pointer;
     /*margin: 10px;*/
     border-radius: 5px;
