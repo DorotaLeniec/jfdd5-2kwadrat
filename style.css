@@ -63,7 +63,7 @@ header {
     font-size: 82px;
     transition: .3s;
     -webkit-transition: .3s;
-    -moz-transition: .3s;
+    -moz-transition: .9s;
     -o-transition: .3s;
     display: inline-block;
 }
@@ -93,6 +93,7 @@ header #logo {
 
 header #logo:hover{
     cursor: pointer;
+    text-shadow: 1px 3px 5px #55acee;
 }
 
 header a {
@@ -165,6 +166,7 @@ section {
 .form input[type="text"] {
     width: 200px;
     text-align: center;
+    color: #ffffff;
     height: 30px;
     border-radius: 5%;
     border-color: rgb(85,172,238);
@@ -222,7 +224,15 @@ p {
         height: 45px;
         align-items: center;
     }
+.section-banner h1 {
+    font-size: 30px;
+    position: relative;
+}
 
+.btn,.blue {
+    position: relative;
+    font-size:55px ;
+}
     nav {
         margin:auto;
     }
