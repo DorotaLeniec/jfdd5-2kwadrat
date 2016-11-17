@@ -147,7 +147,7 @@ section {
     color: black;
     cursor:pointer;
 }
-/*Styl dla paragrafu.Natalia*/
+/*Styl dla paragrafu dotyczacy formularzu.Natalia*/
 p {
     color: white;
     font-size: 13px;
@@ -229,3 +229,10 @@ p {
 }
 
 /* koniec styli Macieja */
+
+/*Natalia. Styl paragrafu, ktory dotyczy bezpieczenstw strony*/
+#footer1 {
+    color: white;
+    font-size:15px;
+    padding: 100px 100px 100px 100px;
+}
