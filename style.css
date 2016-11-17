@@ -33,7 +33,22 @@ header {
     position: absolute;
     top:50%;
     left: 40%;
-    transform: translateX(-30%) translateY(-50%);
+    transform: translateX(-40%) translateY(-40%);
+}
+.button-to-form {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 65px;
+    text-shadow: 1px 4px black ;
+    position: absolute;
+    top:65%;
+    left: 40%;
+    transform: translateX(-30%) translateY(-40%);
+    border-radius: 5%;
+}
+.button-to-form:hover {
+    color: #66CCCC;
+    background-color: #003344;
 }
 header #logo {
     margin-left: 10vw;
@@ -226,8 +241,8 @@ p {
     height: 150px;
     width: 180px;
     /*min-width: 150px;*/
-    /*max-width: 200px;*/
-    margin: 5px 5px;
+    /*!*max-width: 200px;*!*/
+    /*margin: 5px 5px;*/
     border: 1px solid black;
     border-radius: 10px;
     /*font: Calibri;*/
@@ -293,6 +308,5 @@ p {
     height: auto;
     border-radius: 100%;
     border: 3px solid;
-    box-shadow: 5px 10px  20px black;
+    box-shadow: 5px 10px black;
 }
-
