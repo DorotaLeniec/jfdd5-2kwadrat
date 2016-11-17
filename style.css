@@ -148,9 +148,9 @@ section {
 }
 
 .form input[type="text"] {
-    width: 300px;
+    width: 200px;
     text-align: center;
-    height: 60px;
+    height: 30px;
     border-radius: 5%;
 }
 /*Natalia pisze, że wkleiła formularz css*/
