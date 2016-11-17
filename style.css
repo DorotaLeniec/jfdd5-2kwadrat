@@ -16,33 +16,24 @@ header {
     box-shadow: 0px 0.3px 10px 1px #000;
 }
 
-    .section-banner {
+.section-banner {
      background-image: url("FirstWeb/images/banner-bg-empty-plate.jpg");
      background-size: cover;
      background-position: 55%;
      background-repeat: no-repeat;
-     /*height: 100vh;*/
-     height: calc(100vh +500px);
+     height: 130vh;
      position: relative;
-     /*padding-bottom: 200px;*/
-
     }
 
 
-/*style nagłowkow h1 h2*/
 .section-banner h1 {
     font-size: 80px;
     text-shadow: 1px 4px black ;
     position: absolute;
-    top:35%;
-    left: 30%;
-
+    top:50%;
+    left: 40%;
+    transform: translateX(-30%) translateY(-50%);
 }
-/*.section-banner h2 {*/
-/*font-size: 40px;*/
-/*text-align: center;*/
-/*}*/
-
 header #logo {
     margin-left: 10vw;
 }
@@ -116,12 +107,7 @@ section {
     padding: 5px;
 
 }
-
-
-
-
-
-    /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
+ /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
     border-radius: 6px;
     background-color: #66CCCC ;
@@ -165,11 +151,10 @@ p {
     background-color: #334455 ;
 }
 
-@media (max-width: 600px) {                    /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 600px */
+    @media (max-width: 600px) {
     header {
         flex-direction: column;
         height: 45px;
-
     }
 
     header #logo {
