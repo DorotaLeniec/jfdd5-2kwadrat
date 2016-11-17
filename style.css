@@ -23,10 +23,13 @@ header {
      background-repeat: no-repeat;
      height: 130vh;
      position: relative;
+
     }
 
 
 .section-banner h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
     font-size: 80px;
     text-shadow: 1px 4px black ;
     position: absolute;
@@ -145,14 +148,13 @@ section {
 }
 /*Styl dla paragrafu dotyczacy formularzu.Natalia*/
 p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 300;
     color: white;
-    font-size: 13px;
+    font-size: 35px;
 }
 
-.sectionFour {
-    display: flex;
-    background-color: #334455 ;
-}
 
     @media (max-width: 600px) {
     header {
@@ -237,8 +239,33 @@ p {
 
 
 /*Natalia wprowadziła styl paragrafu odnosnie bezpieczenstwa strony*/
-p.security1 {
-    font-size:14px;
+.security1 {
+    font-size:40px;
     color: black;
     text-align:center;
+}
+/*.photos-container {*/
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    /*background-color: whitesmoke;*/
+    /*opacity: 0.7;*/
+    /*padding-top: 60px;*/
+    /*padding-left: 80px;*/
+    /*position: relative;*/
+/*}*/
+.section-about-us {
+    display: flex;
+    background-color: #334455 ;
+    padding-top: 120px;
+
+}
+
+
+.face-photo-box {
+    width: 20%;
+    height: 50%;
+    background-color: #b4e391;
+    display: inline-block;
+    clear: both;
+    margin: 10px;
 }
