@@ -50,7 +50,6 @@ header {
     left: 40%;
     transform: translateX(-75%) translateY(-91%);
 }
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 .btn {
     position: absolute;
     top:50%;
@@ -70,7 +69,7 @@ header {
 }
 
 .btn:hover {
-    cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+    cursor:pointer;
 }
 .blue {
     color: #55acee;
@@ -82,12 +81,12 @@ header {
 }
 
 header #logo {
-    color: #000000;
+    color: #55acee;
     font-family: 'Open Sans', 'sans-serif';
     font-size: 25px;
     letter-spacing: 4px;
-    border-left: 3px solid #7cc576;
-    border-right: 3px solid #7cc576;
+    border-left: 3px solid #55acee;
+    border-right: 3px solid #55acee;
     padding-left: 7px;
     padding-right: 7px;
 }
@@ -115,8 +114,8 @@ nav ul {
 nav ul li {
     font-family: 'Open Sans', 'sans-serif';
     padding: 10px;
-    font-size: 14px;
-    color: #777777 ;
+    font-size: 18px;
+    color: #55acee ;
 }
 
 nav a {
@@ -124,7 +123,7 @@ nav a {
 }
 
 nav ul li:hover {
-    border-bottom: 3px solid #7cc576 ;
+    border-bottom: 3px solid #55acee;
     cursor: pointer;
 }
 
@@ -141,19 +140,21 @@ section {
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #77a777 ;
+    background-color: #ffffff ;
 }
 
 .sectionTree {
     /*display: flex;*/
     padding-top:200px;
-    background-color: #003344 ;
+    background-color: #ffffff ;
 }
 
+.form p {
+    color: #55acee;
+}
 .form{
-
     border-radius: 6px;
-    border-color: #66CCCC ;
+    border-color: #55acee ;
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
@@ -166,6 +167,9 @@ section {
     text-align: center;
     height: 30px;
     border-radius: 5%;
+    border-color: rgb(85,172,238);
+    border-style: double solid;
+    background-color: rgb(85,172,238);
 }
 /*Natalia pisze, że wkleiła formularz css*/
  /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
@@ -252,7 +256,7 @@ p {
 /* style Macieja */
 
 .features {
-    background-color: #77a777;
+    background-color: #ffffff;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -270,7 +274,7 @@ p {
     background-repeat: no-repeat;
     background-position: center top 10px;
     background-size: 100px auto;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     padding: 150px 3px 3px 3px;
     display: flex;
     height: 150px;
@@ -278,21 +282,25 @@ p {
     /*min-width: 150px;*/
     /*!*max-width: 200px;*!*/
     margin: 5px 5px;
-    border: 1px solid black;
+    border: 2px solid #55acee;
     border-radius: 10px;
     /*font: Calibri;*/
     font-size: 20px;
+    color: #55acee;
     letter-spacing: 1px;
     transition-property: background-color;
     transition-duration: 0.5s;
     /*justify-content: center;*/
     align-items: center;
     font-family: 'Open Sans', 'sans-serif';
+    box-shadow: 0px 6px 18px #55acee;
 }
 
 .cecha:hover {
-    background-color: lightgoldenrodyellow;
-    transform: scale(1.05, 1.05);
+    background-color: #55acee;
+    color: #fff;
+    box-shadow: 0px 6px 18px black;
+
 }
 
 .save-money {
@@ -323,7 +331,7 @@ p {
 }
 .section-about-us {
     display: flex;
-    background-color: #334455 ;
+    background-color: #ffffff ;
     padding-top: 120px;
     padding-left: 100px;
     padding-right: 100px;
