@@ -131,15 +131,13 @@ section {
 }
 
 .sectionTree {
-    display: flex;
+    /*display: flex;*/
+    padding-top:200px;
     background-color: #003344 ;
 }
 
 .form{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
+
     border-radius: 6px;
     border-color: #66CCCC ;
     padding: 10px;
@@ -147,6 +145,13 @@ section {
     font-family: Georgia;
     align-items:center;
 
+}
+
+.form input[type="text"] {
+    width: 300px;
+    text-align: center;
+    height: 60px;
+    border-radius: 5%;
 }
 /*Natalia pisze, że wkleiła formularz css*/
  /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
