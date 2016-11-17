@@ -16,16 +16,14 @@ header {
     box-shadow: 0px 0.3px 10px 1px #000;
 }
 
-    .section-banner {
+.section-banner {
      background-image: url("FirstWeb/images/banner-bg-empty-plate.jpg");
      background-size: cover;
      background-position: 55%;
      background-repeat: no-repeat;
      height: 130vh;
      position: relative;
-
-    }
-
+}
 
 .section-banner h1 {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -37,8 +35,22 @@ header {
     left: 40%;
     transform: translateX(-30%) translateY(-50%);
 }
+
 header #logo {
     margin-left: 10vw;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Ranga', cursive;
+    font-size: 25px;
+    letter-spacing: 4px;
+    border-left: 3px solid #7cc576;
+    border-right: 3px solid #7cc576;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header #logo:hover{
@@ -47,6 +59,7 @@ header #logo:hover{
 
 nav {
     margin-right: 10vw;
+    margin-bottom: 2px;
 
 }
 
@@ -68,7 +81,7 @@ nav a {
 }
 
 nav ul li:hover {
-    border-bottom: 3px solid #7cc576 ;
+    border-bottom: 3px solid #7cc576;
     cursor: pointer;
 }
 
@@ -156,7 +169,7 @@ p {
 }
 
 
-    @media (max-width: 600px) {
+    @media (max-width: 760px) {
     header {
         flex-direction: column;
         height: 45px;
