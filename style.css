@@ -15,34 +15,28 @@ header {
     z-index: 1;
     box-shadow: 0px 0.3px 10px 1px #000;
 }
-
-    .section-banner {
+ .section-banner {
      background-image: url("FirstWeb/images/banner-bg-empty-plate.jpg");
      background-size: cover;
      background-position: 55%;
      background-repeat: no-repeat;
-     /*height: 100vh;*/
-     height: calc(100vh +500px);
+     height: 130vh;
      position: relative;
-     /*padding-bottom: 200px;*/
+     /*background-attachment: fixed;*/
 
     }
 
 
-/*style nagłowkow h1 h2*/
 .section-banner h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
     font-size: 80px;
     text-shadow: 1px 4px black ;
     position: absolute;
-    top:35%;
-    left: 30%;
-
+    top:50%;
+    left: 40%;
+    transform: translateX(-30%) translateY(-50%);
 }
-/*.section-banner h2 {*/
-/*font-size: 40px;*/
-/*text-align: center;*/
-/*}*/
-
 header #logo {
     margin-left: 10vw;
 }
@@ -104,6 +98,7 @@ section {
     justify-content: center;
     margin: auto;
     flex-direction: column;
+
 }
 /*Natalia pisze, że wkleiła formularz css*/
 
@@ -113,15 +108,10 @@ section {
     padding: 10px;
     text-align: center;
     font-family: Georgia;
-    padding: 5px;
+    align-items:center;
 
 }
-
-
-
-
-
-    /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
+ /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
     border-radius: 6px;
     background-color: #66CCCC ;
@@ -137,6 +127,8 @@ section {
     background: linear-gradient(to right, #feffff  0%,#ddf1f9  35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff ', endColorstr='#a0d8ef ',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
+   padding: 8px 15px 8px 15px;
+    margin: 3px;
 }
 
 .submit:hover {
@@ -154,22 +146,20 @@ section {
     color: black;
     cursor:pointer;
 }
-/*Styl dla paragrafu.Natalia*/
+/*Styl dla paragrafu dotyczacy formularzu.Natalia*/
 p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 300;
     color: white;
-    font-size: 13px;
+    font-size: 35px;
 }
 
-.sectionFour {
-    display: flex;
-    background-color: #334455 ;
-}
 
-@media (max-width: 600px) {                    /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 600px */
+    @media (max-width: 600px) {
     header {
         flex-direction: column;
         height: 45px;
-
     }
 
     header #logo {
@@ -237,13 +227,11 @@ p {
     transition-duration: 0.5s;
     /*justify-content: center;*/
     align-items: center;
-
 }
 
 .cecha:hover {
     background-color: lightgoldenrodyellow;
     transform: scale(1.05, 1.05);
-
 }
 
 .save-money {
@@ -261,3 +249,40 @@ p {
 .best-in-class {
     background-image: url('FirstWeb/images/best-in-class.svg');
 }
+
+/* koniec styli Macieja */
+
+
+/*Natalia wprowadziła styl paragrafu odnosnie bezpieczenstwa strony*/
+.security1 {
+    font-size:40px;
+    color: black;
+    text-align:center;
+}
+.section-about-us {
+    display: flex;
+    background-color: #334455 ;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+
+.face-photo-box {
+
+    width: 25%;
+    height: 25%;
+    /*background-color: #b4e391;*/
+    display: inline-block;
+    clear: both;
+    margin: 10px;
+}
+.section-about-us-face-one {
+    width: 75%;
+    height: auto;
+    border-radius: 100%;
+    border: 3px solid;
+    box-shadow: 5px 10px  20px black;
+}
+
