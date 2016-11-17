@@ -16,32 +16,27 @@ header {
     box-shadow: 0px 0.3px 10px 1px #000;
 }
 
-/*sexction banner ze zdjjeciem ruchomym*/.section-banner {
+    .section-banner {
      background-image: url("FirstWeb/images/banner-bg-empty-plate.jpg");
      background-size: cover;
      background-position: 55%;
      background-repeat: no-repeat;
      /*height: 100vh;*/
-     height: calc(100vh - -500px);
+     height: calc(100vh +500px);
      position: relative;
      /*padding-bottom: 200px;*/
 
     }
 
+
 /*style nagłowkow h1 h2*/
 .section-banner h1 {
-    opacity: 0.2;
-    background-color: lightsteelblue;
-    border-radius: 6%;
-    font-weight: 400;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 100px;
-    text-shadow: 3px 4px black ;
+    font-size: 80px;
+    text-shadow: 1px 4px black ;
     position: absolute;
     top:35%;
     left: 30%;
-    text-align: center;
-    padding-bottom: 10px;
+
 }
 /*.section-banner h2 {*/
 /*font-size: 40px;*/
@@ -71,7 +66,7 @@ nav ul {
 nav ul li {
     padding: 10px;
     font-size: 14px;
-    color: #777777  ;
+    color: #777777 ;
 }
 
 nav a {
@@ -79,7 +74,7 @@ nav a {
 }
 
 nav ul li:hover {
-    border-bottom: 3px solid #7cc576  ;
+    border-bottom: 3px solid #7cc576 ;
     cursor: pointer;
 }
 
@@ -89,19 +84,19 @@ section {
 
 .sectionOne {
     display: flex;
-    background-color: #7cc576  ;
+    background-color: #7cc576 ;
 }
 
 .sectionTwo {
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #77a777  ;
+    background-color: #77a777 ;
 }
 
 .sectionTree {
     display: flex;
-    background-color: #003344  ;
+    background-color: #003344 ;
 }
 
 .form{
@@ -115,23 +110,33 @@ section {
 
 .form {
     border-radius: 6px;
-    border-color: #66CCCC  ;
+    border-color: #66CCCC ;
     padding: 10px;
     text-align: center;
     font-family: Georgia;
     align-items:center;
 
 }
-/*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
+
+
+
+
+
+    /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
     border-radius: 6px;
-    background-color: #66CCCC  ;
+    background-color: #66CCCC ;
     color: black;
     background: #feffff  ; /* Old browsers */
     background: -moz-linear-gradient(left, #feffff   0%, #ddf1f9   35%, #a0d8ef   100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #feffff   0%,#ddf1f9   35%,#a0d8ef   100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #feffff   0%,#ddf1f9   35%,#a0d8ef   100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff  ', endColorstr='#a0d8ef  ',GradientType=1 ); /* IE6-9 */
+    background: #feffff ; /* Old browsers */
+    background: -moz-linear-gradient(left, #feffff  0%, #ddf1f9  35%, #a0d8ef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #feffff  0%,#ddf1f9  35%,#a0d8ef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #feffff  0%,#ddf1f9  35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff ', endColorstr='#a0d8ef ',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
    padding: 8px 15px 8px 15px;
     margin: 3px;
@@ -143,6 +148,11 @@ section {
     background: -webkit-linear-gradient(top, #b4e391   0%,#61c419   50%,#b4e391   100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #b4e391   0%,#61c419   50%,#b4e391   100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391  ', endColorstr='#b4e391  ',GradientType=0 ); /* IE6-9 */
+    background: #b4e391 ; /* Old browsers */
+    background: -moz-linear-gradient(top, #b4e391  0%, #61c419  50%, #b4e391  100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b4e391  0%,#61c419  50%,#b4e391  100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b4e391  0%,#61c419  50%,#b4e391  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391 ', endColorstr='#b4e391 ',GradientType=0 ); /* IE6-9 */
     copyntType:1;); /* IE6-9 */
     color: black;
     cursor:pointer;
@@ -155,7 +165,7 @@ p {
 
 .sectionFour {
     display: flex;
-    background-color: #334455  ;
+    background-color: #334455 ;
 }
 
 @media (max-width: 600px) {                    /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 600px */
@@ -195,16 +205,17 @@ p {
 /* style Macieja */
 
 .features {
-    background-color: chartreuse;
+    background-color: #77a777;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     margin-top: 60px;
-
+    width: 800px;
     display: flex;
     justify-content: center;
     margin: auto;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .cecha {
@@ -213,15 +224,24 @@ p {
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: antiquewhite;
-    padding-top: 200px;
+    padding: 180px 3px 3px 3px;
     display: inline-block;
     height: 150px;
-    width: 24%;
-    min-width: 150px;
-    max-width: 200px;
-    margin: 5px 0;
+    width: 180px;
+    /*min-width: 150px;*/
+    /*max-width: 200px;*/
+    margin: 5px 5px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    font: Arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.cecha:hover {
+    background-color: burlywood;
 }
 
 .icon-cross {
@@ -230,9 +250,10 @@ p {
 
 /* koniec styli Macieja */
 
-/*Natalia. Styl paragrafu, ktory dotyczy bezpieczenstw strony*/
-#footer1 {
-    color: white;
-    font-size:15px;
-    padding: 100px 100px 100px 100px;
+
+/*Natalia wprowadziła styl paragrafu odnosnie bezpieczenstwa strony*/
+p.security1 {
+    font-size:14px;
+    color: black;
+    text-align:center;
 }
