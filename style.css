@@ -192,16 +192,17 @@ p {
 /* style Macieja */
 
 .features {
-    background-color: chartreuse;
+    background-color: #77a777;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     margin-top: 60px;
-
+    width: 800px;
     display: flex;
     justify-content: center;
     margin: auto;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .cecha {
@@ -210,15 +211,24 @@ p {
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: antiquewhite;
-    padding-top: 200px;
+    padding: 180px 3px 3px 3px;
     display: inline-block;
     height: 150px;
-    width: 24%;
-    min-width: 150px;
-    max-width: 200px;
-    margin: 5px 0;
+    width: 180px;
+    /*min-width: 150px;*/
+    /*max-width: 200px;*/
+    margin: 5px 5px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    font: Arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.cecha:hover {
+    background-color: burlywood;
 }
 
 .icon-cross {
