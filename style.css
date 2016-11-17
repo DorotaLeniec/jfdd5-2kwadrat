@@ -40,30 +40,47 @@ header {
  }
 
 .section-banner h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    color: #55acee;
+    font-family: 'Open Sans', 'sans-serif';
     font-weight: 500;
-    font-size: 80px;
-    text-shadow: 1px 4px black ;
+    font-size: 40px;
+    /*text-shadow: 1px 1px black ;*/
     position: absolute;
     top:50%;
     left: 40%;
-    transform: translateX(-40%) translateY(-40%);
+    transform: translateX(-75%) translateY(-91%);
 }
-.button-to-form {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 65px;
-    text-shadow: 1px 4px black ;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.btn {
     position: absolute;
-    top:65%;
+    top:50%;
     left: 40%;
-    transform: translateX(-30%) translateY(-40%);
-    border-radius: 5%;
+    transform: translateX(-85%) translateY(30%);
+    cursor: pointer;
+    /*margin: 10px;*/
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 82px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
 }
-.button-to-form:hover {
-    color: #66CCCC;
-    background-color: #003344;
+
+.btn:hover {
+    cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
 }
+.blue {
+    color: #55acee;
+    border: 2px #55acee solid;
+}
+.blue:hover {
+    background-color: #55acee;
+    color: #fff
+}
+
 header #logo {
     color: #000000;
     font-family: 'Ranga', cursive;
@@ -127,20 +144,13 @@ section {
 }
 
 .sectionTree {
-    display: flex;
+    /*display: flex;*/
+    padding-top:200px;
     background-color: #003344 ;
 }
 
 .form{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
 
-}
-/*Natalia pisze, że wkleiła formularz css*/
-
-.form {
     border-radius: 6px;
     border-color: #66CCCC ;
     padding: 10px;
@@ -149,6 +159,14 @@ section {
     align-items:center;
 
 }
+
+.form input[type="text"] {
+    width: 300px;
+    text-align: center;
+    height: 60px;
+    border-radius: 5%;
+}
+/*Natalia pisze, że wkleiła formularz css*/
  /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
     border-radius: 6px;
@@ -165,8 +183,8 @@ section {
     background: linear-gradient(to right, #feffff  0%,#ddf1f9  35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff ', endColorstr='#a0d8ef ',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
-   padding: 8px 15px 8px 15px;
-    margin: 3px;
+   padding: 8px 19px 8px 19px;
+    margin: 4px;
 }
 
 .submit:hover {
@@ -186,11 +204,10 @@ section {
 }
 /*Styl dla paragrafu dotyczacy formularzu.Natalia*/
 p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans', 'sans-serif';
     font-weight: 300;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 
@@ -259,7 +276,7 @@ p {
     width: 180px;
     /*min-width: 150px;*/
     /*!*max-width: 200px;*!*/
-    /*margin: 5px 5px;*/
+    margin: 5px 5px;
     border: 1px solid black;
     border-radius: 10px;
     /*font: Calibri;*/
@@ -291,6 +308,7 @@ p {
 .best-in-class {
     background-image: url('FirstWeb/images/best-in-class.svg');
 }
+
 
 /* koniec styli Macieja */
 
