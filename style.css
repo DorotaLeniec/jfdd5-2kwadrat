@@ -22,9 +22,7 @@ header {
      background-repeat: no-repeat;
      height: 130vh;
      position: relative;
-     /*background-attachment: fixed;*/
-
-    }
+ }
 
 
 .section-banner h1 {
@@ -56,10 +54,22 @@ header {
 }
 header #logo {
     margin-left: 10vw;
+    color: #000000;
+    font-family: 'Ranga', cursive;
+    font-size: 25px;
+    letter-spacing: 4px;
+    border-left: 3px solid #7cc576;
+    border-right: 3px solid #7cc576;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 header #logo:hover{
     cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
 }
 
 nav {
@@ -233,8 +243,8 @@ p {
     height: 150px;
     width: 180px;
     /*min-width: 150px;*/
-    /*max-width: 200px;*/
-    margin: 5px 5px;
+    /*!*max-width: 200px;*!*/
+    /*margin: 5px 5px;*/
     border: 1px solid black;
     border-radius: 10px;
     /*font: Calibri;*/
