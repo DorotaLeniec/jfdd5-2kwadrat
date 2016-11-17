@@ -221,8 +221,8 @@ p {
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: antiquewhite;
-    padding: 180px 3px 3px 3px;
-    display: inline-block;
+    padding: 150px 3px 3px 3px;
+    display: flex;
     height: 150px;
     width: 180px;
     /*min-width: 150px;*/
@@ -230,17 +230,34 @@ p {
     margin: 5px 5px;
     border: 1px solid black;
     border-radius: 10px;
-    font: Arial;
+    /*font: Calibri;*/
     font-size: 20px;
     letter-spacing: 1px;
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
+    /*justify-content: center;*/
+    align-items: center;
+
 }
 
 .cecha:hover {
-    background-color: burlywood;
+    background-color: lightgoldenrodyellow;
+    transform: scale(1.05, 1.05);
+
 }
 
-.icon-cross {
-    background-image: url('FirstWeb/images/icon-cross.svg');
+.save-money {
+    background-image: url('FirstWeb/images/save-money.svg');
+}
+
+.save-time {
+    background-image: url('FirstWeb/images/save-time.svg');
+}
+
+.wide-choice {
+    background-image: url('FirstWeb/images/wide-choice.svg');
+}
+
+.best-in-class {
+    background-image: url('FirstWeb/images/best-in-class.svg');
 }
