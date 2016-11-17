@@ -168,8 +168,8 @@ section {
     background: linear-gradient(to right, #feffff  0%,#ddf1f9  35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff ', endColorstr='#a0d8ef ',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
-   padding: 8px 15px 8px 15px;
-    margin: 3px;
+   padding: 8px 19px 8px 19px;
+    margin: 4px;
 }
 
 .submit:hover {
@@ -193,7 +193,7 @@ p {
     font-family: 'Indie Flower', cursive;
     font-weight: 300;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 
