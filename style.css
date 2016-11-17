@@ -140,11 +140,6 @@ section {
     justify-content: center;
     margin: auto;
     flex-direction: column;
-
-}
-/*Natalia pisze, że wkleiła formularz css*/
-
-.form {
     border-radius: 6px;
     border-color: #66CCCC ;
     padding: 10px;
@@ -153,6 +148,7 @@ section {
     align-items:center;
 
 }
+/*Natalia pisze, że wkleiła formularz css*/
  /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
     border-radius: 6px;
