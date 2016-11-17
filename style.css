@@ -109,6 +109,7 @@ section {
     justify-content: center;
     margin: auto;
     flex-direction: column;
+
 }
 /*Natalia pisze, że wkleiła formularz css*/
 
@@ -118,7 +119,7 @@ section {
     padding: 10px;
     text-align: center;
     font-family: Georgia;
-    padding: 5px;
+    align-items:center;
 
 }
 /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
@@ -132,6 +133,8 @@ section {
     background: linear-gradient(to right, #feffff   0%,#ddf1f9   35%,#a0d8ef   100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff  ', endColorstr='#a0d8ef  ',GradientType=1 ); /* IE6-9 */
     cursor: pointer;
+   padding: 8px 15px 8px 15px;
+    margin: 3px;
 }
 
 .submit:hover {
