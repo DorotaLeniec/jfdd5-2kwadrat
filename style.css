@@ -4,7 +4,7 @@
 }
 
 header {
-    height: 20px;
+    height: 30px;
     display: flex;
     position: fixed;
     justify-content: space-around;
@@ -15,6 +15,23 @@ header {
     z-index: 1;
     box-shadow: 0 0.3px 10px 1px #000;
 }
+
+header #logo {
+    color: #55acee;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 25px;
+    letter-spacing: 4px;
+    border-left: 3px solid #55acee;
+    border-right: 3px solid #55acee;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+header #logo:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #55acee;
+}
+
  .section-banner {
      background-image: url("FirstWeb/images/banner-bg-empty-plate.jpg");
      background-size: cover;
@@ -80,41 +97,21 @@ header {
     color: #fff
 }
 
-header #logo {
-    color: #55acee;
-    font-family: 'Open Sans', 'sans-serif';
-    font-size: 25px;
-    letter-spacing: 4px;
-    border-left: 3px solid #55acee;
-    border-right: 3px solid #55acee;
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-header #logo:hover{
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #55acee;
-}
-
 header a {
     text-decoration: none;
-}
-
-nav {
-    margin-right: 10vw;
-
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 5px;
     list-style-type: none;
 }
 
 nav ul li {
     font-family: 'Open Sans', 'sans-serif';
-    padding: 10px;
+    padding: 5px 15px;
     font-size: 18px;
     color: #55acee ;
 }
@@ -218,23 +215,26 @@ p {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 810px) {
     header {
         flex-direction: column;
         height: 45px;
         align-items: center;
     }
-.section-banner h1 {
-    font-size: 30px;
-    position: relative;
-}
 
-.btn,.blue {
-    position: relative;
-    font-size:55px ;
+    .section-banner h1 {
+        font-size: 30px;
+        position: relative;
+    }
+
+    .btn,.blue {
+        position: relative;
+        font-size:55px ;
 }
     nav {
-        margin:auto;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     nav ul li {
@@ -347,8 +347,6 @@ p {
     padding-right: 100px;
 
 }
-
-
 .face-photo-box {
 
     width: 25%;

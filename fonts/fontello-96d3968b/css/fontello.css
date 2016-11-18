@@ -28,7 +28,7 @@
  
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
+  width: 1.3em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
@@ -54,7 +54,33 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.icon-twitter-circled:before { content: '\f30a'; } /* '' */
-.icon-facebook-squared:before { content: '\f30e'; } /* '' */
-.icon-gplus-circled:before { content: '\f310'; } /* '' */
+
+.icon-twitter-circled:before {
+    content: '\f30a';
+    font-size: 30px;
+}
+
+.icon-facebook-squared:before {
+    content: '\f30e';
+    font-size: 30px;
+}
+
+.icon-gplus-circled:before {
+    content: '\f310';
+    font-size: 30px;
+}
+
+.icon-twitter-circled:hover {
+    color: #00aced;
+    cursor: pointer;
+}
+
+.icon-facebook-squared:hover {
+    color: #3b5998;
+    cursor: pointer;
+}
+
+.icon-gplus-circled:hover {
+    color: #dd4b39;
+    cursor: pointer;
+}
