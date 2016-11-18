@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-<!--zmiana-->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <title>InsideMyFridge</title>
+    <!--zmiana-->
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
@@ -19,19 +19,29 @@
 
     <nav>
         <ul>
-            <a href="#navigation-handler-banner"><li>ZAJAWKA</li></a>
-            <a href="#ficzery"><li>FICZERY</li></a>
-            <a href="#formularz"><li>FORMULARZ</li></a>
-            <a href="#autorzy"><li>AUTORZY</li></a>
+            <a href="#navigation-handler-banner">
+                <li>ZAJAWKA</li>
+            </a>
+            <a href="#ficzery">
+                <li>FICZERY</li>
+            </a>
+            <a href="#formularz">
+                <li>FORMULARZ</li>
+            </a>
+            <a href="#autorzy">
+                <li>AUTORZY</li>
+            </a>
         </ul>
     </nav>
 
 </header>
 
-<div id="social">                                                                                         <!-- KUBA: social media przyklejone do boku -->
-        <div class="facebook">F</div>
-        <div class="twitter">T</div>
-        <div class="gplus">G</div>
+<div id="social">
+    <!-- KUBA: social media przyklejone do boku -->
+    <div class="facebook">F</div>
+    <div class="twitter">T</div>
+    <div class="instagram">I</div>
+    <div class="youtube">Y</div>
 </div>
 
 <div id="container">
@@ -44,7 +54,8 @@
         <a class="btn blue" href="#formularz">WPADAJ!</a>
     </section>
 
-    <section class="sectionTwo" id="ficzery">                                                           <!-- tą sekcję pisze ja - Maciej :slightly_smiling_face: -->
+    <section class="sectionTwo" id="ficzery">
+        <!-- tą sekcję pisze ja - Maciej :slightly_smiling_face: -->
         <div class="features">
             <div class="cecha save-money">
                 Dzięki naszej aplikacji zaoszczędzisz czas i pieniądze!
@@ -68,24 +79,50 @@
             <p> Zostanie wysłany do Ciebie tylko jeden e-mail z informacją o premierze naszej strony.</p><br>
             <input class="formularz-zgloszeniowy" type="text" class="form" name="e-mail" placeholder="Twój e-mail"/>
             <input type="submit" class="submit" name="submit1" value="Wyślij">
-            <br />
+            <br/>
             <!-- Natalia wkleiła formularz i 'button' w html -->
         </form>
     </section>
 
+
+
+
+
+
     <section class="section-about-us" id="autorzy">
-            <div class="face-photo-box">
-                <img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">
+        <div id="photo-container">
+            <div id="card" class="shaddow">
+                <div class="front face">
+                    <img class="section-about-us-face-one" width="300px" height="300px" src="FirstWeb/images/section-about-us-face-one.jpg">
+                </div>
+                <div class="back face">
+                    <p>OPIS OSOBY LALALAL</p>
+                </div>
             </div>
-        <div class="face-photo-box">
-            <img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">
         </div>
-        <div class="face-photo-box">
-            <img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">
-        </div>
-        <div class="face-photo-box">
-            <img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">
-        </div>
+
+
+
+
+
+
+        <!--<div class="front face ">-->
+        <!--<img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">-->
+        <!--</div>-->
+        <!--<div class="front face ">-->
+            <!--<div class="front face ">-->
+                <!--<img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="front face ">-->
+            <!--<img class="section-about-us-face-one" src="FirstWeb/images/section-about-us-face-one.jpg">-->
+        <!--</div>-->
+        <!--<div class="hidden-content-back-photo">-->
+            <!--<div class="back face">opis osoby</div>-->
+            <!--<div class="back face">opis osoby</div>-->
+            <!--<div class="back face">opis osoby</div>-->
+            <!--<div class="back face">opis osoby</div>-->
+        <!--</div>-->
     </section>
 </div>
 </body>
