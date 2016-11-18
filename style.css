@@ -331,6 +331,33 @@ p.security {
     background-image: url('FirstWeb/images/best-in-class.svg');
 }
 
+/*Stopka*/
+
+footer {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85, 172, 238);
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px -0.3px 10px #000;
+
+}
+
+.copyright{
+    margin-right: 200px;
+}
+
+.last-update-date {
+    margin-left: 200px;
+}
+
+.team-name,
+.update-date {
+    font-style: italic;
+}
+
 
 /* koniec styli Macieja */
 
