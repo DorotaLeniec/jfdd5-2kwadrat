@@ -125,10 +125,7 @@ nav a {
 nav ul li:hover {
     border-bottom: 3px solid #55acee;
     cursor: pointer;
-}
 
-section {
-    height: 100vh;
 }
 
 .sectionOne {
@@ -140,13 +137,12 @@ section {
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #ffffff ;
+    background-color: #d3e8e7;
 }
 
 .sectionTree {
     /*display: flex;*/
-    padding-top:200px;
-    background-color: #ffffff ;
+    background-color: #ffffff;
 }
 
 .form p {
@@ -154,7 +150,8 @@ section {
 }
 .form{
     border-radius: 6px;
-    border-color: #55acee ;
+    border-color: #55acee;
+    background-color:#bdfcb0;
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
@@ -162,7 +159,7 @@ section {
 
 }
 
-.form input[type="text"] {
+.form input[type="text"], .form input[type="email"] {
     width: 200px;
     text-align: center;
     font-size:20px;
@@ -274,7 +271,6 @@ p.security {
 /* style Macieja */
 
 .features {
-    background-color: #ffffff;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -375,7 +371,7 @@ footer {
 }
 .section-about-us {
     display: flex;
-    background-color: #ff0fff;
+    background-color: #c4fff7;
     padding-top: 120px;
     padding-left: 100px;
     padding-right: 100px;
