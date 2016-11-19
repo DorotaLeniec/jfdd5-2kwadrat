@@ -139,7 +139,8 @@ section {
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #ffffff ;
+    justify-content: center;
+    background-color: #55acee;
 }
 
 .sectionTree {
@@ -276,19 +277,22 @@ p.security {
     text-align: center;
     width: 800px;
     display: flex;
-    justify-content: center;
-    margin: 60px auto auto;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*margin: 100px auto;*/
     flex-direction: row;
     flex-wrap: wrap;
+    border-radius: 10px;
+    font-family: 'Open Sans', 'sans-serif';
 }
 
 .cecha {
     background-image: url('FirstWeb/images/icon-checked.svg');
     background-repeat: no-repeat;
     background-position: center top 10px;
-    background-size: 100px auto;
+    background-size: 80px auto;
     background-color: #ffffff;
-    padding: 150px 3px 3px 3px;
+    padding: 85px 3px 3px 3px;
     display: flex;
     height: 150px;
     width: 180px;
@@ -297,23 +301,41 @@ p.security {
     margin: 5px 5px;
     border: 2px solid #55acee;
     border-radius: 10px;
-    /*font: Calibri;*/
-    font-size: 20px;
+    font-size: 22px;
     color: #55acee;
     letter-spacing: 1px;
     transition-property: background-color;
     transition-duration: 0.5s;
-    /*justify-content: center;*/
     align-items: center;
-    font-family: 'Open Sans', 'sans-serif';
-    box-shadow: 0 6px 18px #55acee;
 }
 
 .cecha:hover {
     background-color: #55acee;
     color: #fff;
     box-shadow: 0 6px 18px black;
+}
 
+.column-1,
+.column-2 {
+    background-color: #ffffff;
+    display: flex;
+    height: 300px;
+    width: 380px;
+    margin: 5px;
+    border: 2px solid #55acee;
+    border-radius: 10px;
+    color: #55acee;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 22px;
+    align-items: center;
+    padding: 3px;
+}
+
+.column-1 ul,
+.column-2 ul {
+    list-style-type: disc;
+    padding: 3px;
 }
 
 .save-money {
@@ -343,7 +365,6 @@ footer {
     font-size: 20px;
     color: white;
     box-shadow: 0px -0.3px 10px #000;
-
 }
 
 .copyright{
@@ -358,7 +379,6 @@ footer {
 .update-date {
     font-style: italic;
 }
-
 
 /* koniec styli Macieja */
 
