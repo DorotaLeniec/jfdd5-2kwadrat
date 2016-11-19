@@ -13,16 +13,16 @@ header {
     background-color: white;
     padding: 20px;
     z-index: 1;
-    box-shadow: 0 3px 10px 1px #000;
+    box-shadow: 0 1px 10px 1px #000;
 }
- .section-banner {
+.section-banner {
      background: transparent url("FirstWeb/images/banner-bg-empty-plate.jpg") no-repeat 55%;
      background-size: cover;
      height: 130vh;
      position: relative;
  }
 
- #social {
+#social {
      display: flex;
      flex-direction: column;
      justify-content: space-around;
@@ -91,7 +91,7 @@ header #logo {
 
 header #logo:hover{
     cursor: pointer;
-    text-shadow: 1px 3px 5px #55acee;
+    text-shadow: -2px -2px 40px #55acee
 }
 
 header a {
@@ -99,7 +99,8 @@ header a {
 }
 
 nav {
-    margin-right: 10vw;
+    margin-right: 5vw;
+    margin-top: -5px;
 
 }
 
@@ -222,7 +223,7 @@ p.security {
     text-align:center;
     text-decoration: underline;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     header {
         flex-direction: column;
         height: 45px;
@@ -239,6 +240,8 @@ p.security {
 }
     nav {
         margin:auto;
+        width: 70%;
+        margin: 0 auto;
     }
 
     nav ul li {
