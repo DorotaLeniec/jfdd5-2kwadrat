@@ -239,7 +239,6 @@ p.security {
     font-size:55px ;
 }
     nav {
-        margin:auto;
         width: 70%;
         margin: 0 auto;
     }
@@ -247,7 +246,9 @@ p.security {
     nav ul li {
         font-size: 12px;
     }
-
+    nav ul li:hover {
+        border-bottom: 1px solid #55acee;
+    }
     #social {
         display: none;
     }
