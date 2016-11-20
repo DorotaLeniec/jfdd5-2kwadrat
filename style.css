@@ -88,11 +88,9 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-
-
-
 .sectionTwo {
   display: flex;
+  justify-content: center;
   align-content: center;
   align-items: center;
   background-color: #96f2ef;
