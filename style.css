@@ -1,6 +1,7 @@
 #container {
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
 }
 
 header {
@@ -229,14 +230,18 @@ p.security {
         height: 45px;
         align-items: center;
     }
-.section-banner h1 {
-    font-size: 30px;
-    position: relative;
+
+    section{
+        height: auto;
+    }
+    .section-banner h1 {
+        font-size: 30px;
+        position: relative;
 }
 
-.btn,.blue {
-    position: relative;
-    font-size:55px ;
+    .btn,.blue {
+        position: relative;
+        font-size:55px ;
 }
     nav {
         width: 70%;
@@ -258,6 +263,10 @@ p.security {
 @media (max-width: 420px) {                 /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 420px */
     header {
         height: 150px;
+    }
+
+    section {
+        height: auto;
     }
 
     nav ul {
