@@ -15,6 +15,7 @@ header {
     z-index: 1;
     box-shadow: 0 1px 10px 1px #000;
 }
+
 .section-banner {
      background: transparent url("FirstWeb/images/banner-bg-empty-plate.jpg") no-repeat 55%;
      background-size: cover;
@@ -127,6 +128,9 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+section {
+    height: 100vh;
+}
 
 .sectionOne {
     display: flex;
@@ -142,7 +146,7 @@ nav ul li:hover {
 }
 .sectionTree {
     /*display: flex;*/
-    background-color: #ffffff ;
+    background-color: #baffde ;
 }
 
 .form p {
@@ -150,7 +154,6 @@ nav ul li:hover {
 }
 .form{
     border-radius: 6px;
-    background-color:#baffde;
     border-color: #55acee ;
     padding: 10px;
     text-align: center;
