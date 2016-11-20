@@ -33,7 +33,9 @@ header {
      box-shadow: 0 1px 5px 3px #000;
  }
 
-
+#social a {
+    color: #444444;
+}
 
 header #logo {
     color: #55acee;
