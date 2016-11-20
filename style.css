@@ -1,5 +1,5 @@
 #container {
-width: 100vw;
+    padding-top: 60px;
 
 }
 section {
@@ -37,7 +37,9 @@ header {
      box-shadow: 0 1px 5px 3px #000;
  }
 
-
+#social a {
+    color: #444444;
+}
 
 header #logo {
     color: #55acee;
@@ -181,6 +183,10 @@ p.security {
         flex-direction: column;
         height: 45px;
         align-items: center;
+    }
+
+    #container {
+        padding-top: 85px;
     }
 
     section{
