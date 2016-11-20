@@ -320,7 +320,7 @@ p.security {
     background-color: #ffffff;
     display: flex;
     height: 300px;
-    width: 353px;
+    width: 380px;
     margin: 5px;
     border: 2px solid #55acee;
     border-radius: 10px;
@@ -329,7 +329,7 @@ p.security {
     font-family: 'Open Sans', 'sans-serif';
     font-size: 22px;
     align-items: center;
-    padding: 3px 3px 3px 30px;
+    padding: 3px;
 }
 
 .column-1 ul,
@@ -362,9 +362,9 @@ footer {
     justify-content: center;
     background-color: rgb(85, 172, 238);
     align-items: center;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
-    box-shadow: 0 -0.3px 10px #000;
+    box-shadow: 0px -0.3px 10px #000;
 }
 
 .copyright{
