@@ -411,7 +411,7 @@ footer {
 .face.back {
     display: block;
     transform: rotateY(180deg);
-    box-sizing: border-bo
+    box-sizing: border-box;
     padding: 10px;
     color: white;
     text-align: center;
