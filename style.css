@@ -186,7 +186,7 @@ p.security {
     }
 
     section{
-        height:100vh;
+        height: auto;
     }
 
     nav {
@@ -212,7 +212,7 @@ p.security {
     }
 
     section {
-        height: 100vh;
+        height: auto;
     }
 
     nav ul {
