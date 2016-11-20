@@ -137,7 +137,7 @@ nav ul li:hover {
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #d3e8e7;
+    background-color: #96e0dd;
 }
 
 .sectionTree {
@@ -151,7 +151,7 @@ nav ul li:hover {
 .form{
     border-radius: 6px;
     border-color: #55acee;
-    background-color:#bdfcb0;
+    background-color:#6bef95;
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
@@ -371,7 +371,7 @@ footer {
 }
 .section-about-us {
     display: flex;
-    background-color: #c4fff7;
+    background-color: #10d9ef;
     padding-top: 120px;
     padding-left: 100px;
     padding-right: 100px;
