@@ -116,10 +116,10 @@ nav ul li:hover {
 }
 
 .form input[type="text"], .form input[type="email"]{
+    color:grey;
     width: 200px;
     text-align: center;
     font-size:20px;
-    color: #ffffff;
     display: block;
     padding: 20px;
     margin: 0 auto;
