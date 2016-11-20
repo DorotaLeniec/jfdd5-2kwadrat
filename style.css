@@ -1,5 +1,5 @@
 #container {
-width: 100vw;
+    padding-top: 60px;
 
 }
 section {
@@ -183,6 +183,10 @@ p.security {
         flex-direction: column;
         height: 45px;
         align-items: center;
+    }
+
+    #container {
+        padding-top: 85px;
     }
 
     section{
