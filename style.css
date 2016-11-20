@@ -1,6 +1,11 @@
 #container {
-    display: flex;
-    flex-direction: column;
+width: 100vw;
+
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
 }
 
 header {
@@ -13,16 +18,11 @@ header {
     background-color: white;
     padding: 20px;
     z-index: 1;
-    box-shadow: 0 3px 10px 1px #000;
+    box-shadow: 0 1px 10px 1px #000;
 }
- .section-banner {
-     background: transparent url("FirstWeb/images/banner-bg-empty-plate.jpg") no-repeat 55%;
-     background-size: cover;
-     height: 130vh;
-     position: relative;
- }
 
- #social {
+
+#social {
      display: flex;
      flex-direction: column;
      justify-content: space-around;
@@ -37,46 +37,7 @@ header {
      box-shadow: 0 1px 5px 3px #000;
  }
 
-.section-banner h1 {
-    color: #55acee;
-    font-family: 'Open Sans', 'sans-serif';
-    font-weight: 500;
-    font-size: 40px;
-    /*text-shadow: 1px 1px black ;*/
-    position: absolute;
-    top:50%;
-    left: 40%;
-    transform: translateX(-75%) translateY(-91%);
-}
-.btn {
-    position: absolute;
-    top:50%;
-    left: 40%;
-    transform: translateX(-85%) translateY(30%);
-    cursor: pointer;
-    /*margin: 10px;*/
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 82px;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .9s;
-    -o-transition: .3s;
-    display: inline-block;
-}
 
-.btn:hover {
-    cursor:pointer;
-}
-.blue {
-    color: #55acee;
-    border: 2px #55acee solid;
-}
-.blue:hover {
-    background-color: #55acee;
-    color: #fff
-}
 
 header #logo {
     color: #55acee;
@@ -91,7 +52,7 @@ header #logo {
 
 header #logo:hover{
     cursor: pointer;
-    text-shadow: 1px 3px 5px #55acee;
+    text-shadow: -2px -2px 40px #55acee
 }
 
 header a {
@@ -99,7 +60,8 @@ header a {
 }
 
 nav {
-    margin-right: 10vw;
+    margin-right: 5vw;
+    margin-top: -5px;
 
 }
 
@@ -126,31 +88,24 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-section {
-    height: 100vh;
-}
 
-.sectionOne {
-    display: flex;
-    background-color: #7cc576 ;
-}
+
 
 .sectionTwo {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #55acee;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: #96f2ef;
+  padding-bottom: 50px;
 }
 
 .sectionTree {
     /*display: flex;*/
-    padding-top:200px;
-    background-color: #ffffff ;
+    background-color: #baffde ;
 }
 
 .form p {
-    color: #55acee;
+    color: dimgrey;
 }
 .form{
     border-radius: 6px;
@@ -162,7 +117,7 @@ section {
 
 }
 
-.form input[type="text"] {
+.form input[type="text"], .form input[type="email"]{
     width: 200px;
     text-align: center;
     font-size:20px;
@@ -219,33 +174,32 @@ p {
 p.security {
     font-size:11px;
     font-weight: bold;
-    color:black;
+    color:dimgrey;
     text-align:center;
     text-decoration: underline;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     header {
         flex-direction: column;
         height: 45px;
         align-items: center;
     }
-.section-banner h1 {
-    font-size: 30px;
-    position: relative;
-}
 
-.btn,.blue {
-    position: relative;
-    font-size:55px ;
-}
+    section{
+        height: auto;
+    }
+
     nav {
-        margin:auto;
+        width: 70%;
+        margin: 0 auto;
     }
 
     nav ul li {
         font-size: 12px;
     }
-
+    nav ul li:hover {
+        border-bottom: 1px solid #55acee;
+    }
     #social {
         display: none;
     }
@@ -255,6 +209,10 @@ p.security {
 @media (max-width: 420px) {                 /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 420px */
     header {
         height: 150px;
+    }
+
+    section {
+        height: auto;
     }
 
     nav ul {
@@ -286,7 +244,7 @@ p.security {
     background-image: url('FirstWeb/images/icon-checked.svg');
     background-repeat: no-repeat;
     background-position: center top 10px;
-    background-size: 80px auto;
+    background-size: 100px auto;
     background-color: #ffffff;
     padding: 85px 3px 3px 3px;
     display: flex;
@@ -300,6 +258,7 @@ p.security {
     letter-spacing: 1px;
     transition-property: background-color;
     transition-duration: 0.5s;
+    /*justify-content: center;*/
     align-items: center;
 }
 
