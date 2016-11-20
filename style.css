@@ -137,7 +137,7 @@ nav ul li:hover {
   display: flex;
   align-content: center;
   align-items: center;
-  background-color: #aaffd7;
+  background-color: #96f2ef;
   padding-bottom: 50px;
 }
 .sectionTree {
@@ -150,7 +150,7 @@ nav ul li:hover {
 }
 .form{
     border-radius: 6px;
-    background-color:#6bef95;
+    background-color:#baffde;
     border-color: #55acee ;
     padding: 10px;
     text-align: center;
@@ -369,7 +369,7 @@ footer {
 }
 .section-about-us {
     display: flex;
-    background-color: #aaf6ff;
+    background-color: #07ff8b;
     padding-top: 120px;
     padding-left: 100px;
     padding-right: 100px;
