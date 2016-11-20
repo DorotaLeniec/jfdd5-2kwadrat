@@ -17,12 +17,6 @@ header {
     box-shadow: 0 1px 10px 1px #000;
 }
 
-.section-banner {
-     background: transparent url("FirstWeb/images/banner-bg-empty-plate.jpg") no-repeat 55%;
-     background-size: cover;
-     height: 130vh;
-     position: relative;
- }
 
 #social {
      display: flex;
@@ -39,46 +33,7 @@ header {
      box-shadow: 0 1px 5px 3px #000;
  }
 
-.section-banner h1 {
-    color: #55acee;
-    font-family: 'Open Sans', 'sans-serif';
-    font-weight: 500;
-    font-size: 40px;
-    /*text-shadow: 1px 1px black ;*/
-    position: absolute;
-    top:50%;
-    left: 40%;
-    transform: translateX(-75%) translateY(-91%);
-}
-.btn {
-    position: absolute;
-    top:50%;
-    left: 40%;
-    transform: translateX(-85%) translateY(30%);
-    cursor: pointer;
-    /*margin: 10px;*/
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 82px;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .9s;
-    -o-transition: .3s;
-    display: inline-block;
-}
 
-.btn:hover {
-    cursor:pointer;
-}
-.blue {
-    color: #55acee;
-    border: 2px #55acee solid;
-}
-.blue:hover {
-    background-color: #55acee;
-    color: #fff
-}
 
 header #logo {
     color: #55acee;
@@ -133,10 +88,7 @@ section {
     height: 100vh;
 }
 
-.sectionOne {
-    display: flex;
-    background-color: #7cc576 ;
-}
+
 
 .sectionTwo {
   display: flex;
@@ -232,17 +184,9 @@ p.security {
     }
 
     section{
-        height: auto;
+        height:100vh;
     }
-    .section-banner h1 {
-        font-size: 30px;
-        position: relative;
-}
 
-    .btn,.blue {
-        position: relative;
-        font-size:55px ;
-}
     nav {
         width: 70%;
         margin: 0 auto;
@@ -266,7 +210,7 @@ p.security {
     }
 
     section {
-        height: auto;
+        height: 100vh;
     }
 
     nav ul {
@@ -379,6 +323,7 @@ footer {
     color: black;
     text-align:center;
 }
+/*section-about-us*/
 .section-about-us {
     display: flex;
     background-color: #07ff8b;
@@ -386,42 +331,43 @@ footer {
     padding-left: 100px;
     padding-right: 100px;
 }
-#photo-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    z-index: 1;
-    perspective: 1000;
-}
-#card {
-    border-radius: 10%;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d ;
-    transition: all 1.0s linear;
+/*}*/
+/*#photo-container {*/
+    /*position: relative;*/
+    /*width: 300px;*/
+    /*height: 300px;*/
+    /*z-index: 1;*/
+    /*perspective: 1000;*/
+/*}*/
+/*#card {*/
+    /*border-radius: 10%;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*transform-style: preserve-3d ;*/
+    /*transition: all 1.0s linear;*/
 
-}
+/*}*/
 
-#photo-container:hover #card {
-    transform: rotateY(180deg);
-    box-shadow: -5px 5px 5px black;
+/*#photo-container:hover #card {*/
+    /*transform: rotateY(180deg);*/
+    /*box-shadow: -5px 5px 5px black;*/
 
-}
-.face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-.face.back {
-    display: block;
-    transform: rotateY(180deg);
-    box-sizing: border-box;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    background-color: #aaa;
-}
+/*}*/
+/*.face {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*backface-visibility: hidden;*/
+/*}*/
+/*.face.back {*/
+    /*display: block;*/
+    /*transform: rotateY(180deg);*/
+    /*box-sizing: border-box;*/
+    /*padding: 10px;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*background-color: #aaa;*/
+/*}*/
 
 
 
