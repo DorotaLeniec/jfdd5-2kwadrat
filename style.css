@@ -103,7 +103,7 @@ section {
 }
 
 .form p {
-    color: #55acee;
+    color: dimgrey;
 }
 .form{
     border-radius: 6px;
@@ -143,7 +143,7 @@ section {
     -moz-border-radius: 48px;
     border-radius: 48px;
     font-family: Georgia, sans-serif;
-    color: #000000;
+    color:  white;
     font-size:15px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
@@ -172,7 +172,7 @@ p {
 p.security {
     font-size:11px;
     font-weight: bold;
-    color:black;
+    color:dimgrey;
     text-align:center;
     text-decoration: underline;
 }
