@@ -240,6 +240,7 @@ p.security {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     border-radius: 10px;
     font-family: 'Open Sans', 'sans-serif';
 }
@@ -250,7 +251,7 @@ p.security {
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: #ffffff;
-    padding: 85px 3px 3px 3px;
+    padding: 95px 3px 3px 3px;
     display: flex;
     height: 150px;
     width: 180px;
@@ -336,17 +337,23 @@ p.security {
     background-image: url('FirstWeb/images/best-in-class.svg');
 }
 
+@media screen and (max-width: 808px) {
+    .features {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .features {
-        display: flex;
-        justify-content: center;
+        width: 280px;
     }
 
     .cecha {
-        height: 75px;
-        width: 90px;
-        background-size: 50px auto;
-        font-size: 12px;
+        height: 100px;
+        width: 120px;
+        background-size: 60px auto;
+        padding-top: 65px;
+        font-size: 14px;
     }
 
     .cecha:hover {
@@ -355,17 +362,16 @@ p.security {
 
     .column-1,
     .column-2 {
-        height: 150px;
-        width: 200px;
-        font-size: 12px;
+        height: 200px;
+        width: 260px;
+        font-size: 14px;
     }
 
     .column-1:hover,
     .column-2:hover {
         background-color: #55acee;
         color: #fff;
-        box-shadow: 0px 0px 20px 5px black;
-        /*z-index: 100;*/
+        box-shadow: 0 0 20px 5px black;
         transform: scale(1,1) translate(0,0);
         transition-duration: 0.5s;
         border-color: #ffffff;
