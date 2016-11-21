@@ -2,7 +2,9 @@
     background: transparent;
     background-image: url("../images/garnek-zajawkaa.jpeg");
     background-size: cover;
-    background-position: 60%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 140vh;
     display: flex;
     flex-direction: column;
