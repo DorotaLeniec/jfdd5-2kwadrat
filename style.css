@@ -1,8 +1,11 @@
-
+body {
+    border:solid white 7px;
+}
 section {
     height: 100vh;
     width: 100%;
     padding-top: 60px;
+    border:black solid 20px;
 }
 
 header {
@@ -188,6 +191,7 @@ p.security {
 
     section{
         height: auto;
+
     }
 
     nav {
