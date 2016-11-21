@@ -3,17 +3,21 @@
     background-image: url("../images/przyklad.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 140vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /*border:solid 30px black;*/
+    margin-top: 60px;
+    /*box-shadow: 3px 3px 3px 3px black;*/
+
 
 
 }
 
 .section-banner-h1-box {
     text-align: center;
-    margin-top: -300px;
+
 }
 
 .section-banner h1 {

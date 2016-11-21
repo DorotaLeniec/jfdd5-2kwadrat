@@ -1,11 +1,18 @@
 body {
-    border:solid white 7px;
+    /*border:solid white 17px;*/
+    /*border:black solid 5px;*/
+    /*padding-right: 20px;*/
+    padding: 30px;
 }
 section {
     height: 100vh;
-    width: 100%;
+    width: 98%;
     padding-top: 60px;
-    border:black solid 20px;
+    /*border:pink solid 2px;*/
+    margin-bottom: 50px;
+    margin-left: 20px;
+    /*margin-right: 50px;*/
+    box-shadow: 2px 3px 4px 5px black;
 }
 
 header {
