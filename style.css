@@ -373,15 +373,15 @@ p.security {
         /*font-size: 14px;*/
     /*}*/
 
-    /*.column-1:hover,*/
-    /*.column-2:hover {*/
-        /*background-color: #55acee;*/
-        /*color: #fff;*/
-        /*box-shadow: 0 0 20px 5px black;*/
-        /*transform: scale(1,1) translate(0,0);*/
-        /*transition-duration: 0.5s;*/
-        /*border-color: #ffffff;*/
-    /*}*/
+    .column-1:hover,
+    .column-2:hover {
+        background-color: #55acee;
+        color: #fff;
+        box-shadow: 0 0 20px 5px black;
+        transform: scale(1,1) translate(0,0);
+        transition-duration: 0.5s;
+        border-color: #ffffff;
+    }
 }
 
 /*Stopka*/
