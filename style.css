@@ -343,45 +343,45 @@ p.security {
     background-image: url('FirstWeb/images/best-in-class.svg');
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 840px) {
     .features {
         width: 400px;
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 450px) {
     .features {
-        width: 280px;
+        width: 200px;
     }
 
-    .cecha {
-        height: 100px;
-        width: 120px;
-        background-size: 60px auto;
-        padding-top: 65px;
-        font-size: 14px;
-    }
+    /*.cecha {*/
+        /*height: 100px;*/
+        /*width: 120px;*/
+        /*background-size: 60px auto;*/
+        /*padding-top: 65px;*/
+        /*font-size: 14px;*/
+    /*}*/
 
-    .cecha:hover {
-        background-size: 80px auto;
-    }
+    /*.cecha:hover {*/
+        /*background-size: 80px auto;*/
+    /*}*/
 
-    .column-1,
-    .column-2 {
-        height: 200px;
-        width: 260px;
-        font-size: 14px;
-    }
+    /*.column-1,*/
+    /*.column-2 {*/
+        /*height: 200px;*/
+        /*width: 260px;*/
+        /*font-size: 14px;*/
+    /*}*/
 
-    .column-1:hover,
-    .column-2:hover {
-        background-color: #55acee;
-        color: #fff;
-        box-shadow: 0 0 20px 5px black;
-        transform: scale(1,1) translate(0,0);
-        transition-duration: 0.5s;
-        border-color: #ffffff;
-    }
+    /*.column-1:hover,*/
+    /*.column-2:hover {*/
+        /*background-color: #55acee;*/
+        /*color: #fff;*/
+        /*box-shadow: 0 0 20px 5px black;*/
+        /*transform: scale(1,1) translate(0,0);*/
+        /*transition-duration: 0.5s;*/
+        /*border-color: #ffffff;*/
+    /*}*/
 }
 
 /*Stopka*/
