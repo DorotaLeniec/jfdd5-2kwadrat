@@ -228,6 +228,12 @@ p.security {
         align-content: center;
     }
 
+    nav ul li:hover {
+        border-bottom: none;
+        border-left: 1px solid #55acee;
+        border-right: 1px solid #55acee;
+    }
+
 }
 
 /* style Macieja */
