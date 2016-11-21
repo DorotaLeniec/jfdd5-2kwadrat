@@ -85,7 +85,6 @@
 .section-about-us {
     display: flex;
     justify-content:space-between;
-    align-content: space-between;
     background-color: #07ff8b;
     padding-top: 100px;
 }
@@ -96,10 +95,11 @@
     height: 300px;
 }
 
-/*.wizytowka-box {*/
+.wizytowka-box {
+    position: relative;
     /*width: 400px;*/
     /*height: 400px;*/
-/*}*/
+}
 
 .wizytowka-box > .wizytowka-back {
     border-style: double;
@@ -110,7 +110,6 @@
     height: 300px;
     width: 300px;
     text-align: center;
-    position: absolute;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s ease 0s;
@@ -124,7 +123,7 @@
     border-radius: 100%;
     transition: 1s ease 0s;
     transform: perspective(600px) rotateY(0deg);
-    /*backface-visibility: hidden;*/
+    backface-visibility: hidden;
     position: absolute;
     height: 300px;
     width: 300px;
