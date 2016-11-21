@@ -126,6 +126,7 @@ nav ul li:hover {
 }
 
 .form {
+    opacity: 0.7;
     border-radius: 6px;
     border-color: #55acee;
     padding: 10px;
@@ -133,6 +134,9 @@ nav ul li:hover {
     font-family: 'Open Sans', 'sans-serif';
     align-items: center;
 
+}
+.form input:active{
+    opacity:1;
 }
 
 .form input[type="text"], .form input[type="email"] {
