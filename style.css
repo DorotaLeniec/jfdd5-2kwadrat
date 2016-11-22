@@ -6,8 +6,8 @@ body {
 }
 
 section {
-    height: 100vh;
-    width: aut;
+    min-height: 100vh;
+    width: auto;
     padding-top: 60px;
     /*border:pink solid 2px;*/
     margin-bottom: 80px;
@@ -216,7 +216,7 @@ p.security {
 
     section {
         height: auto;
-
+        min-height: 100vh;
     }
 
     nav {
@@ -245,7 +245,7 @@ p.security {
     }
 
     section {
-        height: auto;
+        min-height: 100vh;
     }
 
     nav ul {
