@@ -3,12 +3,12 @@
     background-image: url("../images/przyklad.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     /*border:solid 30px black;*/
-    margin-top: 130px;
+    margin-top: 70px;
     /*box-shadow: 3px 3px 3px 3px black;*/
 
 
@@ -94,10 +94,14 @@
 }
 
 .section-about-us {
+    padding-left:50px;
+    padding-right: 50px;
+
     background: transparent;
     background-image: url("../images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
+    /*height: 100vh;*/
     display: flex;
     justify-content:space-around;
     background-color: #07ff8b;
@@ -105,9 +109,9 @@
 }
 
 .wizytowka-obrazek {
-    width: 400px;
+    width: 370px;
     border-radius: 100%;
-    height: 400px;
+    height: 370px;
     /*border:solid black 8px;*/
 }
 
@@ -115,6 +119,7 @@
     position: relative;
 }
 .podpis {
+    opacity: 0.8;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     font-size: 30px;
@@ -145,8 +150,8 @@
     box-shadow: 3px 3px 4px 5px black;
     border-radius: 100%;
     background-color: white;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 370px;
     text-align: center;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
@@ -162,8 +167,8 @@
     transform: perspective(600px) rotateY(0deg);
     backface-visibility: hidden;
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 370px;
 }
 
 .wizytowka-box:hover > .wizytowka-back {
@@ -175,9 +180,10 @@
 }
 
 .text-opis-osoby {
-    padding: 100px;
+    padding: 60px;
     display: inline-block;
     color: black;
+    font-size:20px;
 }
 
 /*@media (max-width: 1450px) {*/
@@ -185,7 +191,67 @@
         /*flex-wrap: wrap;*/
     /*}*/
 /*}*/
-@media (max-width: 1600px) {
+/*@media (max-width: 1600px) {*/
+    /*.section-about-us {*/
+        /*flex-wrap: wrap;*/
+    /*}*/
+    /*.wizytowka-obrazek{*/
+        /*width:300px;*/
+        /*height: 300px;*/
+    /*}*/
+    /*.wizytowka-box > .wizytowka-back {*/
+        /*width:300px;*/
+        /*height: 300px;*/
+
+    /*}*/
+    /*.wizytowka-box > .wizytowka-front {*/
+        /*width:300px;*/
+        /*height: 300px;*/
+
+    /*}*/
+/*}*/
+@media (max-width: 1200px) {
+    .wizytowka-obrazek{
+        width:250px;
+        height: 250px;
+    }
+    .wizytowka-box > .wizytowka-back {
+        width:250px;
+        height: 250px;
+
+    }
+    .wizytowka-box > .wizytowka-front {
+        width:250px;
+        height: 250px;
+
+    }
+    .text-opis-osoby {
+        font-size: 11px;
+    }
+}
+@media (max-width: 450px) {
+    .wizytowka-obrazek{
+        width:200px;
+        height: 200px;
+    }
+    .wizytowka-box > .wizytowka-back {
+        width:200px;
+        height: 200px;
+
+    }
+    .wizytowka-box > .wizytowka-front {
+        width:200px;
+        height: 200px;
+
+    }
+    .text-opis-osoby {
+        padding: 50px;
+        display: inline-block;
+        color: black;
+        font-size:10px;
+    }
+}
+@media (max-width: 1750px) {
     .section-about-us {
         flex-wrap: wrap;
     }
@@ -203,36 +269,7 @@
         height: 300px;
 
     }
-}
-@media (max-width: 1200px) {
-    .wizytowka-obrazek{
-        width:250px;
-        height: 250px;
-    }
-    .wizytowka-box > .wizytowka-back {
-        width:250px;
-        height: 250px;
-
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:250px;
-        height: 250px;
-
-    }
-}
-@media (max-width: 560px) {
-    .wizytowka-obrazek{
-        width:150px;
-        height: 150px;
-    }
-    .wizytowka-box > .wizytowka-back {
-        width:150px;
-        height: 150px;
-
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:150px;
-        height: 150px;
-
+    .text-opis-osoby {
+        font-size: 14px;
     }
 }
