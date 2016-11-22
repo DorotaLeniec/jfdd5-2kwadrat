@@ -102,7 +102,6 @@ nav ul li:hover {
     background-image: url("FirstWeb/images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -116,7 +115,6 @@ nav ul li:hover {
     background-image: url("FirstWeb/images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     /*display: flex;*/
     background-color: #baffde;
 }
