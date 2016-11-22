@@ -95,7 +95,6 @@
     background-image: url("../images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     display: flex;
     justify-content:space-around;
     background-color: #07ff8b;
