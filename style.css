@@ -32,8 +32,8 @@ header {
     justify-content: space-around;
     position: fixed;
     width: 50px;
-    height: 150px;
-    top: 50vh;
+    height: 200px;
+    top: 40vh;
     right: 0;
     z-index: 3;
     background-color: #ffffff;
@@ -186,18 +186,14 @@ p {
     font-size: 25px;
 }
 
-p.security {
-    font-size: 11px;
-    color:black;
-    text-align: center;
-    text-decoration: underline;
-}
+
 
 @media (max-width: 800px) {
     header {
         flex-direction: column;
         height: 45px;
         align-items: center;
+        padding-left: 5px;
     }
 
     #container {
@@ -264,11 +260,16 @@ p.security {
 
     .legal{
         padding: 5px;
-        order: 2
+        order: 2;
+        font-size: 8px;
     }
 
     .social-wrapper-footer {
         padding-bottom: 10px;
+    }
+
+    .copyright-updated {
+        font-size: 8px;
     }
 }
 
@@ -400,21 +401,21 @@ p.security {
     }
 
     .cecha {
-    height: 80px;
-    width: 200px;
-    background-size: 60px auto;
-    padding-top: 75px;
-    font-size: 18px;
+        height: 80px;
+        width: 200px;
+        background-size: 60px auto;
+        padding-top: 75px;
+        font-size: 18px;
     }
 
     .cecha:hover {
-    background-size: 80px auto;
-    /*}*/
-    /*.column-1,*/
-    /*.column-2 {*/
-    /*height: 200px;*/
-    /*width: 260px;*/
-    /*font-size: 14px;*/
+        background-size: 80px auto;
+        /*}*/
+        /*.column-1,*/
+        /*.column-2 {*/
+        /*height: 200px;*/
+        /*width: 260px;*/
+        /*font-size: 14px;*/
     }
 
     .column-1,
@@ -492,11 +493,11 @@ footer {
 
 footer {
     height: auto;
-    padding:20px;
+    padding: 13px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #666666;
+    background-color: #ffffff;
     align-items: center;
     font-size: 15px;
     align-content: center;
@@ -509,15 +510,16 @@ footer .legal {
 
 footer div a{
     padding: 10px;
-    color: white;
+    color: #000;
 }
 
 .social-wrapper-footer a{
     padding: 0 10px;
-    color: #ffffff;
-    font-size: 20px;
+    color: #000;
+    font-size: 27px;
 }
 
 .copyright-updated {
     padding: 10px;
+    color: #000
 }
