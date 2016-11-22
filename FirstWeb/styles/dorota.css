@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     /*border:solid 30px black;*/
-    margin-top: 130px;
+    margin-top: 70px;
     /*box-shadow: 3px 3px 3px 3px black;*/
 
 
@@ -96,6 +96,7 @@
 .section-about-us {
     padding-left:50px;
     padding-right: 50px;
+
     background: transparent;
     background-image: url("../images/zima2.jpg");
     background-size: cover;

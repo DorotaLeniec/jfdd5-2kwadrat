@@ -1,6 +1,6 @@
 body {
     /*border:solid white 17px;*/
-    border:red solid 5px;
+    /*border:red solid 5px;*/
     /*padding-right: 20px;*/
     /*padding: 30px;*/
 }
@@ -9,7 +9,7 @@ section {
     min-height: 100vh;
     width: auto;
     padding-top: 60px;
-    border:pink solid 2px;
+    /*border:white solid 2px;*/
     margin-bottom: 80px;
     margin-left: 80px;
     margin-right: 80px;
