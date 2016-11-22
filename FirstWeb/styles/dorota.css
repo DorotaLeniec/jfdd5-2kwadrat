@@ -23,6 +23,8 @@
 .section-banner h1 {
     /*margin-left: -200px;*/
     border:solid black 2px;
+    border-left: 0;
+    border-right: 0;
     color: white;
     font-family: 'Alfa Slab One', cursive;
     font-size: 60px;
