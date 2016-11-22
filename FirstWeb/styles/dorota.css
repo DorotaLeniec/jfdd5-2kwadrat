@@ -108,7 +108,7 @@
     font-family: 'Alfa Slab One', cursive;
     font-size: 30px;
     padding: 20px;
-    color: white;
+    color: black;
     text-decoration: underline;
     text-shadow: black 9px 2px 13px ;
 }
@@ -119,8 +119,9 @@
  opacity: 0;
 }
 .wizytowka-box > .wizytowka-back {
-    border:solid white 10px;
-    box-shadow: 1px 1px 10px 5px whitesmoke;
+    opacity: 0.7;
+    border:solid black 4px;
+    box-shadow: 19px 3px 23px 3px black;
     border-radius: 100%;
     background-color: white;
     height: 370px;
@@ -129,12 +130,11 @@
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s ease 0s;
-    opacity: 0.9;
 }
 .wizytowka-box > .wizytowka-front {
     opacity:0.9;
-    border:solid white 10px;
-    box-shadow: 1px 1px 10px 5px whitesmoke;
+    border:solid black 4px;
+    box-shadow: 19px 3px 23px 3px black;
     border-radius: 100%;
     transition: 1s ease 0s;
     transform: perspective(600px) rotateY(0deg);
