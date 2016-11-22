@@ -1,5 +1,5 @@
 body {
-    background-image: url("FirstWeb/images/zima2.jpg");
+    background-image: url("FirstWeb/images/jajo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -101,6 +101,7 @@ nav ul li:hover {
     align-items: center;
     /*background-color: #96f2ef;*/
     padding-bottom: 50px;
+    opacity: 0.8;
 }
 
 .sectionTree {
@@ -109,16 +110,19 @@ nav ul li:hover {
     border-bottom: 30px;
     border-style: solid;
     background-color: black;
+    opacity: 0.8;
+    box-shadow: 19px 3px 23px 3px black;;
 }
 
 .form p {
+    font-weight: 100;
     color: pink;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .form {
-    opacity: 0.7;
+    /*opacity: 0.9;*/
     border-radius: 6px;
     border-color: pink;
     padding: 10px;
@@ -276,7 +280,7 @@ p {
 /* style Macieja */
 
 .features {
-    opacity: 0.75;
+    /*opacity: 0.95;*/
     /*background-color: #ffffff;*/
     /*padding: 4px;*/
     text-align: center;
@@ -285,12 +289,12 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     font-family: 'Alfa Slab One', cursive;
 }
 
 .cecha {
-    opacity: 0.7;
+    opacity: 0.8;
     background-image: url('FirstWeb/images/icon-checked.svg');
     background-repeat: no-repeat;
     background-position: center top 10px;
@@ -313,18 +317,16 @@ p {
 
 .cecha:hover {
     opacity: 1;
-    /*background-color: #55acee;*/
     background-size: 120px auto;
     background-position: center top 5px;
     color: black;
     box-shadow: 0 0 20px 5px black;
-    /*border-color: #ffffff;*/
     transition-duration: 0.5s;
 }
 
 .column-1,
 .column-2 {
-    opacity: 0.5;
+    opacity: 0.7;
     background-color: #ffffff;
     display: flex;
     height: 300px;
