@@ -235,6 +235,10 @@ p.security {
         display: none;
     }
 
+    .legal {
+        padding-bottom: 5px;
+    }
+
 }
 
 @media (max-width: 420px) {
@@ -262,6 +266,19 @@ p.security {
         border-right: 1px solid #55acee;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .legal{
+        padding: 5px;
+        order: 2
+    }
+
+    .social-wrapper-footer {
+        padding-bottom: 10px;
+    }
 }
 
 /* style Macieja */
@@ -475,19 +492,29 @@ footer {
     padding:20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #666666;
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
     align-content: center;
+    color: white;
 }
 
 footer .legal {
     display: block;
 }
 
+footer div a{
+    padding: 10px;
+    color: white;
+}
+
 .social-wrapper-footer a{
     padding: 0 10px;
     color: #ffffff;
     font-size: 20px;
+}
+
+.copyright-updated {
+    padding: 10px;
 }
