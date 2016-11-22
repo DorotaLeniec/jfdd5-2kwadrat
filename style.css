@@ -1,19 +1,16 @@
 body {
-    /*border:solid white 17px;*/
-    /*border:red solid 5px;*/
-    /*padding-right: 20px;*/
-    /*padding: 30px;*/
+    background-image: url("FirstWeb/images/zima2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
 }
 
 section {
     min-height: 100vh;
     width: auto;
     padding-top: 60px;
-    /*border:white solid 2px;*/
-    margin-bottom: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    box-shadow: 10px 10px 40px 5px black;
 }
 
 header {
@@ -98,35 +95,32 @@ nav ul li:hover {
 }
 
 .sectionTwo {
-    background: transparent;
-    background-image: url("FirstWeb/images/zima2.jpg");
-    background-size: cover;
-    background-position: 60%;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #96f2ef;
+    /*background-color: #96f2ef;*/
     padding-bottom: 50px;
 }
 
 .sectionTree {
-    background: transparent;
-    background-image: url("FirstWeb/images/zima2.jpg");
-    background-size: cover;
-    background-position: 60%;
-    /*display: flex;*/
-    background-color: #baffde;
+    z-index: 5;
+    border-top: 30px;
+    border-bottom: 30px;
+    border-style: solid;
+    background-color: black;
 }
 
 .form p {
-    color: dimgrey;
+    color: pink;
+    z-index: 0;
+    opacity: 0.5;
 }
 
 .form {
     opacity: 0.7;
     border-radius: 6px;
-    border-color: #55acee;
+    border-color: pink;
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
@@ -162,8 +156,6 @@ nav ul li:hover {
     background-image: -ms-linear-gradient(top, #f5fbff, #abd4ed);
     background-image: -o-linear-gradient(top, #f5fbff, #abd4ed);
     background-image: linear-gradient(to bottom, #f5fbff, #abd4ed);
-    -webkit-border-radius: 52;
-    -moz-border-radius: 52;
     border-radius: 52px;
     font-family: Georgia;
     color: #706970;
@@ -433,7 +425,6 @@ p.security {
     .column-1:hover,
     .column-2:hover {
         opacity: 0.8;
-        /*background-color: #55acee;*/
         color: black;
         box-shadow: 0 0 20px 5px black;
         transform: scale(1, 1) translate(0, 0);
@@ -493,9 +484,9 @@ footer {
 
 @import url('http://weloveiconfonts.com/api/?family=entypo');
 
-body {
-    background: #ddd;
-}
+/*body {*/
+    /*background: #ddd;*/
+/*}*/
 
 /*Stopka*/
 
