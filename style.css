@@ -421,7 +421,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: white;
-    border-radius: 7%;
+    /*border-radius: 7%;*/
     align-items: center;
     font-size: 16px;
     box-shadow: 2px -0.3px 10px #000;
