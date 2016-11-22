@@ -21,8 +21,11 @@
 }
 
 .section-banner h1 {
+
     /*margin-left: -200px;*/
-    border:solid black 2px;
+    border:solid black 5px;
+    border-left:none;
+    border-right: none;
     color: white;
     font-family: 'Alfa Slab One', cursive;
     font-size: 60px;
@@ -47,7 +50,7 @@
     -moz-transition: .9s;
     -o-transition: .3s;
     color: black;
-    border: 2px black solid;
+    border: 5px black solid;
     background-color: white;
     opacity: 0.6;
 }
@@ -103,13 +106,38 @@
     width: 400px;
     border-radius: 100%;
     height: 400px;
-    border:solid black 8px;
+    /*border:solid black 8px;*/
 }
 
 .wizytowka-box {
     position: relative;
 }
+.podpis {
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+    text-shadow: black 9px 2px 13px ;
+}
+/*.wizytowka-box:hover > .cien {*/
+    /*background-color: #55acee;*/
+    /*height: 100px;*/
+    /*width: 400px;*/
+    /*border-radius: 100%;*/
+    /*opacity: 1;*/
+/*}*/
+/*.wizytowka-box > .cien  {*/
+    /*opacity: 0;*/
+/*}*/
 
+.wizytowka-box:hover > .podpis  {
+    opacity: 0.8;
+}
+.wizytowka-box > .podpis  {
+ opacity: 0;
+}
 .wizytowka-box > .wizytowka-back {
     border:solid black 8px;
     box-shadow: 3px 3px 4px 5px black;
@@ -121,9 +149,10 @@
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s ease 0s;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .wizytowka-box > .wizytowka-front {
+    opacity:0.8;
     /*border:solid black 3px;*/
     box-shadow: 3px 3px 4px 5px black;
     border-radius: 100%;
@@ -173,19 +202,35 @@
 
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .wizytowka-obrazek{
-        width:200px;
-        height: 200px;
+        width:250px;
+        height: 250px;
     }
     .wizytowka-box > .wizytowka-back {
-        width:200px;
-        height: 200px;
+        width:250px;
+        height: 250px;
 
     }
     .wizytowka-box > .wizytowka-front {
-        width:200px;
-        height: 200px;
+        width:250px;
+        height: 250px;
+
+    }
+}
+@media (max-width: 560px) {
+    .wizytowka-obrazek{
+        width:150px;
+        height: 150px;
+    }
+    .wizytowka-box > .wizytowka-back {
+        width:150px;
+        height: 150px;
+
+    }
+    .wizytowka-box > .wizytowka-front {
+        width:150px;
+        height: 150px;
 
     }
 }

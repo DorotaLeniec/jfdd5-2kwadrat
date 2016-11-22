@@ -2,7 +2,7 @@ body {
     /*border:solid white 17px;*/
     /*border:black solid 5px;*/
     /*padding-right: 20px;*/
-    padding: 30px;
+    /*padding: 30px;*/
 }
 
 section {
@@ -210,7 +210,7 @@ p.security {
     }
 
     #container {
-        padding-top: 85px;
+        /*padding-top: 85px;*/
     }
 
     section {
@@ -421,13 +421,13 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: white;
-    border-radius: 7%;
+    /*border-radius: 7%;*/
     align-items: center;
     font-size: 16px;
     box-shadow: 2px -0.3px 10px #000;
 }
 
-.copyright {
+.copyright{
     display: flex;
     margin: 4px;
     background-color: #ffffff;
@@ -459,4 +459,35 @@ footer {
     font-size: 40px;
     color: black;
     text-align: center;
+}
+
+
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+body {
+    background: #ddd;
+}
+
+/*Stopka*/
+
+footer {
+    height: auto;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #666666;
+    align-items: center;
+    font-size: 10px;
+    align-content: center;
+}
+
+footer .legal {
+    display: block;
+}
+
+.social-wrapper-footer a{
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
 }
