@@ -21,8 +21,11 @@
 }
 
 .section-banner h1 {
+
     /*margin-left: -200px;*/
-    border:solid black 2px;
+    border:solid black 5px;
+    border-left:none;
+    border-right: none;
     color: white;
     font-family: 'Alfa Slab One', cursive;
     font-size: 60px;
@@ -47,7 +50,7 @@
     -moz-transition: .9s;
     -o-transition: .3s;
     color: black;
-    border: 2px black solid;
+    border: 5px black solid;
     background-color: white;
     opacity: 0.6;
 }
