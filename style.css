@@ -494,6 +494,7 @@ footer {
 /*Stopka*/
 
 footer {
+    font-family: sans-serif;
     height: auto;
     padding: 13px;
     display: flex;
