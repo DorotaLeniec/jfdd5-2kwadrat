@@ -7,13 +7,13 @@ body {
 
 section {
     height: 100vh;
-    width: aut;
+    width: 98%;
     padding-top: 60px;
     /*border:pink solid 2px;*/
-    margin-bottom: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    box-shadow: 10px 10px 40px 5px black;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    /*margin-right: 50px;*/
+    box-shadow: 2px 3px 4px 5px black;
 }
 
 header {
@@ -197,7 +197,7 @@ p {
 }
 
 p.security {
-    font-size: 12px;
+    font-size: 11px;
     color:black;
     text-align: center;
     text-decoration: underline;
@@ -236,10 +236,6 @@ p.security {
         display: none;
     }
 
-    .legal {
-        padding-bottom: 5px;
-    }
-
 }
 
 @media (max-width: 420px) {
@@ -267,19 +263,6 @@ p.security {
         border-right: 1px solid #55acee;
     }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .legal{
-        padding: 5px;
-        order: 2
-    }
-
-    .social-wrapper-footer {
-        padding-bottom: 10px;
-    }
 }
 
 /* style Macieja */
@@ -493,29 +476,19 @@ footer {
     padding:20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #666666;
     align-items: center;
-    font-size: 15px;
+    font-size: 10px;
     align-content: center;
-    color: white;
 }
 
 footer .legal {
     display: block;
 }
 
-footer div a{
-    padding: 10px;
-    color: white;
-}
-
 .social-wrapper-footer a{
     padding: 0 10px;
     color: #ffffff;
     font-size: 20px;
-}
-
-.copyright-updated {
-    padding: 10px;
 }

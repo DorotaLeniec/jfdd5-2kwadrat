@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     /*border:solid 30px black;*/
-    margin-top: 130px;
+    margin-top: 75px;
     /*box-shadow: 3px 3px 3px 3px black;*/
 
 
@@ -23,16 +23,13 @@
 .section-banner h1 {
 
     /*margin-left: -200px;*/
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border:solid black 2px;
+    border:solid black 5px;
     border-left:none;
     border-right: none;
     color: white;
     font-family: 'Alfa Slab One', cursive;
     font-size: 60px;
     text-align: center;
-    text-shadow: black 17px 9px 19px ;
 }
 
 .btn-to-form-box {
@@ -53,7 +50,7 @@
     -moz-transition: .9s;
     -o-transition: .3s;
     color: black;
-    border: 2px black solid;
+    border: 5px black solid;
     background-color: white;
     opacity: 0.6;
 }
