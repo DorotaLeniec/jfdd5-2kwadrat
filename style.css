@@ -6,14 +6,14 @@ body {
 }
 
 section {
-    height: 100vh;
-    width: aut;
+    min-height: 100vh;
+    width: 98%;
     padding-top: 60px;
     /*border:pink solid 2px;*/
-    margin-bottom: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    box-shadow: 10px 10px 40px 5px black;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    /*margin-right: 50px;*/
+    box-shadow: 2px 3px 4px 5px black;
 }
 
 header {
@@ -102,7 +102,6 @@ nav ul li:hover {
     background-image: url("FirstWeb/images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -116,7 +115,6 @@ nav ul li:hover {
     background-image: url("FirstWeb/images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     /*display: flex;*/
     background-color: #baffde;
 }
@@ -158,18 +156,19 @@ nav ul li:hover {
 /*Natalia pisze, że wkleiła formularz css*/
 /*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
 .submit {
-    background: #3498db;
-    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-    -webkit-border-radius: 48px;
-    -moz-border-radius: 48px;
-    border-radius: 48px;
-    font-family: Georgia, sans-serif;
-    color: white;
-    font-size: 15px;
+    background: #f5fbff;
+    background-image: -webkit-linear-gradient(top, #f5fbff, #abd4ed);
+    background-image: -moz-linear-gradient(top, #f5fbff, #abd4ed);
+    background-image: -ms-linear-gradient(top, #f5fbff, #abd4ed);
+    background-image: -o-linear-gradient(top, #f5fbff, #abd4ed);
+    background-image: linear-gradient(to bottom, #f5fbff, #abd4ed);
+    -webkit-border-radius: 52;
+    -moz-border-radius: 52;
+    border-radius: 52px;
+    font-family: Georgia;
+    color: #706970;
+    font-size: 21px;
+    font-weigth:bold;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     cursor: pointer;
@@ -177,12 +176,12 @@ nav ul li:hover {
 }
 
 .submit:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    background: #e6eaed;
+    background-image: -webkit-linear-gradient(top, #e6eaed, #f5fbff);
+    background-image: -moz-linear-gradient(top, #e6eaed, #f5fbff);
+    background-image: -ms-linear-gradient(top, #e6eaed, #f5fbff);
+    background-image: -o-linear-gradient(top, #e6eaed, #f5fbff);
+    background-image: linear-gradient(to bottom, #e6eaed, #f5fbff);
     text-decoration: none;
     cursor: pointer;
 }
@@ -354,7 +353,7 @@ p.security {
     /*background-color: #55acee;*/
     color: black;
     box-shadow: 5px 5px 20px 10px black;
-    z-index: 100;
+    /*z-index: 100;*/
     transform: scale(1.3, 1.3) translate(-46px, -37px);
     transition-duration: 0.5s;
     border-color: black;
@@ -373,7 +372,7 @@ p.security {
 
 .column-1 ul li,
 .column-2 ul li {
-    margin: 10px auto;
+    margin: 25px auto;
 }
 
 .save-money {
@@ -419,10 +418,12 @@ p.security {
     /*width: 260px;*/
     /*font-size: 14px;*/
     /*}*/
+
     .column-1:hover,
     .column-2:hover {
-        background-color: #55acee;
-        color: #fff;
+        opacity: 1;
+        /*background-color: #55acee;*/
+        color: black;
         box-shadow: 0 0 20px 5px black;
         transform: scale(1, 1) translate(0, 0);
         transition-duration: 0.5s;
