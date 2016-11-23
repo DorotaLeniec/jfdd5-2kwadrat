@@ -26,6 +26,10 @@ header {
     box-shadow: 0 0.5px 10px 0.5px #000;
 }
 
+.page-header .main-menu .main-menu-switch {
+    display: none;
+}
+
 #social {
     display: flex;
     flex-direction: column;
@@ -62,7 +66,9 @@ header #logo:hover {
 }
 
 header a {
+    text-align: center;
     text-decoration: none;
+    z-index: 11;
 }
 
 nav {
@@ -196,12 +202,7 @@ p {
     header {
         flex-direction: column;
         height: 45px;
-        align-items: center;
         padding-left: 5px;
-    }
-
-    #container {
-        /*padding-top: 85px;*/
     }
 
     section {
@@ -235,15 +236,39 @@ p {
 @media (max-width: 420px) {
     /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 420px */
     header {
-        height: 150px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
     }
 
     section {
         min-height: 100vh;
     }
 
+    header #logo {
+        font-size: 18px;
+        position: absolute;
+        top: 28px;
+        right: 17%;
+        z-index: 10;
+        min
+
+    }
+
+    nav {
+        /*display: inline-block;*/
+        width: 100%;
+        z-index: 9;
+        background-color: #fff;
+        /*position: absolute;*/
+        top: 5px;
+        left: 5px;
+    }
+
     nav ul {
-        display: -webkit-flex;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -251,10 +276,13 @@ p {
         align-content: center;
     }
 
+    nav ul li{
+        width: 92%;
+        background-color: white;
+    }
+
     nav ul li:hover {
-        border-bottom: none;
-        border-left: 1px solid #55acee;
-        border-right: 1px solid #55acee;
+        border: none;
     }
 
     footer {
@@ -274,6 +302,55 @@ p {
 
     .copyright-updated {
         font-size: 8px;
+    }
+
+    /********** NAVBAR DLA MOBILE **********/
+
+    .page-header .logo {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .page-header .main-menu {
+        float: none;
+    }
+
+    .page-header .main-menu ul {
+        float: none;
+        display: none;
+    }
+
+    .page-header .main-menu .main-menu-switch {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .page-header .main-menu .main-menu-switch:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #4d94ce;
+        content: '\2228';
+        width: 100%;
+    }
+
+    .page-header .main-menu .main-menu-switch:checked:before {
+        background-color: #56bcff;
+        content: '\2227';
+    }
+
+    .page-header .main-menu .main-menu-switch:checked + ul {
+        display: block;
+    }
+
+    .page-header .main-menu li {
+        display: block;
     }
 }
 
