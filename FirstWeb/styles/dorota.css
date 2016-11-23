@@ -8,7 +8,8 @@
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 100px;
-    box-shadow: 19px 3px 23px 3px black;
+    box-shadow: 19px 15px 85px 3px black;
+    max-width: 100%;
 }
 
 .section-banner-h1-box {
@@ -86,62 +87,81 @@
 }
 
 .section-about-us {
-    display: flex;
-    justify-content:space-around;
     padding-top: 100px;
-    /*opacity: 0.9;*/
+
+}
+.about-us-container {
+    border: white solid 2px;
+    text-align: center;
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 200px;
+    padding-top:20px;
+    box-shadow: 19px 15px 85px 3px black;
 }
 
 .wizytowka-obrazek {
-    width: 370px;
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
-    height: 370px;
-    /*border:solid black 8px;*/
 }
+
 
 .wizytowka-box {
     position: relative;
+    display: inline-block;
+    /*border:red solid 2px;*/
+     width:300px;
+    height: 300px;
+    margin-left: 1%;
+    text-align: center;
+    margin: 0 40px 10px 0;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    /*padding-bottom: 20px;*/
 }
 .podpis {
-    opacity: 0.8;
+    /*display: inline-block;*/
+    /*margin-bottom: 10px;*/
+    opacity: 0;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 300;
     padding: 20px;
     color: black;
-    text-decoration: underline;
-    text-shadow: black 9px 2px 13px ;
+    /*text-decoration: underline;*/
+    /*text-shadow: black 9px 2px 13px ;*/
 }
 .wizytowka-box:hover > .podpis  {
-    opacity: 0.9;
+    opacity: 0.7;
 }
-.wizytowka-box > .podpis  {
- opacity: 0;
-}
+
 .wizytowka-box > .wizytowka-back {
     opacity: 0.7;
-    border:solid black 4px;
-    box-shadow: 19px 3px 23px 3px black;
+    /*border:solid greenyellow 4px;*/
+    /*position: absolute;*/
     border-radius: 100%;
     background-color: white;
-    height: 370px;
-    width: 370px;
+    height: 100%;
+    width: 100%;
     text-align: center;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s ease 0s;
+    padding-bottom: 20px;
 }
 .wizytowka-box > .wizytowka-front {
-    opacity:0.9;
-    border:solid black 4px;
-    box-shadow: 19px 3px 23px 3px black;
+    opacity:1;
+    /*border:solid  aqua 4px;*/
+    /*box-shadow: 19px 3px 23px 3px black;*/
     border-radius: 100%;
     transition: 1s ease 0s;
     transform: perspective(600px) rotateY(0deg);
     backface-visibility: hidden;
     position: absolute;
-    height: 370px;
-    width: 370px;
+    height:100%;
+    width: 100%;
 }
 
 .wizytowka-box:hover > .wizytowka-back {
@@ -153,73 +173,65 @@
 }
 
 .text-opis-osoby {
-    padding: 60px;
+    padding: 40px;
     display: inline-block;
+    /*color: red;*/
     color: black;
-    font-size:20px;
+    font-size: 18px;
+
 }
 
 
-@media (max-width: 1200px) {
-    .wizytowka-obrazek{
-        width:250px;
-        height: 250px;
-    }
-    .wizytowka-box > .wizytowka-back {
-        width:250px;
-        height: 250px;
+/*@media (max-width: 1200px) {*/
+    /*.wizytowka-obrazek{*/
+        /*width:250px;*/
+        /*height: 250px;*/
+    /*}*/
+    /*.wizytowka-box > .wizytowka-back {*/
+        /*width:250px;*/
+        /*height: 250px;*/
 
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:250px;
-        height: 250px;
+    /*}*/
+    /*.wizytowka-box > .wizytowka-front {*/
+        /*width:250px;*/
+        /*height: 250px;*/
 
-    }
-    .text-opis-osoby {
-        font-size: 11px;
-    }
-}
-@media (max-width: 450px) {
-    .wizytowka-obrazek{
-        width:200px;
-        height: 200px;
-    }
-    .wizytowka-box > .wizytowka-back {
-        width:200px;
-        height: 200px;
+    /*}*/
+   /**/
+/*}*/
+/*@media screen and (max-width: 600px) {*/
+    /*.wizytowka-box{*/
+        /*width:200px;*/
+        /*height: 200px;*/
+    /*}*/
 
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:200px;
-        height: 200px;
-
-    }
-    .text-opis-osoby {
-        padding: 50px;
-        display: inline-block;
-        color: black;
-        font-size:10px;
-    }
-}
-@media (max-width: 1750px) {
+    /*}*/
+    /*!*.text-opis-osoby {*!*/
+        /*!*padding: 50px;*!*/
+        /*!*display: inline-block;*!*/
+        /*!*color: black;*!*/
+        /*!*font-size:10px;*!*/
+    /*!*}*!*/
+/*}*/
+@media screen and (max-width: 1520px) {
     .section-about-us {
         flex-wrap: wrap;
     }
-    .wizytowka-obrazek{
-        width:300px;
-        height: 300px;
+    .wizytowka-box {
+        margin:50px;
     }
-    .wizytowka-box > .wizytowka-back {
-        width:300px;
-        height: 300px;
 
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:300px;
-        height: 300px;
-
-    }
     .text-opis-osoby {
-        font-size: 14px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+
+ .wizytowka-box {
+     height: 200px;
+     width: 200px;
+ }
+    .text-opis-osoby {
+        font-size: 12px;
     }
 }
