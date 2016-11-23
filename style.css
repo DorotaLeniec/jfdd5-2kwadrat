@@ -33,7 +33,7 @@ header {
     position: fixed;
     width: 50px;
     height: 200px;
-    top: 40vh;
+    top: 36vh;
     right: 0;
     z-index: 3;
     background-color: #ffffff;
@@ -524,4 +524,8 @@ footer div a{
 .copyright-updated {
     padding: 10px;
     color: #000
+}
+
+.social-wrapper-footer a:hover{
+    color: rgba(0, 0, 0, 0.7);
 }
