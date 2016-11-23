@@ -1,0 +1,93 @@
+
+.form p {
+  color: dimgrey;
+}
+
+.form {
+  opacity: 0.7;
+  border-radius: 6px;
+  border-color: #55acee;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Open Sans', 'sans-serif';
+  align-items: center;
+
+}
+.form input:active{
+  opacity:1;
+}
+
+.form input[type="text"], .form input[type="email"] {
+  color: grey;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 6px;
+  height: 35px;
+  border-radius: 5%;
+  border-color: black;
+  border-style: double solid;
+  background-color: floralwhite;
+}
+
+/*Natalia pisze, że wkleiła formularz css*/
+/*css do przycisku'wyślij' , ktory jest przy formularzu z e-mailem*/
+.submit {
+  background: #f5fbff;
+  background-image: -webkit-linear-gradient(top, #f5fbff, #abd4ed);
+  background-image: -moz-linear-gradient(top, #f5fbff, #abd4ed);
+  background-image: -ms-linear-gradient(top, #f5fbff, #abd4ed);
+  background-image: -o-linear-gradient(top, #f5fbff, #abd4ed);
+  background-image: linear-gradient(to bottom, #f5fbff, #abd4ed);
+  -webkit-border-radius: 52;
+  -moz-border-radius: 52;
+  border-radius: 52px;
+  font-family: Georgia;
+  color: #706970;
+  font-size: 21px;
+  font-weigth:bold;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.submit:hover {
+  background: #e6eaed;
+  background-image: -webkit-linear-gradient(top, #e6eaed, #f5fbff);
+  background-image: -moz-linear-gradient(top, #e6eaed, #f5fbff);
+  background-image: -ms-linear-gradient(top, #e6eaed, #f5fbff);
+  background-image: -o-linear-gradient(top, #e6eaed, #f5fbff);
+  background-image: linear-gradient(to bottom, #e6eaed, #f5fbff);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p.security {
+  font-size: 11px;
+  color:black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+
+
+@media all and (max-width: 420px) {
+  .form p {
+    font-size: 10px;
+  }
+
+  .form input[type="text"], .form input[type="email"] {
+    width: 100px;
+    padding: 0;
+  }
+  .submit {
+    font-size: 10px;
+}
+}
+/*Styl dla paragrafu dotyczacy formularzu.Natalia*/
