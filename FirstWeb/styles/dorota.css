@@ -3,26 +3,18 @@
     background-image: url("../images/przyklad.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*border:solid 30px black;*/
-    margin-top: 130px;
-    /*box-shadow: 3px 3px 3px 3px black;*/
-
-
-
+    margin-bottom: 100px;
+    box-shadow: 19px 3px 23px 3px black;
 }
 
 .section-banner-h1-box {
     text-align: center;
-
 }
 
 .section-banner h1 {
-
-    /*margin-left: -200px;*/
     padding-top: 5px;
     padding-bottom: 5px;
     border:solid black 2px;
@@ -32,11 +24,12 @@
     font-family: 'Alfa Slab One', cursive;
     font-size: 60px;
     text-align: center;
-    text-shadow: black 17px 9px 19px ;
+    /*text-shadow: black 17px 9px 19px ;*/
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 .btn-to-form-box {
-    /*margin-left: -200px;*/
     text-align: center;
     margin-top: 30px;
 }
@@ -59,8 +52,6 @@
 }
 
 .btn-to-form:hover {
-    /*background-color: white;*/
-    /*opacity:0.7;*/
     color: black;
     cursor: pointer;
     opacity: 1;
@@ -94,21 +85,16 @@
 }
 
 .section-about-us {
-    background: transparent;
-    background-image: url("../images/zima2.jpg");
-    background-size: cover;
-    background-position: 60%;
-    height: 100vh;
     display: flex;
     justify-content:space-around;
-    background-color: #07ff8b;
     padding-top: 100px;
+    /*opacity: 0.9;*/
 }
 
 .wizytowka-obrazek {
-    width: 400px;
+    width: 370px;
     border-radius: 100%;
-    height: 400px;
+    height: 370px;
     /*border:solid black 8px;*/
 }
 
@@ -116,55 +102,45 @@
     position: relative;
 }
 .podpis {
+    opacity: 0.8;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     font-size: 30px;
     padding: 20px;
-    color: white;
+    color: black;
     text-decoration: underline;
     text-shadow: black 9px 2px 13px ;
 }
-/*.wizytowka-box:hover > .cien {*/
-    /*background-color: #55acee;*/
-    /*height: 100px;*/
-    /*width: 400px;*/
-    /*border-radius: 100%;*/
-    /*opacity: 1;*/
-/*}*/
-/*.wizytowka-box > .cien  {*/
-    /*opacity: 0;*/
-/*}*/
-
 .wizytowka-box:hover > .podpis  {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .wizytowka-box > .podpis  {
  opacity: 0;
 }
 .wizytowka-box > .wizytowka-back {
-    border:solid black 8px;
-    box-shadow: 3px 3px 4px 5px black;
+    opacity: 0.7;
+    border:solid black 4px;
+    box-shadow: 19px 3px 23px 3px black;
     border-radius: 100%;
     background-color: white;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 370px;
     text-align: center;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s ease 0s;
-    opacity: 0.5;
 }
 .wizytowka-box > .wizytowka-front {
-    opacity:0.8;
-    /*border:solid black 3px;*/
-    box-shadow: 3px 3px 4px 5px black;
+    opacity:0.9;
+    border:solid black 4px;
+    box-shadow: 19px 3px 23px 3px black;
     border-radius: 100%;
     transition: 1s ease 0s;
     transform: perspective(600px) rotateY(0deg);
     backface-visibility: hidden;
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 370px;
 }
 
 .wizytowka-box:hover > .wizytowka-back {
@@ -176,17 +152,55 @@
 }
 
 .text-opis-osoby {
-    padding: 100px;
+    padding: 60px;
     display: inline-block;
     color: black;
+    font-size:20px;
 }
 
-/*@media (max-width: 1450px) {*/
-    /*.section-about-us {*/
-        /*flex-wrap: wrap;*/
-    /*}*/
-/*}*/
-@media (max-width: 1600px) {
+
+@media (max-width: 1200px) {
+    .wizytowka-obrazek{
+        width:250px;
+        height: 250px;
+    }
+    .wizytowka-box > .wizytowka-back {
+        width:250px;
+        height: 250px;
+
+    }
+    .wizytowka-box > .wizytowka-front {
+        width:250px;
+        height: 250px;
+
+    }
+    .text-opis-osoby {
+        font-size: 11px;
+    }
+}
+@media (max-width: 450px) {
+    .wizytowka-obrazek{
+        width:200px;
+        height: 200px;
+    }
+    .wizytowka-box > .wizytowka-back {
+        width:200px;
+        height: 200px;
+
+    }
+    .wizytowka-box > .wizytowka-front {
+        width:200px;
+        height: 200px;
+
+    }
+    .text-opis-osoby {
+        padding: 50px;
+        display: inline-block;
+        color: black;
+        font-size:10px;
+    }
+}
+@media (max-width: 1750px) {
     .section-about-us {
         flex-wrap: wrap;
     }
@@ -204,36 +218,7 @@
         height: 300px;
 
     }
-}
-@media (max-width: 1200px) {
-    .wizytowka-obrazek{
-        width:250px;
-        height: 250px;
-    }
-    .wizytowka-box > .wizytowka-back {
-        width:250px;
-        height: 250px;
-
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:250px;
-        height: 250px;
-
-    }
-}
-@media (max-width: 560px) {
-    .wizytowka-obrazek{
-        width:150px;
-        height: 150px;
-    }
-    .wizytowka-box > .wizytowka-back {
-        width:150px;
-        height: 150px;
-
-    }
-    .wizytowka-box > .wizytowka-front {
-        width:150px;
-        height: 150px;
-
+    .text-opis-osoby {
+        font-size: 14px;
     }
 }
