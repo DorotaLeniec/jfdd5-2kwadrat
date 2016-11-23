@@ -6,8 +6,8 @@ body {
 }
 
 section {
-    height: 100vh;
-    width: aut;
+    min-height: 100vh;
+    width: auto;
     padding-top: 60px;
     /*border:pink solid 2px;*/
     margin-bottom: 80px;
@@ -102,7 +102,6 @@ nav ul li:hover {
     background-image: url("FirstWeb/images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -116,7 +115,6 @@ nav ul li:hover {
     background-image: url("FirstWeb/images/zima2.jpg");
     background-size: cover;
     background-position: 60%;
-    height: 100vh;
     /*display: flex;*/
     background-color: #baffde;
 }
@@ -373,7 +371,7 @@ p.security {
 
 .column-1 ul li,
 .column-2 ul li {
-    margin: 10px auto;
+    margin: 25px auto;
 }
 
 .save-money {
@@ -396,6 +394,11 @@ p.security {
     .features {
         width: 400px;
     }
+
+    .column-1:hover,
+    .column-2:hover {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -403,26 +406,34 @@ p.security {
         width: 200px;
     }
 
-    /*.cecha {*/
-    /*height: 100px;*/
-    /*width: 120px;*/
-    /*background-size: 60px auto;*/
-    /*padding-top: 65px;*/
-    /*font-size: 14px;*/
-    /*}*/
-    /*.cecha:hover {*/
-    /*background-size: 80px auto;*/
+    .cecha {
+    height: 80px;
+    width: 200px;
+    background-size: 60px auto;
+    padding-top: 75px;
+    font-size: 18px;
+    }
+
+    .cecha:hover {
+    background-size: 80px auto;
     /*}*/
     /*.column-1,*/
     /*.column-2 {*/
     /*height: 200px;*/
     /*width: 260px;*/
     /*font-size: 14px;*/
-    /*}*/
+    }
+
+    .column-1,
+    .column-2 {
+        font-size: 18px;
+    }
+
     .column-1:hover,
     .column-2:hover {
-        background-color: #55acee;
-        color: #fff;
+        opacity: 0.8;
+        /*background-color: #55acee;*/
+        color: black;
         box-shadow: 0 0 20px 5px black;
         transform: scale(1, 1) translate(0, 0);
         transition-duration: 0.5s;
