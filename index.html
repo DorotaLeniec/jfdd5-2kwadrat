@@ -19,11 +19,11 @@
 
 <body>
 
-<header>
+<header class="page-header">
 
-    <a href="index.html"><span id="logo">INSIDE MY FRIDGE</span></a>
-
-    <nav>
+    <a href="index.html"><span id="logo">INSIDE&nbspMY&nbspFRIDGE</span></a>
+    <nav class="main-menu">
+        <input type="checkbox" class="main-menu-switch">
         <ul>
             <a href="index.html"><li>HOME</li></a>
             <a href="#ficzery"><li>ABOUT&nbspIMF</li></a>
@@ -87,25 +87,32 @@
     <section class="sectionTree" id="formularz">
 
         <form class="form" method="post">
-            <p>Please enter your email address and you will hear first about the opening of our website!<br>
+
+            <p class="font-form">Please enter your email address and you will hear first about the opening of our website!<br>
             E-mail with information about the launch of our website will be send to you.</p>
             <br>
+            <fieldset>
+                <legend class="legenda-form"> &nbsp; NEWSLETTER &nbsp; </legend>
             <input class="formularz-zgloszeniowy form" type="text" name="name1" placeholder="Name" required="required"/>
             <input class="formularz-zgloszeniowy form" type="text" name="surname" placeholder="Surname"
                    required="required"/>
             <input class="formularz-zgloszeniowy form" type="email" name="email" placeholder="E-mail"
                    required="required"/>
-
-            <input type="submit" class="submit" name="submit1" value="Submit">
-            <br/>
-            <!-- Natalia wkleiła formularz i 'button' w html -->
+                <div class="checkbox1">
+                    <input type="checkbox" name="check1" value="checkbox">
+                    <span class="styl-par">I declare, that I agree to have my personal data, if it necessary, processed for recruitment process (according to the Act of personal data protection,
+                        dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).</span>/></div>
+                <input type="submit" class="submit" name="submit1" value="Sign up">
+                </fieldset>
             <br/>
             <p class="security">We assure that the collection, processing and use of your personal data is done in
                 compliance with all rules on data protection under the law.</p>
+
         </form>
     </section>
 
     <section class="section-about-us " id="autorzy">
+        <div class="about-us-container">
         <div class="wizytowka-box">
             <div class="wizytowka-front">
                 <img class="wizytowka-obrazek" src="FirstWeb/images/formularz-face.jpg">
@@ -145,7 +152,7 @@
             </div>
             <div class="podpis">Dorota Leniec</div>
         </div>
-
+        </div>
     </section>
 
     <footer>
