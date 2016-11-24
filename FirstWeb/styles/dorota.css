@@ -33,6 +33,7 @@
 .btn-to-form-box {
     text-align: center;
     margin-top: 30px;
+
 }
 
 .btn-to-form {
@@ -50,6 +51,8 @@
     border: 2px black solid;
     background-color: white;
     opacity: 0.6;
+    padding-left:20px;
+    padding-right: 20px;
 }
 
 .btn-to-form:hover {
