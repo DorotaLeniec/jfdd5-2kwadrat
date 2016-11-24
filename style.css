@@ -544,49 +544,48 @@ nav ul li:hover {
         opacity: 0.7;
         box-shadow: 0px 0px 0px 0px black;
         transform: scale(1, 1) translate(0px, 0px);
-
     }
 
 }
 
 /*Stopka*/
 
-footer {
-    /*height: 30px;*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: white;
-    /*border-radius: 7%;*/
-    align-items: center;
-    font-size: 16px;
-    box-shadow: 2px -0.3px 10px #000;
-}
+/*footer {*/
+    /*!*height: 30px;*!*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+    /*background-color: white;*/
+    /*!*border-radius: 7%;*!*/
+    /*align-items: center;*/
+    /*font-size: 16px;*/
+    /*box-shadow: 2px -0.3px 10px #000;*/
+/*}*/
 
-.copyright{
-    display: flex;
-    margin: 4px;
-    background-color: #ffffff;
-    color: black;
-    padding: 1px 2px;
-    border: 1px solid #ffffff;
-    border-radius: 7px;
-}
+/*.copyright{*/
+    /*display: flex;*/
+    /*margin: 4px;*/
+    /*background-color: #ffffff;*/
+    /*color: black;*/
+    /*padding: 1px 2px;*/
+    /*border: 1px solid #ffffff;*/
+    /*border-radius: 7px;*/
+/*}*/
 
-.last-update-date {
-    display: flex;
-    margin: 4px;
-    background-color: #ffffff;
-    color: black;
-    padding: 1px 2px;
-    border: 1px solid #ffffff;
-    border-radius: 7px;
-}
+/*.last-update-date {*/
+    /*display: flex;*/
+    /*margin: 4px;*/
+    /*background-color: #ffffff;*/
+    /*color: black;*/
+    /*padding: 1px 2px;*/
+    /*border: 1px solid #ffffff;*/
+    /*border-radius: 7px;*/
+/*}*/
 
-.team-name,
-.update-date {
-    font-style: italic;
-}
+/*.team-name,*/
+/*.update-date {*/
+    /*font-style: italic;*/
+/*}*/
 
 /* koniec styli Macieja */
 
