@@ -37,7 +37,7 @@ header {
     position: fixed;
     width: 50px;
     height: 200px;
-    top: 36vh;
+    top: 31vh;
     right: 0;
     z-index: 3;
     background-color: #ffffff;
@@ -104,7 +104,7 @@ nav ul li:hover {
     padding: 5px;
     color: white;
     text-align: center;
-    font-family: Garuda;
+    font-family: 'Raleway', sans-serif;
     font-size: 25px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
@@ -633,6 +633,30 @@ footer div a{
     padding: 0 10px;
     color: #000;
     font-size: 27px;
+}
+
+.social-wrapper-photo  .facebook {
+    color: #3b5998;
+}
+
+.social-wrapper-photo .gplus {
+    color: #d34836;
+}
+
+.social-wrapper-photo .twitter {
+    color: #00aced;
+}
+
+.social-wrapper-photo  .facebook:hover {
+    color: #393d79;
+}
+
+.social-wrapper-photo .gplus:hover {
+    color: #983d2c;
+}
+
+.social-wrapper-photo .twitter:hover {
+    color: #0079ac;
 }
 
 .copyright-updated {
