@@ -1,19 +1,16 @@
 body {
-    /*border:solid white 17px;*/
-    /*border:black solid 5px;*/
-    /*padding-right: 20px;*/
-    /*padding: 30px;*/
+    background-image: url("FirstWeb/images/jajo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
 }
 
 section {
-    height: 100vh;
-    width: aut;
+    min-height: 100vh;
+    width: auto;
     padding-top: 60px;
-    /*border:pink solid 2px;*/
-    margin-bottom: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    box-shadow: 10px 10px 40px 5px black;
 }
 
 header {
@@ -29,14 +26,18 @@ header {
     box-shadow: 0 0.5px 10px 0.5px #000;
 }
 
+.page-header .main-menu .main-menu-switch {
+    display: none;
+}
+
 #social {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
     width: 50px;
-    height: 150px;
-    top: 50vh;
+    height: 200px;
+    top: 31vh;
     right: 0;
     z-index: 3;
     background-color: #ffffff;
@@ -65,7 +66,9 @@ header #logo:hover {
 }
 
 header a {
+    text-align: center;
     text-decoration: none;
+    z-index: 11;
 }
 
 nav {
@@ -97,59 +100,77 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+.sentences {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
 .sectionTwo {
-    background: transparent;
-    background-image: url("FirstWeb/images/zima2.jpg");
-    background-size: cover;
-    background-position: 60%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #96f2ef;
+    /*background-color: #96f2ef;*/
     padding-bottom: 50px;
+    opacity: 0.8;
 }
 
 .sectionTree {
-    background: transparent;
-    background-image: url("FirstWeb/images/zima2.jpg");
-    background-size: cover;
-    background-position: 60%;
-    height: 100vh;
-    /*display: flex;*/
-    background-color: #baffde;
+    z-index: 5;
+    border-top: 30px;
+    border-bottom: 30px;
+    border-style: solid;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 19px 3px 23px 3px black;
+    margin-top:25px;
+    box-shadow: 19px 15px 85px 3px black;
+    margin-top:25px;
 }
 
-.form p {
-    color: dimgrey;
+ .styl-par {
+     color:white;
+     font-size:12px;
+
+ }
+
+
+
+ .font-form {
+    color: white;
+    opacity: 1;
+    font-size:20px;
 }
 
 .form {
-    opacity: 0.7;
-    border-radius: 6px;
-    border-color: #55acee;
+    /*opacity: 0.9;*/
+    border-color: pink;
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
     align-items: center;
 
 }
+
 .form input:active{
     opacity:1;
 }
 
 .form input[type="text"], .form input[type="email"] {
     color: grey;
-    width: 200px;
+    width: 180px;
     text-align: center;
     font-size: 20px;
     display: block;
     padding: 20px;
     margin: 0 auto;
     margin-top: 6px;
-    height: 35px;
-    border-radius: 5%;
+    height: 30px;
     border-color: black;
     border-style: double solid;
     background-color: floralwhite;
@@ -164,14 +185,12 @@ nav ul li:hover {
     background-image: -ms-linear-gradient(top, #f5fbff, #abd4ed);
     background-image: -o-linear-gradient(top, #f5fbff, #abd4ed);
     background-image: linear-gradient(to bottom, #f5fbff, #abd4ed);
-    -webkit-border-radius: 52;
-    -moz-border-radius: 52;
     border-radius: 52px;
     font-family: Georgia;
     color: #706970;
-    font-size: 21px;
+    font-size: 15px;
     font-weigth:bold;
-    padding: 10px 20px 10px 20px;
+    padding: 12px 27px 12px 27px;
     text-decoration: none;
     cursor: pointer;
     margin: 7px;
@@ -188,35 +207,55 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-/*Styl dla paragrafu dotyczacy formularzu.Natalia*/
-p {
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 300;
-    color: white;
-    font-size: 25px;
-}
-
-p.security {
-    font-size: 12px;
-    color:black;
+.security{
+    padding-top: 18px;
+    font-size:15px;
+    color:white;
     text-align: center;
     text-decoration: underline;
 }
 
+/*Styl dla paragrafu dotyczacy formularzu.Natalia*/
+
+
+/*responsywnosc w formularzu*/
+@media all and (max-width: 420px) {
+    .form p {
+        font-size: 10px
+    }
+
+    .form input[type="text"], .form input[type="email"] {
+        width: 100px;
+        padding: 0;
+    }
+    .submit {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .form p {
+        font-size: 10px;
+    }
+
+    .form input[type="text"], .form input[type="email"] {
+        width: 100px;
+        padding: 0;
+    }
+    .submit {
+        font-size: 10px;
+    }
+}
 @media (max-width: 800px) {
     header {
         flex-direction: column;
         height: 45px;
-        align-items: center;
-    }
-
-    #container {
-        /*padding-top: 85px;*/
+        padding-left: 5px;
     }
 
     section {
         height: auto;
-
+        min-height: 100vh;
     }
 
     nav {
@@ -240,20 +279,48 @@ p.security {
         padding-bottom: 5px;
     }
 
+    .sentences {
+        font-size: 20px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
 }
 
 @media (max-width: 420px) {
     /* Zmiany dotyczace responsywnosci przy szerokosci ekranu mniejszej niz 420px */
     header {
-        height: 150px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
     }
 
     section {
-        height: auto;
+        min-height: 100vh;
+    }
+
+    header #logo {
+        font-size: 18px;
+        position: absolute;
+        top: 28px;
+        right: 17%;
+        z-index: 10;
+    }
+
+    nav {
+        /*display: inline-block;*/
+        width: 100%;
+        z-index: 9;
+        background-color: #fff;
+        /*position: absolute;*/
+        top: 5px;
+        left: 5px;
     }
 
     nav ul {
-        display: -webkit-flex;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -261,10 +328,13 @@ p.security {
         align-content: center;
     }
 
+    nav ul li{
+        width: 92%;
+        background-color: white;
+    }
+
     nav ul li:hover {
-        border-bottom: none;
-        border-left: 1px solid #55acee;
-        border-right: 1px solid #55acee;
+        border: none;
     }
 
     footer {
@@ -274,43 +344,105 @@ p.security {
 
     .legal{
         padding: 5px;
-        order: 2
+        order: 2;
+        font-size: 8px;
     }
 
     .social-wrapper-footer {
         padding-bottom: 10px;
+    }
+
+    .copyright-updated {
+        font-size: 8px;
+    }
+
+    .sentences {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /********** NAVBAR DLA MOBILE **********/
+
+    .page-header .logo {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .page-header .main-menu {
+        float: none;
+    }
+
+    .page-header .main-menu ul {
+        float: none;
+        display: none;
+    }
+
+    .page-header .main-menu .main-menu-switch {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .page-header .main-menu .main-menu-switch:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #4d94ce;
+        content: '\2228';
+        width: 100%;
+    }
+
+    .page-header .main-menu .main-menu-switch:checked:before {
+        background-color: #56bcff;
+        content: '\2227';
+    }
+
+    .page-header .main-menu .main-menu-switch:checked + ul {
+        display: block;
+    }
+
+    .page-header .main-menu li {
+        display: block;
     }
 }
 
 /* style Macieja */
 
 .features {
-    opacity: 0.75;
-    /*background-color: #ffffff;*/
-    /*padding: 4px;*/
     text-align: center;
     width: 800px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 10px;
     font-family: 'Alfa Slab One', cursive;
 }
+.checkbox1 {
+    margin-top:10px;
 
+}
+.legenda-form {
+    color: white;
+    font-size: 20px;
+}
 .cecha {
-    opacity: 0.7;
+    opacity: 0.8;
     background-image: url('FirstWeb/images/icon-checked.svg');
     background-repeat: no-repeat;
     background-position: center top 10px;
     background-size: 100px auto;
     background-color: #ffffff;
-    padding: 95px 3px 3px 3px;
-    display: flex;
-    height: 150px;
+    padding: 140px 3px 3px 3px;
+    height: 105px;
     width: 180px;
     margin: 5px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     border-radius: 10px;
     font-size: 22px;
     color: black;
@@ -322,24 +454,22 @@ p.security {
 
 .cecha:hover {
     opacity: 1;
-    /*background-color: #55acee;*/
     background-size: 120px auto;
     background-position: center top 5px;
     color: black;
     box-shadow: 0 0 20px 5px black;
-    /*border-color: #ffffff;*/
     transition-duration: 0.5s;
 }
 
 .column-1,
 .column-2 {
-    opacity: 0.5;
+    opacity: 0.7;
     background-color: #ffffff;
     display: flex;
     height: 300px;
-    width: 380px;
+    width: 375px;
     margin: 5px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     border-radius: 10px;
     color: black;
     letter-spacing: 1px;
@@ -352,18 +482,17 @@ p.security {
 .column-1:hover,
 .column-2:hover {
     opacity: 1;
-    /*background-color: #55acee;*/
     color: black;
     box-shadow: 5px 5px 20px 10px black;
     z-index: 100;
-    transform: scale(1.3, 1.3) translate(-46px, -37px);
+    transform: scale(1.3, 1.3) translate(-43px, -35px);
     transition-duration: 0.5s;
     border-color: black;
 }
 
 .column-1:hover {
-    transform: scale(1.3, 1.3) translate(46px, -37px);
-    box-shadow: -5px 5px 20px 10px black;
+    transform: scale(1.3, 1.3) translate(43px, -35px);
+    /*box-shadow: -5px 5px 20px 10px black;*/
 }
 
 .column-1 ul,
@@ -374,7 +503,7 @@ p.security {
 
 .column-1 ul li,
 .column-2 ul li {
-    margin: 10px auto;
+    margin: 25px auto;
 }
 
 .save-money {
@@ -397,6 +526,11 @@ p.security {
     .features {
         width: 400px;
     }
+
+    .column-1:hover,
+    .column-2:hover {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -404,46 +538,38 @@ p.security {
         width: 200px;
     }
 
-    /*.cecha {*/
-    /*height: 100px;*/
-    /*width: 120px;*/
-    /*background-size: 60px auto;*/
-    /*padding-top: 65px;*/
-    /*font-size: 14px;*/
-    /*}*/
-    /*.cecha:hover {*/
-    /*background-size: 80px auto;*/
-    /*}*/
-    /*.column-1,*/
-    /*.column-2 {*/
-    /*height: 200px;*/
-    /*width: 260px;*/
-    /*font-size: 14px;*/
-    /*}*/
+    .cecha {
+        height: 60px;
+        width: 200px;
+        background-size: 60px auto;
+        padding-top: 95px;
+        font-size: 18px;
+    }
+
+    .cecha:hover {
+        opacity: 0.8;
+        background-size: 60px auto;
+        background-position: center top 10px;
+        box-shadow: 0 0 0 0;
+    }
+
+    .column-1 ul,
+    .column-2 ul {
+        font-size: 14px;
+        list-style-type: none;
+        padding-left: 3px;
+    }
+
     .column-1:hover,
     .column-2:hover {
-        background-color: #55acee;
-        color: #fff;
-        box-shadow: 0 0 20px 5px black;
-        transform: scale(1, 1) translate(0, 0);
-        transition-duration: 0.5s;
-        border-color: #ffffff;
+        opacity: 0.7;
+        box-shadow: 0 0 0 0;
+        z-index: 100;
+        border-color: black;
     }
 }
 
-/*Stopka*/
-
-footer {
-    /*height: 30px;*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: white;
-    /*border-radius: 7%;*/
-    align-items: center;
-    font-size: 16px;
-    box-shadow: 2px -0.3px 10px #000;
-}
+/* elementy stopki */
 
 .copyright{
     display: flex;
@@ -482,23 +608,25 @@ footer {
 
 @import url('http://weloveiconfonts.com/api/?family=entypo');
 
-body {
-    background: #ddd;
-}
+/*body {*/
+    /*background: #ddd;*/
+/*}*/
 
 /*Stopka*/
 
 footer {
+    font-family: sans-serif;
     height: auto;
-    padding:20px;
+    padding: 13px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #666666;
+    background-color: #ffffff;
     align-items: center;
     font-size: 15px;
     align-content: center;
     color: white;
+    font-family: Sans-Serif;
 }
 
 footer .legal {
@@ -507,15 +635,45 @@ footer .legal {
 
 footer div a{
     padding: 10px;
-    color: white;
+    color: #000;
 }
 
-.social-wrapper-footer a{
+.social-wrapper-footer, .social-wrapper-photo a{
     padding: 0 10px;
-    color: #ffffff;
-    font-size: 20px;
+    color: #000;
+    font-size: 27px;
+}
+
+.social-wrapper-photo  .facebook {
+    color: #3b5998;
+}
+
+.social-wrapper-photo .gplus {
+    color: #d34836;
+}
+
+.social-wrapper-photo .twitter {
+    color: #00aced;
+}
+
+.social-wrapper-photo  .facebook:hover {
+    color: #393d79;
+}
+
+.social-wrapper-photo .gplus:hover {
+    color: #983d2c;
+}
+
+.social-wrapper-photo .twitter:hover {
+    color: #0079ac;
 }
 
 .copyright-updated {
     padding: 10px;
+    color: #000
 }
+
+.social-wrapper-footer a:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
+
