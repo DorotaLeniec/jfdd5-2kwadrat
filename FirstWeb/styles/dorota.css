@@ -33,6 +33,7 @@
 .btn-to-form-box {
     text-align: center;
     margin-top: 30px;
+
 }
 
 .btn-to-form {
@@ -50,6 +51,8 @@
     border: 2px black solid;
     background-color: white;
     opacity: 0.6;
+    padding-left:20px;
+    padding-right: 20px;
 }
 
 .btn-to-form:hover {
@@ -96,7 +99,7 @@
     opacity: 0.8;
     margin-top: 200px;
     padding-top:20px;
-    box-shadow: 19px 15px 85px 3px black;
+    box-shadow: 0px -5px 18px 0px rgba(0,0,0,0.75);
 }
 
 .wizytowka-obrazek {

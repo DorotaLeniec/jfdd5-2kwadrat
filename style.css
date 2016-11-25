@@ -37,7 +37,7 @@ header {
     position: fixed;
     width: 50px;
     height: 200px;
-    top: 36vh;
+    top: 31vh;
     right: 0;
     z-index: 3;
     background-color: #ffffff;
@@ -100,6 +100,16 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+.sentences {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
 .sectionTwo {
     display: flex;
     justify-content: center;
@@ -128,7 +138,7 @@ nav ul li:hover {
  }
 
 
-}
+
  .font-form {
     color: white;
     opacity: 1;
@@ -145,6 +155,7 @@ nav ul li:hover {
     align-items: center;
 
 }
+
 .form input:active{
     opacity:1;
 }
@@ -268,6 +279,12 @@ nav ul li:hover {
         padding-bottom: 5px;
     }
 
+    .sentences {
+        font-size: 20px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
 }
 
 @media (max-width: 420px) {
@@ -290,8 +307,6 @@ nav ul li:hover {
         top: 28px;
         right: 17%;
         z-index: 10;
-        min
-
     }
 
     nav {
@@ -339,6 +354,12 @@ nav ul li:hover {
 
     .copyright-updated {
         font-size: 8px;
+    }
+
+    .sentences {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     /********** NAVBAR DLA MOBILE **********/
@@ -446,7 +467,7 @@ nav ul li:hover {
     background-color: #ffffff;
     display: flex;
     height: 300px;
-    width: 376px;
+    width: 375px;
     margin: 5px;
     /*border: 2px solid black;*/
     border-radius: 10px;
@@ -464,14 +485,14 @@ nav ul li:hover {
     color: black;
     box-shadow: 5px 5px 20px 10px black;
     z-index: 100;
-    transform: scale(1.3, 1.3) translate(-46px, -37px);
+    transform: scale(1.3, 1.3) translate(-43px, -35px);
     transition-duration: 0.5s;
     border-color: black;
 }
 
 .column-1:hover {
-    transform: scale(1.3, 1.3) translate(46px, -37px);
-    box-shadow: -5px 5px 20px 10px black;
+    transform: scale(1.3, 1.3) translate(43px, -35px);
+    /*box-shadow: -5px 5px 20px 10px black;*/
 }
 
 .column-1 ul,
@@ -531,61 +552,34 @@ nav ul li:hover {
         list-style-type: none;
         padding-left: 3px;
     }
-
-    .cecha:hover {
-        opacity: 0.8;
-        background-size: 60px auto;
-        background-position: center top 10px;
-        box-shadow: 0 0 0 0;
-    }
-
-    .column-1:hover,
-    .column-2:hover {
-        opacity: 0.7;
-        box-shadow: 0px 0px 0px 0px black;
-        transform: scale(1, 1) translate(0px, 0px);
-    }
-
 }
 
-/*Stopka*/
+/* elementy stopki */
 
-/*footer {*/
-    /*!*height: 30px;*!*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-around;*/
-    /*background-color: white;*/
-    /*!*border-radius: 7%;*!*/
-    /*align-items: center;*/
-    /*font-size: 16px;*/
-    /*box-shadow: 2px -0.3px 10px #000;*/
-/*}*/
+.copyright{
+    display: flex;
+    margin: 4px;
+    background-color: #ffffff;
+    color: black;
+    padding: 1px 2px;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+}
 
-/*.copyright{*/
-    /*display: flex;*/
-    /*margin: 4px;*/
-    /*background-color: #ffffff;*/
-    /*color: black;*/
-    /*padding: 1px 2px;*/
-    /*border: 1px solid #ffffff;*/
-    /*border-radius: 7px;*/
-/*}*/
+.last-update-date {
+    display: flex;
+    margin: 4px;
+    background-color: #ffffff;
+    color: black;
+    padding: 1px 2px;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+}
 
-/*.last-update-date {*/
-    /*display: flex;*/
-    /*margin: 4px;*/
-    /*background-color: #ffffff;*/
-    /*color: black;*/
-    /*padding: 1px 2px;*/
-    /*border: 1px solid #ffffff;*/
-    /*border-radius: 7px;*/
-/*}*/
-
-/*.team-name,*/
-/*.update-date {*/
-    /*font-style: italic;*/
-/*}*/
+.team-name,
+.update-date {
+    font-style: italic;
+}
 
 /* koniec styli Macieja */
 
@@ -629,10 +623,34 @@ footer div a{
     color: #000;
 }
 
-.social-wrapper-footer a{
+.social-wrapper-footer, .social-wrapper-photo a{
     padding: 0 10px;
     color: #000;
     font-size: 27px;
+}
+
+.social-wrapper-photo  .facebook {
+    color: #3b5998;
+}
+
+.social-wrapper-photo .gplus {
+    color: #d34836;
+}
+
+.social-wrapper-photo .twitter {
+    color: #00aced;
+}
+
+.social-wrapper-photo  .facebook:hover {
+    color: #393d79;
+}
+
+.social-wrapper-photo .gplus:hover {
+    color: #983d2c;
+}
+
+.social-wrapper-photo .twitter:hover {
+    color: #0079ac;
 }
 
 .copyright-updated {
@@ -643,3 +661,4 @@ footer div a{
 .social-wrapper-footer a:hover{
     color: rgba(0, 0, 0, 0.7);
 }
+
