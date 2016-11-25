@@ -127,6 +127,8 @@ nav ul li:hover {
     border-style: solid;
     background-color: black;
     opacity: 0.8;
+    box-shadow: 19px 3px 23px 3px black;
+    margin-top:25px;
     box-shadow: 19px 15px 85px 3px black;
     margin-top:25px;
 }
@@ -147,7 +149,6 @@ nav ul li:hover {
 
 .form {
     /*opacity: 0.9;*/
-    border-radius: 6px;
     border-color: pink;
     padding: 10px;
     text-align: center;
@@ -170,7 +171,6 @@ nav ul li:hover {
     margin: 0 auto;
     margin-top: 6px;
     height: 30px;
-    border-radius: 5%;
     border-color: black;
     border-style: double solid;
     background-color: floralwhite;
