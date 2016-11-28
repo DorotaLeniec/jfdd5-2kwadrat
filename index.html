@@ -1,205 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>InsideMyFridge</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">                    <!-- linia odpowiedzialna za to, żeby opcja wyswietlania w smartfonie w devtools skalowała strone -->
-    <!--zmiana-->
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Sigmar+One" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="FirstWeb/styles/dorota.css">
-    <link rel="stylesheet" href="FirstWeb/styles/natalia.css">
-    <link rel="stylesheet" href="fontello-c4ddfcb2/css/fontello.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>InsideMyFridge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linia odpowiedzialna za to, żeby opcja wyswietlania w smartfonie w devtools skalowała strone -->
+  <!--zmiana-->
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Sigmar+One" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="FirstWeb/styles/dorota.css">
+  <link rel="stylesheet" href="FirstWeb/styles/natalia.css">
+  <link rel="stylesheet" href="fontello-c4ddfcb2/css/fontello.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
-
 <header class="page-header">
-
-    <a href="index.html"><span id="logo">INSIDE&nbspMY&nbspFRIDGE</span></a>
-    <nav class="main-menu">
-        <input type="checkbox" class="main-menu-switch">
-        <ul>
-            <a href="index.html"><li>HOME</li></a>
-            <a href="#ficzery"><li>ABOUT&nbspIMF</li></a>
-            <a href="#formularz"><li>CONTACT</li></a>
-            <a href="#autorzy"><li>ABOUT&nbspUS</li></a>
-        </ul>
-    </nav>
+  <a href="index.html"><span id="logo">INSIDE&nbspMY&nbspFRIDGE</span></a>
+  <nav class="main-menu">
+    <input type="checkbox" class="main-menu-switch">
+    <ul>
+      <a href="index.html">
+        <li>HOME</li>
+      </a>
+      <a href="#ficzery">
+        <li>ABOUT&nbspIMF</li>
+      </a>
+      <a href="#formularz">
+        <li>CONTACT</li>
+      </a>
+      <a href="#autorzy">
+        <li>ABOUT&nbspUS</li>
+      </a>
+    </ul>
+  </nav>
 
 </header>
 
 <div id="social">
-    <a href="http://www.facebook.com" target="_blank"><i class="icon-facebook-circled"></i></a>
-    <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-circled"></i></a>
-    <a href="https://twitter.com/" target="_blank"><i class="icon-twitter-circled"></i></a>
+  <a href="http://www.facebook.com"
+     target="_blank"><!--comment for white space-->
+    <i class="icon-facebook-circled"></i></a>
+
+  <a href="https://plus.google.com/"
+     target="_blank"><!--comment for white space-->
+    <i class="icon-gplus-circled"></i></a>
+
+  <a href="https://twitter.com/"
+     target="_blank"><!--comment for white space-->
+    <i class="icon-twitter-circled"></i></a>
 </div>
 
 <div id="container">
+  <section class="section-banner" id="navigation-handler-banner">`
+    <div class="section-banner-h1-box">
+      <h1>Don't be ANGRY <br>while HUNGRY.</h1>
+    </div>
+    <span class="sentences">You don't have ingredients? <br> Compare the ingredients that you have to find recipes you can make!</span>
 
-    <section class="section-banner" id="navigation-handler-banner">`
-        <div class="section-banner-h1-box">
-            <h1>Don't be ANGRY <br>while HUNGRY.</h1>
-        </div>
-        <span class="sentences">You don't have ingredients? <br> Compare the ingredients that you have to find recipes you can make!</span>
+    <div class="btn-to-form-box"><a class="btn-to-form" href="#formularz">SIGN IN</a>
+    </div>
+  </section>
 
-        <div class="btn-to-form-box"><a class="btn-to-form" href="#formularz">SIGN IN</a>
-        </div>
-    </section>
+  <section class="sectionTwo" id="ficzery">
+    <div class="features">
+      <div class="cecha save-money">
+        Save your money!
+      </div>
 
-    <section class="sectionTwo" id="ficzery">
-        <!-- tą sekcję pisze ja - Maciej :slightly_smiling_face: -->
-        <div class="features">
-            <div class="cecha save-money">
-                Save your money!
-            </div>
-            <div class="cecha save-time">
-                Save your time!
-            </div>
-            <div class="cecha wide-choice">
-                Recipies for every occasion!
-            </div>
-            <div class="cecha best-in-class">
-                App is best in class!
-            </div>
-            <div class="column-1">
-                <ul>
-                    <li>Nunc venenatis urna a ligula.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Pellentesque elementum gravida lacus, sit.</li>
-                    <li>In nec ligula ornare ipsum.</li>
-                </ul>
-            </div>
-            <div class="column-2">
-                <ul>
-                    <li>Phasellus dignissim id nisi vel.</li>
-                    <li>Vestibulum vel ligula vitae metus.</li>
-                    <li>Nulla eget nisl purus. Lorem.</li>
-                    <li>Curabitur lobortis nisl non porta.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+      <div class="cecha save-time">
+        Save your time!
+      </div>
 
-    <section class="sectionTree" id="formularz">
+      <div class="cecha wide-choice">
+        Recipies for every occasion!
+      </div>
 
-        <form class="form" method="post">
+      <div class="cecha best-in-class">
+        App is best in class!
+      </div>
 
-            <p class="font-form">Please enter your email address and you will hear first about the opening of our website!<br>
-            E-mail with information about the launch of our website will be send to you.</p>
-            <br>
-            <fieldset>
-                <legend class="legenda-form"> &nbsp; NEWSLETTER &nbsp; </legend>
-            <input class="formularz-zgloszeniowy form" type="text" name="name1" placeholder="Name" required="required"/>
-            <input class="formularz-zgloszeniowy form" type="text" name="surname" placeholder="Surname"
-                   required="required"/>
-            <input class="formularz-zgloszeniowy form" type="email" name="email" placeholder="E-mail"
-                   required="required"/>
-                <div class="checkbox1">
-                    <input type="checkbox" name="check1" value="checkbox">
-                    <span class="styl-par">I declare, that I agree to have my personal data, if it necessary, processed for recruitment process (according to the Act of personal data protection,
-                        dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).</span>/></div>
-                <input type="submit" class="submit" name="submit1" value="Sign up">
-                </fieldset>
-            <br/>
-            <p class="security">We assure that the collection, processing and use of your personal data is done in
-                compliance with all rules on data protection under the law.</p>
+      <div class="column-1">
+        <ul>
+          <li>Nunc venenatis urna a ligula.</li>
 
-        </form>
-    </section>
+          <li>Lorem ipsum dolor sit amet.</li>
 
-    <section class="section-about-us " id="autorzy">
-        <div class="about-us-container">
-            <div class="wizytowka-box">
-                <div class="wizytowka-front">
-                    <img class="wizytowka-obrazek" src="FirstWeb/images/natalia.jpg">
-                </div>
-                <div class="wizytowka-back">
-                    <p class="text-opis-osoby">My name is Natalia.
-                        My hobbies include traveling, photography, aromatherapy and reading books.  My favourite season is spring.
-                        I love write my blog about travel, self-development and dreams.
-                        I love coffee with toffee</p>
-                </div>
-                <br>
-                <div class="social-wrapper-photo">
-                    <a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a class="gplus" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                </div>
-                <div class="podpis">Natalia Sawa</div>
-            </div>
-            <div class="wizytowka-box">
-                <div class="wizytowka-front">
-                    <img class="wizytowka-obrazek" src="FirstWeb/images/kuba.jpg">
-                </div>
-                <div class="wizytowka-back">
-                    <p class="text-opis-osoby">My name is Kuba Melson, and I’m currently looking for a job in your company. After I graduated I went hitchhiking to explore a bit of the world. I worked in various countries by performing various jobs. I love travels, thai food and beer brewing</p>
-                </div>
-                <br>
-                <div class="social-wrapper-photo">
-                    <a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a class="gplus" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                </div>
-                <div class="podpis">Kuba Melson</div>
-            </div>
-            <div class="wizytowka-box">
-                <div class="wizytowka-front">
-                    <img class="wizytowka-obrazek" src="FirstWeb/images/maciek1.jpg">
-                </div>
-                <div class="wizytowka-back">
-                    <p class="text-opis-osoby">Hi! I'm Maciej. During app coding I did my best in order to make it very usufel for you!</p>
-                </div>
-                <br>
-                <div class="social-wrapper-photo">
-                    <a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a class="gplus" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                </div>
-                <div class="podpis">Maciek Gerka</div>
-            </div>
-            <div class="wizytowka-box">
-                <div class="wizytowka-front">
-                    <img class="wizytowka-obrazek" src="FirstWeb/images/dorota.jpg">
-                </div>
-                <div class="wizytowka-back">
-                    <p class="text-opis-osoby">My Name is Dorota Leniec. I am Math student. I would like to be Front-End Developer. I love Rock Climbing. In the future i would like to open my climbing wall in Gdansk. My favourite beer is American IPA. American hops are delicious and fruity.</p>
-                </div>
-                <br>
-                <div class="social-wrapper-photo">
-                    <a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a class="gplus" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                </div>
-                <div class="podpis">Dorota Leniec</div>
-            </div>
-        </div>
-    </section>
+          <li>Pellentesque elementum gravida lacus, sit.</li>
 
-    <footer>
-       <div class="legal">
-            <a href="terms_od_services.html" target="_blank">Terms of services</a>
-            <a href="Privacy_notice.html" target="_blank">Privacy notice</a>
-       </div>
+          <li>In nec ligula ornare ipsum.</li>
+        </ul>
+      </div>
 
-        <div class="social-wrapper-footer">
-            <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <div class="column-2">
+        <ul>
+          <li>Phasellus dignissim id nisi vel.</li>
+
+          <li>Vestibulum vel ligula vitae metus.</li>
+
+          <li>Nulla eget nisl purus. Lorem.</li>
+
+          <li>Curabitur lobortis nisl non porta.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionTree" id="formularz">
+    <form class="form" method="post">
+      <p class="font-form">Please enter your email address and you will
+        hear first about the opening of our website!
+
+        <br>
+
+        E-mail with information about the launch of our website
+        will be send to you.</p>
+
+      <br>
+
+      <fieldset>
+        <legend class="legenda-form"> &nbsp; NEWSLETTER &nbsp; </legend>
+
+        <input class="formularz-zgloszeniowy form"
+               type="text"
+               name="name1"
+               placeholder="Name"
+               required="required"/>
+
+        <input class="formularz-zgloszeniowy form"
+               type="text"
+               name="surname"
+               placeholder="Surname"
+               required="required"/>
+
+        <input class="formularz-zgloszeniowy form"
+               type="email"
+               name="email"
+               placeholder="E-mail"
+               required="required"/>
+
+        <div class="checkbox1">
+          <input type="checkbox"
+                 name="check1"
+                 value="checkbox">
+
+          <span class="styl-par">I declare, that I agree to have my personal data, if it necessary,
+          processed for recruitment process (according to the Act of personal data protection,
+          dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).</span>
         </div>
 
-        <div class="copyright-updated">
-            <span>last update: 22.11.2016</span>
-            <span>&copy Copyright ISF</span>
-        </div>
-    </footer>
+        <input type="submit"
+               class="submit"
+               name="submit1"
+               value="Sign up">
+      </fieldset>
 
+      <br/>
+
+      <p class="security">We assure that the collection, processing
+        and use of your personal data is done in
+        compliance with all rules on data protection under the law.</p>
+
+    </form>
+  </section>
+
+  <section class="section-about-us"
+           id="autorzy">
+    <div class="about-us-container">
+      <div class="wizytowka-box">
+        <div class="wizytowka-front">
+          <img class="wizytowka-obrazek" src="FirstWeb/images/natalia.jpg">
+        </div>
+
+        <div class="wizytowka-back">
+          <p class="text-opis-osoby">My name is Natalia.
+            My hobbies include traveling, photography, aromatherapy
+            and reading books. My favourite season is spring.
+            I love write my blog about travel, self-development and dreams.
+            I love coffee with toffee</p>
+        </div>
+
+        <br>
+
+        <div class="social-wrapper-photo">
+          <a class="facebook"
+             href="http://www.facebook.com"
+             target="_blank">
+            <i class="fa fa-facebook-square"
+               aria-hidden="true">
+            </i></a>
+
+          <a class="gplus"
+             href="https://plus.google.com/"
+             target="_blank">
+            <i class="fa fa-google-plus-square"
+               aria-hidden="true">
+            </i></a>
+
+          <a class="twitter"
+             href="https://twitter.com/"
+             target="_blank">
+            <i class="fa fa-twitter-square"
+               aria-hidden="true">
+            </i></a>
+        </div>
+
+        <div class="podpis">Natalia Sawa</div>
+      </div>
+
+      <div class="wizytowka-box">
+        <div class="wizytowka-front">
+          <img class="wizytowka-obrazek"
+               src="FirstWeb/images/kuba.jpg">
+        </div>
+
+        <div class="wizytowka-back">
+          <p class="text-opis-osoby">My name is Kuba Melson, and I’m currently looking for a job in your company. After
+            I graduated I went hitchhiking to explore a bit of the world. I worked in various countries by performing
+            various jobs. I love travels, thai food and beer brewing</p>
+        </div>
+
+        <br>
+
+        <div class="social-wrapper-photo">
+          <a class="facebook"
+             href="http://www.facebook.com"
+             target="_blank"><!--comment for white space-->
+              <i class="fa fa-facebook-square"
+                 aria-hidden="true">
+              </i></a>
+
+          <a class="gplus"
+             href="https://plus.google.com/"
+             target="_blank"><!--comment for white space-->
+              <i class="fa fa-google-plus-square"
+                 aria-hidden="true">
+              </i></a>
+
+          <a class="twitter"
+             href="https://twitter.com/"
+             target="_blank"><!--comment for white space-->
+              <i class="fa fa-twitter-square"
+                 aria-hidden="true">
+              </i></a>
+        </div>
+
+        <div class="podpis">Kuba Melson</div>
+      </div>
+
+      <div class="wizytowka-box">
+        <div class="wizytowka-front">
+          <img class="wizytowka-obrazek" src="FirstWeb/images/maciek1.jpg">
+        </div>
+
+        <div class="wizytowka-back">
+          <p class="text-opis-osoby">Hi! I'm Maciej. During app coding I did my best in order to make it very usufel for
+            you!</p>
+        </div>
+
+        <br>
+
+        <div class="social-wrapper-photo">
+          <a class="facebook"
+             href="http://www.facebook.com"
+             target="_blank"><!--comment for white space-->
+              <i class="fa fa-facebook-square"
+                 aria-hidden="true">
+              </i></a>
+
+          <a class="gplus"
+             href="https://plus.google.com/"
+             target="_blank"><!--comment for white space-->
+              <i class="fa fa-google-plus-square"
+               aria-hidden="true">
+              </i></a>
+
+          <a class="twitter"
+             href="https://twitter.com/"
+             target="_blank">
+              <i class="fa fa-twitter-square"
+                 aria-hidden="true">
+              </i></a>
+        </div>
+
+        <div class="podpis">Maciek Gerka</div>
+      </div>
+
+      <div class="wizytowka-box">
+        <div class="wizytowka-front">
+          <img class="wizytowka-obrazek"
+               src="FirstWeb/images/dorota.jpg">
+        </div>
+
+        <div class="wizytowka-back">
+          <p class="text-opis-osoby">My Name is Dorota Leniec. I am Math student.
+            I would like to be Front-EndDeveloper. I love Rock Climbing. In the future i would like
+            to open my climbing wall in Gdansk. My favourite
+            beer is American IPA. American hops are delicious and fruity.</p>
+        </div>
+
+        <br>
+
+        <div class="social-wrapper-photo">
+          <a class="facebook"
+             href="http://www.facebook.com"
+             target="_blank">
+              <i class="fa fa-facebook-square"
+                 aria-hidden="true">
+              </i></a>
+
+          <a class="gplus"
+             href="https://plus.google.com/"
+             target="_blank">
+              <i class="fa fa-google-plus-square"
+                 aria-hidden="true">
+              </i></a>
+
+          <a class="twitter"
+             href="https://twitter.com/"
+             target="_blank">
+              <i class="fa fa-twitter-square"
+                 aria-hidden="true">
+              </i></a>
+        </div>
+
+        <div class="podpis">Dorota Leniec</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="legal">
+      <a href="terms_od_services.html"
+         target="_blank">
+        Terms of services
+      </a>
+
+      <a href="Privacy_notice.html"
+         target="_blank">
+        Privacy notice
+      </a>
+    </div>
+
+    <div class="social-wrapper-footer">
+      <a href="http://www.facebook.com"
+         target="_blank">
+          <i class="fa fa-facebook-square"
+             aria-hidden="true">
+          </i></a>
+
+      <a href="https://plus.google.com/"
+         target="_blank">
+         <i class="fa fa-google-plus-square"
+            aria-hidden="true">
+         </i></a>
+
+      <a href="https://twitter.com/"
+         target="_blank">
+          <i class="fa fa-twitter-square"
+             aria-hidden="true">
+          </i></a>
+    </div>
+
+    <div class="copyright-updated">
+      <span>last update: 22.11.2016</span>
+
+      <span>&copy Copyright ISF</span>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
