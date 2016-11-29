@@ -1,5 +1,8 @@
-function(){
-  var menuEl = document.getElementsByTagName("nav ul li")
 
-  if ()
-}
+$(document).ready(function() {
+  $(".menuOption").click(function () {
+    $('ul').slideToggle('normal');
+  });
+});
+
+//DO POPRAWKI!
