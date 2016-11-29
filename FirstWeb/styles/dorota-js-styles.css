@@ -1,0 +1,9 @@
+.status {
+    padding: 10px;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: #000;
+    color: #FFF;
+    z-index: 900;
+}
