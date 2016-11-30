@@ -230,7 +230,7 @@ nav ul li:hover {
 
 .cecha {
   opacity: 0.8;
-  background-image: url('FirstWeb/images/icon-checked.svg');
+  /*background-image: url('FirstWeb/images/icon-checked.svg');*/
   background-repeat: no-repeat;
   background-position: center top 10px;
   background-size: 100px auto;
