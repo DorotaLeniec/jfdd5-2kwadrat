@@ -1,8 +1,7 @@
 
 $(document).ready(function() {
   $(".menuOption").click(function () {
-    $('ul').slideToggle('normal');
+    var checkBoxes = $(".main-menu-switch");
+    checkBoxes.prop("checked", !checkBoxes.prop("checked"));
   });
 });
-
-//DO POPRAWKI!
