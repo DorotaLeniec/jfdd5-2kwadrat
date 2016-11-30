@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="FirstWeb/styles/dorota-js-styles.css">
+  <link rel="stylesheet" href="Game/styles/kuba-game.css"/>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
   <nav class="main-menu" id="navmenu">
     <input type="checkbox" class="main-menu-switch">
     <ul>
-      <a class="menuOption" href="index.html">
+      <a class="menuOption" href="#container">
         <li>HOME</li>
       </a>
       <a class="menuOption" href="#ficzery">
@@ -170,10 +171,13 @@
           dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).</span>
         </div>
 
-        <input type="submit"
-               class="submit"
-               name="submit1"
-               value="Sign up">
+        <a href="#area">
+          <input onclick="startGame();"
+                 type="submit"
+                 class="submit"
+                 name="submit1"
+                 value="Sign up">
+        </a>
       </fieldset>
 
       <br/>
@@ -379,10 +383,17 @@
       <span>&copy Copyright ISF</span>
     </div>
   </footer>
+
+  <div id="area">
+    <h1 id="toRemove">OUR GAME HERE</h1>
+  </div>
+
 </div>
 <!--załaczenie biblioteki jQuery z pliku oraz ze strony.Zalaczenie mojego pliku js-->
 <script src="FirstWeb/javascript/jquery-3.1.1.js"></script>
 <script src="FirstWeb/javascript/dorota.js"></script>
 <script src="scripts/hamburger_hiding.js"></script>
+<script src="Game/javascript/kuba.game.js"></script>
+<script src="scripts/smooth_scrolling.js"></script>
 </body>
 </html>

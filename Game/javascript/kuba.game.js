@@ -1,3 +1,4 @@
-/**
- * Created by jmelson on 30.11.16.
- */
+function startGame() {
+  $("#area").css("display", "block");
+
+}
