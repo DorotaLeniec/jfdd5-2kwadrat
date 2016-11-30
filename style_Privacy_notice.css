@@ -1,0 +1,13 @@
+body{
+  background-color: #999;
+}
+
+article {
+  position: relative;
+  margin-left: 100px;
+  width: 80%;
+}
+
+h1 {
+  text-decoration: underline;
+}
