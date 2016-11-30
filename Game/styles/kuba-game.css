@@ -1,0 +1,14 @@
+#area {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+#toRemove {
+  text-align: center;
+  padding-top: 300px;
+  color: yellow;
+  font-size: 60px;
+}
