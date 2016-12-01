@@ -6,9 +6,23 @@
   height: 100vh;
 }
 
-#toRemove {
-  text-align: center;
-  padding-top: 300px;
-  color: yellow;
-  font-size: 60px;
+.area--table {
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  background-color: red;
+}
+
+.area--fridge {
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  background-color: hotpink;
+}
+
+.fridge--ingridient {
+  display: inline-block;
+  width: 45%;
+  height: 20%;
+  background-color: #55acee;
 }
