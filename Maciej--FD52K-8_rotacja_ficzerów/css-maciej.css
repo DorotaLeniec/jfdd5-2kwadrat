@@ -2,13 +2,13 @@
   background-color: black;
 }
 
-.feature-viewer {
+.slide-viewer {
   position: relative;
   overflow: hidden;
   height: 300px;
 }
 
-.feature-group {
+.slide-group {
   width: 100%;
   height: 100%;
   position: relative;

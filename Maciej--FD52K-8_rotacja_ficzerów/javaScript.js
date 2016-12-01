@@ -10,6 +10,8 @@
 // $(".feature-4").prependTo(".features");
 // $(".feature-2").moveRig
 
+
+
 // var numerSlajdu = Math.floor(Math.random()*5)+1;
 //
 // function przewinficzera() {
@@ -22,9 +24,11 @@
 //     setTimeout(przewinSlajd(), 5000);
 // }
 
+
+
 // function przewinficzera() {
 //     $(".features .cecha").first();
-    $(".feature-4").prependTo(".features");
+//     $(".feature-4").prependTo(".features");
 //     $(".feature-3").prependTo(".features");
     // setTimeout("przewinFiczera()", 2000);
 // }
