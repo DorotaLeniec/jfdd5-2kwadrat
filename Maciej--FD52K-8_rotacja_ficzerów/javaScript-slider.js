@@ -6,6 +6,6 @@
 //   top: 182
 // }).animate({left: 230});
 
-$(".features").find("div");
-$(".feature-2").prependTo(".feature-4");
-// $(".feature-2").moveRig
+// $(".features").find("div");
+$(".feature-4").prependTo(".features");
+/* $(".feature-2").moveRig*/
