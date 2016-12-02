@@ -30,29 +30,3 @@
     makeDiv();                                                                                                          // nazot wywolujemy funkcje tworzaca diva
   });
 })();
-
-
-
-
-// (function makeDiv(){
-//   var divsize = ((Math.random()*100) + 30).toFixed();
-//   var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
-//   $newdiv = $('<div/>').css({
-//     'width':divsize+'px',
-//     'height':divsize+'px',
-//     'background-color': color
-//   });
-//
-//   var posx = (Math.random() * ($("#game_area").width() - divsize)).toFixed();
-//   var posy = (Math.random() * ($("#game_area").height() - divsize)).toFixed();
-//
-//   $newdiv.css({
-//     'position':'absolute',
-//     'left':posx+'px',
-//     'top':posy+'px',
-//     'display':'none'
-//   }).appendTo( '#game_area' ).fadeIn(100).delay(200).fadeOut(200, function(){
-//     $(this).remove();
-//     makeDiv();
-//   });
-// })();
