@@ -1,0 +1,33 @@
+#game_area {
+  border: 3px solid white;
+  border-radius: 5px;
+  position: relative;
+  margin: 5% auto 5%;
+  padding: 5px;
+  width: 500px;
+  height: 500px;
+  background-color: #333333;
+}
+
+#scores_area {
+  width: 140px;
+  height: 30px;
+  padding: 3px;
+  background-color: white;
+  border: 3px solid #00aced;
+  border-radius: 10px;
+  color: #3b5998;
+  float: left;
+
+}
+
+#scores_word {
+  float: left;
+  font-size: 10px;
+}
+
+#scores_points {
+  clear: both;
+  text-align: center;
+  font-weight: bold;
+}
