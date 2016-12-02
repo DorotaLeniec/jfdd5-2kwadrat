@@ -432,24 +432,24 @@ nav ul li:hover {
     font-size: 20px;
 }
 .cecha {
-    opacity: 0.8;
-    background-image: url('FirstWeb/images/icon-checked.svg');
-    background-repeat: no-repeat;
-    background-position: center top 10px;
-    background-size: 100px auto;
-    background-color: #ffffff;
-    padding: 140px 3px 3px 3px;
-    height: 105px;
-    width: 180px;
-    margin: 5px;
-    /*border: 2px solid black;*/
-    border-radius: 10px;
-    font-size: 22px;
-    color: black;
-    letter-spacing: 1px;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    align-items: center;
+  opacity: 0.8;
+  /*background-image: url('FirstWeb/images/icon-checked.svg');*/
+  background-repeat: no-repeat;
+  background-position: center top 10px;
+  background-size: 100px auto;
+  background-color: #ffffff;
+  padding: 140px 3px 3px 3px;
+  height: 105px;
+  width: 180px;
+  margin: 5px;
+  /*border: 2px solid black;*/
+  border-radius: 10px;
+  font-size: 22px;
+  color: black;
+  letter-spacing: 1px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  align-items: center;
 }
 
 .cecha:hover {
