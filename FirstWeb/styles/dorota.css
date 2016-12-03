@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
 #zajawkaText {
      position: relative;
      display: inline-block;
@@ -12,7 +11,6 @@
      height: 100vh;
     text-align: center;
 }
-
 #zajawkaText p {
     width: 70%;
     margin: 0 auto;
@@ -32,7 +30,6 @@
     padding: 3%;
     padding-top: 5%;
 }
-
 #asideGraph {
     margin: 0 auto;
     width: 75%;
@@ -41,13 +38,11 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 .animate
 {
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
 }
-
 .action-button
 {
     position: relative;
@@ -62,23 +57,19 @@
     color: #FFF;
     text-decoration: none;
 }
-
 .blue {
     background-color: #55acee;
-    border-bottom: 5px solid #2980B9;
+    border-bottom: 3px solid #2980B9;
     text-shadow: 0px -2px #2980B9;
 }
-
 .action-button:active {
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     border-bottom: 1px solid;
 }
-
 .section-banner-h1-box {
     text-align: center;
 }
-
 .section-banner h1 {
     color: black;
     font-family: 'Open Sans', 'sans-serif';
@@ -89,15 +80,12 @@
     padding-left: 7px;
     padding-right: 7px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
 }
 
 .btn-to-form-box {
     text-align: center;
     margin-top: 30px;
-
 }
-
 .btn-to-form {
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
@@ -116,7 +104,6 @@
     padding-left:20px;
     padding-right: 20px;
 }
-
 .btn-to-form:hover {
     color: black;
     cursor: pointer;
@@ -126,15 +113,11 @@
 @media (max-width: 800px) {
     .section-banner h1 {
         font-size: 40px;
-
     }
     .btn-to-form {
         font-size: 60px;
     }
-
-
 }
-
 @media (max-width: 420px) {
     .section-banner h1 {
         font-size: 25px;
@@ -145,11 +128,8 @@
     }
     .btn-to-form {
         font-size: 40px;
-
     }
-
 }
-
 .about-us-container {
     text-align: center;
     /*background-color: #fff;*/
@@ -157,16 +137,12 @@
     padding-top:200px;
     background-image: url("/FirstWeb/images/frac.jpg");
 }
-
 .wizytowka-obrazek {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    padding: 2px;
-    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
+    border: 8px outset #00aced;
 }
-
-
 .wizytowka-box {
     position: relative;
     display: inline-block;
@@ -175,7 +151,6 @@
     text-align: center;
     margin: 0 50px 10px 70px;
 }
-/*@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);*/
 .podpis {
     margin-top:20px;
     text-align: center;
@@ -187,34 +162,8 @@
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
-    /*border:solid black 3px;*/
+    background-image: url("http://faculty.samfox.wustl.edu/donnelly/donnelly/538a/ashwin_rami/Fractals/IMAGES/Fractal001.jpg");
 }
-.podpis:before,
-.podpis:after {
-    position: absolute;
-    content: '';
-}
-.wizytowka-box:hover .podpis:before {
-    z-index: -2;
-    top: 5px;
-    right: 5px;
-    bottom: 2px;
-    left: 5px;
-    -webkit-background-clip: border-box;
-    background-image: inherit;
-}
- .podpis:after {
-    position: absolute;
-    z-index: -1;
-    top: .125em;
-    right: .125em;
-    bottom: .125em;
-    left: .125em;
-    background-color: white;
-}
-
-
 .wizytowka-box > .wizytowka-back{
     border-radius: 100%;
     height: 100%;
@@ -222,77 +171,40 @@
     text-align: center;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
-    transition: 2s ease 0.5s;
+    transition: 1s ease 0s;
     padding-bottom: 20px;
 }
 .wizytowka-box > .wizytowka-front{
-
     opacity:1;
-    transition: 2s ease 0.5s;
+    transition: 1s ease 0s;
     transform: perspective(00px) rotateY(0deg);
     backface-visibility: hidden;
     position: absolute;
     height:100%;
     width: 100%;
 }
-
-
-
 .wizytowka-box:hover > .wizytowka-back,
 .wizytowka-box >.rotate-js {
     transform: perspective(600px) rotateY(0deg) ;
 }
-
 .wizytowka-box:hover > .wizytowka-front,
 .wizytowka-box > .rotate-js-2 {
     transform: perspective(600px) rotateY(-180deg);
 }
-
 .text-opis-osoby {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 30px;
-    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
+    background-image: url("http://faculty.samfox.wustl.edu/donnelly/donnelly/538a/ashwin_rami/Fractals/IMAGES/Fractal001.jpg");
     padding: 30px;
     display: inline-block;
     color: black;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-
 }
-
-
-/*@media (max-width: 1200px) {*/
-    /*.wizytowka-obrazek{*/
-        /*width:250px;*/
-        /*height: 250px;*/
-    /*}*/
-    /*.wizytowka-box > .wizytowka-back {*/
-        /*width:250px;*/
-        /*height: 250px;*/
-
-    /*}*/
-    /*.wizytowka-box > .wizytowka-front {*/
-        /*width:250px;*/
-        /*height: 250px;*/
-
-    /*}*/
-   /**/
-/*}*/
-/*@media screen and (max-width: 600px) {*/
-    /*.wizytowka-box{*/
-        /*width:200px;*/
-        /*height: 200px;*/
-    /*}*/
-
-    /*}*/
-    /*!*.text-opis-osoby {*!*/
-        /*!*padding: 50px;*!*/
-        /*!*display: inline-block;*!*/
-        /*!*color: black;*!*/
-        /*!*font-size:10px;*!*/
-    /*!*}*!*/
-/*}*/
+.rotate-x {
+    transform: rotateX(360deg);
+}
 @media screen and (max-width: 1520px) {
     .section-about-us {
         flex-wrap: wrap;

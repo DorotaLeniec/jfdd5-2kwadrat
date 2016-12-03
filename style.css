@@ -160,33 +160,27 @@ nav ul li:hover {
 }
 
 .submit {
-    background: #f5fbff;
-    background-image: -webkit-linear-gradient(top, #f5fbff, #abd4ed);
-    background-image: -moz-linear-gradient(top, #f5fbff, #abd4ed);
-    background-image: -ms-linear-gradient(top, #f5fbff, #abd4ed);
-    background-image: -o-linear-gradient(top, #f5fbff, #abd4ed);
-    background-image: linear-gradient(to bottom, #f5fbff, #abd4ed);
-    border-radius: 52px;
-    font-family: Pacifico;
-    color: #00aced;
-    font-size: 17px;
-    font-weigth:bold;
-    padding: 5px 27px 5px 27px;
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
+    font-size: 25px;
+    color: #FFF;
     text-decoration: none;
-    cursor: pointer;
-    margin: 7px;
+}
+.blue {
+    background-color: #55acee;
+    border-bottom: 3px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
 }
 
-.submit:hover {
-    background: #e6eaed;
-    background-image: -webkit-linear-gradient(top, #e6eaed, #f5fbff);
-    background-image: -moz-linear-gradient(top, #e6eaed, #f5fbff);
-    background-image: -ms-linear-gradient(top, #e6eaed, #f5fbff);
-    background-image: -o-linear-gradient(top, #e6eaed, #f5fbff);
-    background-image: linear-gradient(to bottom, #e6eaed, #f5fbff);
-    text-decoration: none;
-    cursor: pointer;
-}
+/*.submit:hover {*/
+    /*transform: translate(0px,5px);*/
+    /*-webkit-transform: translate(0px,5px);*/
+    /*border-bottom: 1px solid;*/
+/*}*/
 
 .security{
     padding-top: 18px;
@@ -249,22 +243,22 @@ form {
     border-radius: 10px;
 }
 
-#submit {
-    width: 25%;
-    height: 46px;
-    background: #00aced;
-    font-family: inherit;
-    font-weight: bold;
-    color: inherit;
-    letter-spacing: 1px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background .3s ease-in-out;
-}
+/*#submit {*/
+    /*width: 25%;*/
+    /*height: 46px;*/
+    /*background: #00aced;*/
+    /*font-family: inherit;*/
+    /*font-weight: bold;*/
+    /*color: inherit;*/
+    /*letter-spacing: 1px;*/
+    /*border-radius: 0 5px 5px 0;*/
+    /*cursor: pointer;*/
+    /*transition: background .3s ease-in-out;*/
+/*}*/
 
-#submit:hover {
-    background: green;
-}
+/*#submit:hover {*/
+    /*background: green;*/
+/*}*/
  .email {
      font-size: 20px;
      font-weight: bold;
