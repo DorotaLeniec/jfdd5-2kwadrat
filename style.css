@@ -167,11 +167,11 @@ nav ul li:hover {
     background-image: -o-linear-gradient(top, #f5fbff, #abd4ed);
     background-image: linear-gradient(to bottom, #f5fbff, #abd4ed);
     border-radius: 52px;
-    font-family: Georgia;
-    color: #706970;
-    font-size: 15px;
+    font-family: Pacifico;
+    color: #00aced;
+    font-size: 17px;
     font-weigth:bold;
-    padding: 12px 27px 12px 27px;
+    padding: 5px 27px 5px 27px;
     text-decoration: none;
     cursor: pointer;
     margin: 7px;
@@ -190,12 +190,88 @@ nav ul li:hover {
 
 .security{
     padding-top: 18px;
-    font-size:15px;
-    color:white;
+    font-size:12px;
+    color: #000000;
     text-align: center;
     text-decoration: underline;
 }
+/*______________________________________________________________*/
 
+#form-area {
+    margin: 0 auto;
+    width: 60%;
+    padding: 30px;
+    border-radius: 15px;
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    text-align: center;
+    border: 8px outset #00aced;
+}
+
+form {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.upper-form {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.description {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
+}
+
+.input {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.button {
+     height: 44px;
+     border: none;
+     margin-bottom: 5px;
+ }
+
+#email {
+    width: 75%;
+    background: #eee;
+    font-family: inherit;
+    color: #000;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border: 3px solid #00aced;
+    border-radius: 10px;
+}
+
+#submit {
+    width: 25%;
+    height: 46px;
+    background: #00aced;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+#submit:hover {
+    background: green;
+}
+ .email {
+     font-size: 20px;
+     font-weight: bold;
+     padding-right: 10px;
+ }
+
+/*___________________________________________________________________*/
 @media all and (max-width: 420px) {
     .form p {
         font-size: 10px
