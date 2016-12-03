@@ -57,7 +57,7 @@
  
 .icon-twitter-circled:before {
      content: '\f30a';
-     font-size: 26px;
+     font-size: 36px;
      -webkit-transition: -webkit-transform .8s ease-out;
      transition: transform .8s ease-in-out;
      cursor: pointer;
@@ -65,7 +65,7 @@
 
 .icon-facebook-circled:before {
     content: '\f30d';
-    font-size: 26px;
+    font-size: 36px;
     -webkit-transition: -webkit-transform .8s ease-out;
     transition: transform .8s ease-in-out;
     cursor: pointer;
@@ -73,7 +73,7 @@
 
 .icon-gplus-circled:before {
     content: '\f310';
-    font-size: 26px;
+    font-size: 36px;
     -webkit-transition: -webkit-transform .8s ease-out;
     transition: transform .8s ease-in-out;
     cursor: pointer;
