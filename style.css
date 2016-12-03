@@ -1,11 +1,11 @@
-body {
-    background-image: url("FirstWeb/images/jajo.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: 0;
-}
+/*body {*/
+    /*background-image: url("FirstWeb/images/jajo.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    /*z-index: 0;*/
+/*}*/
 
 section {
     min-height: 100vh;
@@ -596,9 +596,6 @@ nav ul li:hover {
     font-style: italic;
 }
 
-/* koniec styli Macieja */
-
-/*Natalia wprowadziła styl paragrafu odnosnie bezpieczenstwa strony*/
 .security1 {
     font-size: 40px;
     color: black;
@@ -607,12 +604,6 @@ nav ul li:hover {
 
 
 @import url('http://weloveiconfonts.com/api/?family=entypo');
-
-/*body {*/
-    /*background: #ddd;*/
-/*}*/
-
-/*Stopka*/
 
 footer {
     font-family: sans-serif;
