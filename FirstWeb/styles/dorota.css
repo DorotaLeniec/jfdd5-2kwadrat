@@ -290,7 +290,7 @@
     }
 
     #zajawkaText p {
-        padding: 5% 0;
+        padding: 7% 0;
     }
 }
 
@@ -301,6 +301,11 @@
  }
     .text-opis-osoby {
         font-size: 12px;
+    }
+
+    #zajawkaText p {
+        font-size: 20px;
+        padding-top: 49px;
     }
 
 }
