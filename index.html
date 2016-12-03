@@ -17,10 +17,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="Game/styles/kuba-game.css"/>
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -123,64 +123,46 @@
   </section>
 
   <section class="sectionTree" id="formularz">
-    <form class="form" method="post">
-      <p class="font-form">Please enter your email address and you will
-        hear first about the opening of our website!
-
-        <br>
-
-        E-mail with information about the launch of our website
-        will be send to you.</p>
+    <div id="form-area">
+    <form method="post" name="sign up for beta form">
+      <div class="upper-form">
+        <p>Sign up for more information</p>
+      </div>
 
       <br>
 
-      <fieldset>
-        <legend class="legenda-form"> &nbsp; NEWSLETTER &nbsp; </legend>
+      <hr>
 
-        <input class="formularz-zgloszeniowy form"
-               type="text"
-               name="name1"
-               placeholder="Name"
-               required="required"/>
+      <br>
 
-        <input class="formularz-zgloszeniowy form"
-               type="text"
-               name="surname"
-               placeholder="Surname"
-               required="required"/>
+      <div class="description">
+        <p>Please enter your email address and you will hear first about the opening of our website!<br>
+          E-mail with information about the launch of our website will be send to you.</p>
+      </div>
 
-        <input class="formularz-zgloszeniowy form"
-               type="email"
-               name="email"
-               placeholder="E-mail"
-               required="required"/>
-
-        <div class="checkbox1">
-          <input type="checkbox"
-                 name="check1"
-                 value="checkbox">
-
-          <span class="styl-par">I declare, that I agree to have my personal data, if it necessary,
-          processed for recruitment process (according to the Act of personal data protection,
-          dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).</span>
-        </div>
-
-        <a href="#area">
+      <br>
+      <div class="input">
+        <span class="email">E-mail:</span>
+        <input type="text" class="button" id="email" name="email">
+        <a href="#area" class="submit-button">
           <input onclick="startGame();"
                  type="submit"
                  class="submit"
                  name="submit1"
                  value="Sign up">
         </a>
-      </fieldset>
 
-      <br/>
-
-      <p class="security">We assure that the collection, processing
-        and use of your personal data is done in
+      </div>
+      <br>
+      <div class="checkbox1">
+        <input type="checkbox">
+        <span>I agree for terms and conditions</span>
+      </div>
+      <br>
+      <p class="security">We assure that the collection, processing and use of your personal data is done in
         compliance with all rules on data protection under the law.</p>
-
     </form>
+    </div>
   </section>
 
   <section class="section-about-us"
