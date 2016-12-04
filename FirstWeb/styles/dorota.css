@@ -148,10 +148,9 @@
 
 .about-us-container {
   text-align: center;
-  /*background-color: #fff;*/
+  background-color: #fff;
   margin-top: -60px;
   padding-top: 50px;
-  background-image: url("/FirstWeb/images/frac.jpg");
 }
 
 .wizytowka-obrazek {
