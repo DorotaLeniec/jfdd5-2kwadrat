@@ -161,8 +161,8 @@ nav ul li:hover {
 
 .submit {
     position: relative;
-    padding: 10px 40px;
-    margin: 0px 10px 10px 0px;
+    padding: 5px 40px;
+    margin: 5px 10px 10px 0px;
     border-radius: 10px;
     font-family: 'Pacifico', cursive;
     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
@@ -170,6 +170,12 @@ nav ul li:hover {
     color: #FFF;
     text-decoration: none;
 }
+
+.submit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .blue {
     background-color: #55acee;
     border-bottom: 3px solid #2980B9;
@@ -189,12 +195,11 @@ nav ul li:hover {
     text-align: center;
     text-decoration: underline;
 }
-/*______________________________________________________________*/
 
 #form-area {
     margin: 0 auto;
     width: 60%;
-    padding: 30px;
+    padding: 5px;
     border-radius: 15px;
     background: #fff;
     font-family: 'Lato', sans-serif;
@@ -241,34 +246,19 @@ form {
     text-indent: 5%;
     border: 3px solid #00aced;
     border-radius: 10px;
+    font-size: 20px;
 }
 
-/*#submit {*/
-    /*width: 25%;*/
-    /*height: 46px;*/
-    /*background: #00aced;*/
-    /*font-family: inherit;*/
-    /*font-weight: bold;*/
-    /*color: inherit;*/
-    /*letter-spacing: 1px;*/
-    /*border-radius: 0 5px 5px 0;*/
-    /*cursor: pointer;*/
-    /*transition: background .3s ease-in-out;*/
-/*}*/
-
-/*#submit:hover {*/
-    /*background: green;*/
-/*}*/
  .email {
      font-size: 20px;
      font-weight: bold;
      padding-right: 10px;
  }
 
-/*___________________________________________________________________*/
 @media all and (max-width: 420px) {
     .form p {
-        font-size: 10px
+        font-size: 10px;
+        font-weight: bold;
     }
 
     .form input[type="text"], .form input[type="email"] {
@@ -280,7 +270,7 @@ form {
     }
 }
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 426px) {
     .form p {
         font-size: 10px;
     }
@@ -290,6 +280,10 @@ form {
         padding: 0;
     }
     .submit {
+        font-size: 10px;
+    }
+
+    .upper-form p{
         font-size: 10px;
     }
 }
@@ -330,6 +324,10 @@ form {
         font-size: 20px;
         margin-left: 12px;
         margin-right: 12px;
+    }
+
+    .upper-form p{
+        font-size: 20px;
     }
 
 }
