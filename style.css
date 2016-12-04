@@ -286,6 +286,12 @@ form {
   .upper-form p {
     font-size: 10px;
   }
+
+  .description {
+
+    margin-bottom: 7px;
+  }
+
 }
 
 @media (max-width: 800px) {
