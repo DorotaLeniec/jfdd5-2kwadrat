@@ -117,10 +117,10 @@ nav ul li:hover {
 }
 
 .sectionTree {
-  padding-top: 80px;
-  z-index: 5;
-  border-style: solid;
-  background-color: #fff;
+    padding-top: 80px;
+    z-index: 5;
+    border-style: solid;
+    background-color: #fff;
 }
 
 .styl-par {

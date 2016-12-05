@@ -17,17 +17,18 @@ times(6,function(x){
     });
 });
 
-var tablicaSkladnikow = ['http://simpleicon.com/wp-content/uploads/burger_3.svg','http://simpleicon.com/wp-content/uploads/burger_3.svg','http://simpleicon.com/wp-content/uploads/burger_3.svg','sad.svg',5,6,7,8,9,10];
+var tablicaSkladnikow = ['bread','cheese','tomato','bun','burger','ketchup','pasta','meatball','salmon','egg','milk','flour','salad']
 
 function assigning(){
     $('.skladnik').each(function(){
         var random;
         var temp;
         // for (var i = 1;i < tablicaSkladnikow.length;){
-        random = Math.round(Math.random() * 10);
+        random = Math.ceil(Math.random() * 12);
+        console.log(random);
         temp = tablicaSkladnikow[random];
         console.log(random);
-        $(this).html('<img class="food-icon" src="' + temp + '"/>');
+        $(this).html('<div class=' + temp + '></div>').addClass('food-icon');
 
     });
 }
