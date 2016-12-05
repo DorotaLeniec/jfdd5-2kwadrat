@@ -71,15 +71,62 @@
 }
 
 .ingr11 {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
 
+.ingr12 {
+  position: absolute;
+  bottom: 62px;
+  left: 87px;
+}
+
+.ingr13 {
+  position: absolute;
+  bottom: 30px;
+  left: 125px;
+}
+
+.ingr21 {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+
+.ingr22 {
+  position: absolute;
+  bottom: 62px;
+  left: 87px;
+}
+
+.ingr23 {
+  position: absolute;
+  bottom: 30px;
+  left: 125px;
+}
+
+.ingr31 {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+
+.ingr32 {
+  position: absolute;
+  bottom: 62px;
+  left: 87px;
+}
+
+.ingr33 {
+  position: absolute;
+  bottom: 30px;
+  left: 125px;
 }
 
 .area--people {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-  height: 200px;
+  position: relative;
+  height: 346px;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -89,6 +136,33 @@
   width: 50px;
   background-color: red;
 }
+
+.personOne {
+  position: absolute;
+  bottom: 0;
+  left: 103px;
+}
+
+.personTwo {
+  position: absolute;
+  bottom: 0;
+  left: 380px;
+}
+
+.personThree {
+  position: absolute;
+  bottom: 0;
+  left: 678px;
+}
+ .face {
+   background-image: url(../../FirstWeb/images/example-face.png);
+   width: 100px;
+   height: 100px;
+   background-size: cover;
+   position: absolute;
+   bottom: 100px;
+   right: -26px;
+ }
 
 .area--fridge {
   float: right;
@@ -110,7 +184,7 @@
 .table--plate{
   display: inline;
   width: 210px;
-  /* border-radius: 100%; */
+  height: 105px;
   background-image: url(../../FirstWeb/images/blue-plate.png);
   background-size: contain;
   background-repeat: no-repeat;
