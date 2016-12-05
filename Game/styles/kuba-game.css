@@ -12,8 +12,8 @@
 
 
 .plate {
-  width: 100px;
-  height: 100px;
+  width: 33px;
+  height: 33px;
   background-color: greenyellow;
 }
 .meatburger {
@@ -38,8 +38,55 @@
 }
 .area--table {
   display: inline-block;
-  height: 10vh;
-  width: 48%;
+  height: 100vh;
+  width: 60%;
+  background: url(../../FirstWeb/images/table.jpg);
+  background-size: cover;
+}
+
+.area--plate {
+  width: 49%;
+  bottom: 0;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: space-around;*/
+}
+
+.plateOne {
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+}
+
+.plateTwo {
+  position: absolute;
+  bottom: 100px;
+  left: 320px;
+}
+
+.plateThree {
+  position: absolute;
+  bottom: 100px;
+  left: 620px;
+}
+
+.ingr11 {
+
+}
+
+.area--people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.person {
+  height: 100px;
+  width: 50px;
   background-color: red;
 }
 
@@ -47,7 +94,7 @@
   float: right;
   display: inline-block;
   height: 100vh;
-  width: 52%;
+  width: 40%;
   background-color: hotpink;
   text-align: center;
 }
@@ -61,11 +108,12 @@
 }
 
 .table--plate{
- /*margin: auto;*/
-  height: 300px;
-  width: 300px;
-  border-radius: 100%;
-  background-color: #56bcff;
+  display: inline;
+  width: 210px;
+  /* border-radius: 100%; */
+  background-image: url(../../FirstWeb/images/blue-plate.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 /*----------------GRID----------------*/
