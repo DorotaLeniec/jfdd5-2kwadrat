@@ -2,26 +2,33 @@ $(function () {
   var homeId = '#navigation-handler-banner',
       aboutId = '#ficzery',
       contactId = '#formularz',
-      aboutUsId = '#autorzy';
+      aboutUsId = '#autorzy',
+      areaId = '#area';
 
   var homeOffset = $(homeId).offset().top,
       aboutOffset = $(aboutId).offset().top,
       contactOffset = $(contactId).offset().top,
-      aboutUsOffset = $(aboutUsId).offset().top;
+      aboutUsOffset = $(aboutUsId).offset().top,
+      areaIdOffset = $(areaId).offset().top;
 
   var clearActiveClasses = function () {
-    $('#navmenu a').each(function (idx, aTag) {
-      $(aTag).removeClass('active');
-    })
+    $('#navmenu a').removeClass('active');
   };
 
-  var selectActiveSection = function (offsets) {
-    var currentScrollTop = $(window).scrollTop();
+  var selectActiveSection = function () {
+    var currentScrollTop = $(window).scrollTop() + 11;
+
+    // console.log('currentScrollTop', currentScrollTop);
+    // console.log('homeOffset', homeOffset);
+    // console.log('aboutOffset', aboutOffset);
+    // console.log('contactOffset', contactOffset);
+    // console.log('aboutUsOffset', aboutUsOffset);
+
 
     switch (true) {
       case (currentScrollTop >= homeOffset && currentScrollTop < aboutOffset):
         clearActiveClasses();
-        $("#navmenu a[href='index.html']").addClass('active');
+        $("#navmenu a[href='#container']").addClass('active');
         break;
       case (currentScrollTop >= aboutOffset && currentScrollTop < contactOffset):
         clearActiveClasses();
@@ -31,7 +38,7 @@ $(function () {
         clearActiveClasses();
         $("#navmenu a[href='" + contactId + "']").addClass('active');
         break;
-      case (currentScrollTop >= aboutUsOffset):
+      case (currentScrollTop >= aboutUsOffset && currentScrollTop < areaIdOffset):
         clearActiveClasses();
         $("#navmenu a[href='" + aboutUsId + "']").addClass('active');
         break;
