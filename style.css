@@ -208,16 +208,6 @@ nav ul li:hover {
   text-decoration: underline;
 }
 
-.features {
-  text-align: center;
-  width: 800px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: 'Alfa Slab One', cursive;
-}
-
 .checkbox1 {
   margin-top: 10px;
 
@@ -226,6 +216,16 @@ nav ul li:hover {
 .legenda-form {
   color: white;
   font-size: 20px;
+}
+
+.features {
+  text-align: center;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 .cecha {
