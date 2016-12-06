@@ -35,33 +35,46 @@ assigning();
 // **********---------------------------On icon click function definition--------------------------*********
 // ------------------------------------zmienne globalne-------------------------
 var emptyPlateCounter = [];
+var pointCounter = 0;
 
 $('.food-icon').click(function () {
     var $firstEmptyPlate = $('.plate:empty:visible').first();
     if ($firstEmptyPlate.hasClass($(this).attr('foodType'))) {
         emptyPlateCounting($firstEmptyPlate);
         $firstEmptyPlate.append(this).css("opacity","1");
-        console.log(emptyPlateCounter.length);
+        console.log(pointCounter);
     }else{
         $(this).fadeTo("fast", 0);
         $(this).fadeTo("slow", 1);
     }
     checkPlate();
 });
-
+function pointCounting(){
+    if(pointCounter<3) {
+        pointCounter+=1;
+        $('.points:not(".winner"):first').html(pointCounter);
+    }else{
+        pointCounter=0;
+        pointCounting();
+    }
+};
 
 function emptyPlateCounting(firstPlate){
     emptyPlateCounter.push(firstPlate);
     console.log("z counting" , firstPlate);
     if(emptyPlateCounter.length === 1) {
-        $('.face:first').removeClass('sadFace').addClass('smileFace');
+        $('.face:not(".faceWon"):first').removeClass('sadFace').addClass('smileFace');
+        pointCounting();
     }else if (emptyPlateCounter.length === 2){
-        $('.face:first').removeClass('smileFace').addClass('happyFace');
+        $('.face:not(".faceWon"):first').removeClass('smileFace').addClass('happyFace');
+        pointCounting();
     }else if (emptyPlateCounter.length === 3){
-        $('.face:first').removeClass('happyFace').addClass('winFace').addClass('faceWon');
+        $('.face:not(".faceWon"):first').removeClass('happyFace').addClass('winFace').addClass('faceWon');
+        pointCounting();
+        $('.points:first').addClass('winner')
         emptyPlateCounter = [];
     }
-}
+};
 //***----------------------------------Checking Plate function ------------------------------***************
 function checkPlate() {
     $('.table--plate').each(function () {
@@ -81,5 +94,3 @@ function checkPlate() {
         }
     });
 }
-$('.face:first').css("background-image" , url = '../Images/faces/sad.svg');
-// $('.face').css("background" , "red");
