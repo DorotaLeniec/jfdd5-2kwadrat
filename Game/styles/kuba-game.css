@@ -12,9 +12,10 @@
 
 
 .plate {
+  opacity: 0.5;
   width: 33px;
   height: 33px;
-  background-color: greenyellow;
+  /*background-color: greenyellow;*/
 }
 .meatburger {
   display: none;

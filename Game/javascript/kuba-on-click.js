@@ -17,7 +17,7 @@ times(6,function(x){
     });
 });
 // ********--------------------------Assigning icons into board--------------------------------------************
-var tablicaSkladnikow = ['bread','cheese','tomato','bun','burger','ketchup','pasta','meatball','salmon','egg','milk','flour','salad']
+var tablicaSkladnikow = ['bread','cheese','tomato','bun','burger','ketchup','pasta','meatball','salmon','egg','milk','flour','salad'];
 function assigning(){
     $('.skladnik').each(function(){
         var random;
@@ -27,15 +27,20 @@ function assigning(){
         console.log(random);
         temp = tablicaSkladnikow[random];
         console.log(random);
-        $(this).html('<div class="'  + temp + '"></div>');
-        $('.skladnik > div').addClass('food-icon');
+        var $foodItem = $('<div>').addClass('food-icon').addClass(temp).attr('foodType', temp);
+        $(this).append($foodItem);
     });
 }
 assigning();
 // **********---------------------------On icon click function definition--------------------------*********
 $('.food-icon').click(function () {
-    $(this).parent().addClass('pusty');
-    $('.plate:empty:visible').first().append(this);
+    var $firstEmptyPlate = $('.plate:empty:visible').first();
+    if ($firstEmptyPlate.hasClass($(this).attr('foodType'))) {
+        $firstEmptyPlate.append(this).css("opacity","1");
+    }else{
+
+        $(this).css('background-color',"red").delay(200)
+    }
     checkPlate();
 });
 //***----------------------------------Checking Plate function ------------------------------***************
