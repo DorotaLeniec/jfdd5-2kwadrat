@@ -39,7 +39,8 @@ $('.food-icon').click(function () {
         $firstEmptyPlate.append(this).css("opacity","1");
     }else{
 
-        $(this).css('background-color',"red").delay(200)
+        $(this).fadeTo("fast", 0);
+        $(this).fadeTo("slow", 1);
     }
     checkPlate();
 });
