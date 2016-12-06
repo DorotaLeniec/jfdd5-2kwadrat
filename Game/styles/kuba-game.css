@@ -126,6 +126,7 @@
 }
 
 .area--people {
+  border:solid black 2px;
   position: relative;
   height: 346px;
   margin-bottom: 30px;
@@ -155,8 +156,8 @@
   bottom: 0;
   left: 678px;
 }
- .face {
-   background-image: url(../../FirstWeb/images/example-face.png);
+ .face{
+   border:solid black 2px;
    width: 100px;
    height: 100px;
    background-size: cover;
@@ -164,6 +165,22 @@
    bottom: 100px;
    right: -26px;
  }
+
+ .sadFace{
+   background-image: url(../Images/faces/sad.svg);
+
+ }
+.smileFace{
+  background-image: url(../Images/faces/happiness.svg);
+
+}
+.happyFace{
+  background-image: url(../Images/faces/happy.svg);
+}
+.winFace{
+  background-image: url(../Images/faces/winFace.svg);
+
+}
 
 .area--fridge {
   float: right;
@@ -200,7 +217,7 @@ table {
 .cell {
   width: 10%;
   height: 10%;
-  /*border: 1px solid #000;*/
+  border: 1px solid #000;
   text-align: center;
   padding:20px;
 }
