@@ -281,3 +281,36 @@
   clip: auto;
 }
 
+.item img {
+  width: 150px;
+  height: 150px;
+  padding-top: 50px;
+}
+
+.item {
+  background-color: #4d94ce;
+  height: 400px;
+  width: 500px;
+  background-size: 200px auto;
+}
+
+.ficzer-text {
+  font-size: 32px;
+  font-family: 'Alfa Slab One', cursive;
+  color: black;
+  padding-bottom: 20px;
+}
+
+div.item.active,
+div.item.active.left,
+div.item.active.right {
+  border-radius: 20px;
+  border-bottom: 0;
+}
+
+a.left.carousel-control {
+  border-radius: 20px;
+}
+a.right.carousel-control {
+ border-radius: 20px;
+}
