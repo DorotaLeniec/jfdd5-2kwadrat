@@ -42,6 +42,7 @@ assigning2();
 // ------------------------------------zmienne globalne-------------------------
 var emptyPlateCounter = [];
 var pointCounter = 0;
+var oneClickPointsCollect = [];
 
 $('.food-icon').click(function () {
     var $firstEmptyPlate = $('.plate:empty:visible').first();
@@ -65,10 +66,27 @@ function pointCounting(){
         $('.points:not(".winner"):first').addClass('winner');
         pointCounter=0;
         pointCounting();
-
-
     }
+
+    // ----------------POINTS COUNTING ---------------- //
+
+    function pointsCounting() {
+      oneClickPointsCollect.push(pointCounter);
+      console.log(oneClickPointsCollect);
+      function getSum(total, num) {
+        return total + num;
+      }
+
+      document.getElementById("totalScores").innerHTML = oneClickPointsCollect.reduce(getSum); // albo: .length... ale to daje przy nowym talerzu extra punkt
+    }
+
+pointsCounting()
+
+    // ---------------END OF POINTS COUNTING ---------------- //
+
 }
+
+
 function emptyPlateCounting(firstPlate){
     emptyPlateCounter.push(firstPlate);
     console.log("z counting" , firstPlate);
@@ -93,6 +111,9 @@ function checkPlate() {
             var $faceFirstPointSum = $('.points:first:visible').html();
             $('.points:not(".pointsCounted"):first:visible').fadeOut(700).addClass('pointsCounted');
             $('.pointsSum').html($faceFirstPointSum);
+
+
+
             $('.winFace').fadeOut(1000);
             $(this).fadeOut(1000,function (){
                 gameRefresh();
