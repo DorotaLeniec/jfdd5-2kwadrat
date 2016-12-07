@@ -166,7 +166,7 @@
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right {
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 5;
   display: inline-block;
   margin-top: -10px;
@@ -207,8 +207,8 @@
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
@@ -218,8 +218,8 @@
   border-radius: 10px;
 }
 .carousel-indicators .active {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: 0;
   background-color: #00aced;
 }
@@ -314,21 +314,30 @@ div.item.active.right {
 
 a.left.carousel-control {
   border-radius: 0;
-  font-size: 100px;
+  font-size: 75px;
 }
 a.right.carousel-control {
   border-radius: 0;
-  font-size: 100px;
+  font-size: 75px;
 }
 
 .carousel {
-  width: 62%;
+  width: 61%;
+  border: 5px solid #00aced;
+  border-radius: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right {
-    font-size: 100px;
+    font-size: 50px;
+  }
+  .carousel-control .glyphicon-chevron-right {
+    margin-right: 15px;
+  }
+  .carousel-indicators {
+  bottom: 20px;
   }
 }
 
