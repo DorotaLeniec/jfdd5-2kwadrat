@@ -50,9 +50,13 @@ function pointCounting(){
     if(pointCounter<3) {
         pointCounter+=1;
         $('.points:not(".winner"):first').html(pointCounter);
-    }else{
+        console.log("adding points" , pointCounter);
+    }else {
+        $('.points:not(".winner"):first').addClass('winner');
         pointCounter=0;
         pointCounting();
+
+
     }
 }
 function emptyPlateCounting(firstPlate){
@@ -67,8 +71,9 @@ function emptyPlateCounting(firstPlate){
     }else if (emptyPlateCounter.length === 3){
         $('.face:not(".faceWon"):first').removeClass('happyFace').addClass('winFace').addClass('faceWon');
         pointCounting();
-        $('.points:first').addClass('winner');
         emptyPlateCounter = [];
+
+
     }
 }
 //***----------------------------------Checking Plate function ------------------------------***************
