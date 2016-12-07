@@ -203,12 +203,12 @@ nav a:hover {
   margin: 0 auto;
   width: 60%;
   padding: 5px;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   background: #fff;
   font-family: 'Lato', sans-serif;
   color: #000;
   text-align: center;
-  border: 8px outset #00aced;
+  border: 8px solid #00aced;
 }
 
 form {
