@@ -46,8 +46,10 @@
 }
 
 .area--plate {
-  width: 49%;
+  /*width: 30%;*/
+  height: 300px;
   bottom: 0;
+  border:3px red solid;
   /*display: flex;*/
   /*flex-direction: row;*/
   /*justify-content: space-around;*/
@@ -82,49 +84,17 @@
   bottom: 62px;
   left: 87px;
 }
-
 .ingr13 {
   position: absolute;
   bottom: 30px;
   left: 125px;
 }
 
-.ingr21 {
-  position: absolute;
-  bottom: 30px;
-  left: 50px;
+.points {
+  color:white;
+  background-color: black;
+  border:solid rebeccapurple 3px;
 }
-
-.ingr22 {
-  position: absolute;
-  bottom: 62px;
-  left: 87px;
-}
-
-.ingr23 {
-  position: absolute;
-  bottom: 30px;
-  left: 125px;
-}
-
-.ingr31 {
-  position: absolute;
-  bottom: 30px;
-  left: 50px;
-}
-
-.ingr32 {
-  position: absolute;
-  bottom: 62px;
-  left: 87px;
-}
-
-.ingr33 {
-  position: absolute;
-  bottom: 30px;
-  left: 125px;
-}
-
 .area--people {
   border:solid black 2px;
   position: relative;
@@ -132,15 +102,13 @@
   margin-bottom: 30px;
   width: 100%;
 }
-
 .person {
   text-align: center ;
   font-size: 30px;
-  height: 100px;
+  height: 90px;
   width: 50px;
-  background-color: red;
+  /*background-color: red;*/
 }
-
 .personOne {
   position: absolute;
   bottom: 0;
@@ -159,7 +127,7 @@
   left: 678px;
 }
  .face{
-   border:solid black 2px;
+   /*border:solid black 2px;*/
    width: 100px;
    height: 100px;
    background-size: cover;
@@ -203,6 +171,7 @@
 }
 
 .table--plate{
+  border:solid red 3px;
   display: inline;
   width: 210px;
   height: 105px;
@@ -219,9 +188,9 @@ table {
 .cell {
   width: 10%;
   height: 10%;
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
   text-align: center;
-  padding:20px;
+  /*padding:20px;*/
 }
 .burger {
   background-image: url("../Images/icons/cutlet.svg");

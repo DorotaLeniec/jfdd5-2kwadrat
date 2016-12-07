@@ -21,6 +21,7 @@ times(6,function(x){
 
 
 var tablicaSkladnikow = ['bread','cheese','tomato','bun','burger','ketchup','pasta','meatball','salmon','egg','milk','flour','salad'];
+
 function assigning2(){
     var $emptyCells = 36;
     while($emptyCells>0) {
@@ -34,7 +35,6 @@ function assigning2(){
             $emptyCells = $Cells.length;
         }
     }
-
 }
 assigning2();
 
@@ -48,13 +48,14 @@ $('.food-icon').click(function () {
     if ($firstEmptyPlate.hasClass($(this).attr('foodType'))) {
         emptyPlateCounting($firstEmptyPlate);
         $firstEmptyPlate.append(this).css("opacity","1");
-        console.log(pointCounter);
+
     }else{
         $(this).fadeTo("fast", 0);
         $(this).fadeTo("slow", 1);
     }
     checkPlate();
 });
+
 function pointCounting(){
     if(pointCounter<3) {
         pointCounter+=1;
@@ -78,7 +79,7 @@ function emptyPlateCounting(firstPlate){
         $('.face:not(".faceWon"):first').removeClass('smileFace').addClass('happyFace');
         pointCounting();
     }else if (emptyPlateCounter.length === 3){
-        $('.face:not(".faceWon"):first').removeClass('happyFace').addClass('winFace').addClass('faceWon');
+        $('.face:not(".faceWon"):first').removeClass('happyFace').addClass('faceWon').addClass('winFace');
         pointCounting();
         emptyPlateCounter = [];
 
@@ -89,8 +90,13 @@ function emptyPlateCounting(firstPlate){
 function checkPlate() {
     $('.table--plate').each(function () {
         if ($(this).find('.plate').length === $(this).find('.food-icon').length) {
-            emptyPlateCounter = [];
-            $(this).fadeOut(300);
+            var $faceFirstPointSum = $('.points:first:visible').html();
+            $('.points:not(".pointsCounted"):first:visible').fadeOut(700).addClass('pointsCounted');
+            $('.pointsSum').html($faceFirstPointSum);
+            $('.winFace').fadeOut(1000);
+            $(this).fadeOut(1000,function (){
+                gameRefresh();
+            });
             $('.skladnik:empty:first').append(
                 $(this).find('.food-icon:first')
             );
@@ -100,7 +106,35 @@ function checkPlate() {
             $('.skladnik:empty:first').append(
                 $(this).find('.food-icon:first')
             )
-
         }
     });
 }
+
+function gameRefresh(){
+        if($('.table--plate:visible').length=== 0){
+            $('.face').removeClass('winFace faceWon').addClass('sadFace');
+            $('.face').stop().fadeIn(500);
+            $('.points').stop().fadeIn(500);
+            $('.points').text("0");
+            $('.table--plate .plate').removeClass(tablicaSkladnikow.join(' '));
+            $('.table--plate').show();
+            assigningClassesToPlates();
+        }
+}
+
+function assigningClassesToPlates() {
+    $('.plate').each(function(index,wartosc){
+        var random;
+        random = Math.round(Math.random() * 12);
+        var ingrClass = tablicaSkladnikow[random];
+        $(wartosc).addClass(ingrClass);
+        console.log("hehehhehehehhehehe" , ingrClass , wartosc );
+
+    })
+
+}
+
+
+
+
+
