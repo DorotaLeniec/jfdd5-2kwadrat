@@ -154,8 +154,7 @@ nav a:hover {
   font-size: 20px;
   display: block;
   padding: 20px;
-  margin: 0 auto;
-  margin-top: 6px;
+  margin: 6px auto 0;
   height: 10px;
   border-color: black;
   border-style: double solid;
@@ -165,7 +164,7 @@ nav a:hover {
 .submit {
   position: relative;
   padding: 5px 40px;
-  margin: 5px 10px 10px 0px;
+  margin: 5px 10px 10px 0;
   border-radius: 10px;
   font-family: 'Pacifico', cursive;
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
@@ -182,7 +181,7 @@ nav a:hover {
 .blue {
   background-color: #55acee;
   border-bottom: 3px solid #2980B9;
-  text-shadow: 0px -2px #2980B9;
+  text-shadow: 0 -2px #2980B9;
 }
 
 /*.submit:hover {*/
@@ -439,7 +438,6 @@ form {
 
   .page-header .main-menu .main-menu-switch:before {
     display: block;
-    width: 30px;
     height: 30px;
     font-size: 28px;
     line-height: 30px;
@@ -488,10 +486,8 @@ form {
 
 .cecha {
   opacity: 0.8;
-  background-repeat: no-repeat;
-  background-position: center top 10px;
   background-size: 100px auto;
-  background-color: #ffffff;
+  background: #ffffff no-repeat center top 10px;
   padding: 140px 3px 3px 3px;
   height: 105px;
   width: 180px;
@@ -667,7 +663,6 @@ footer {
   font-size: 15px;
   align-content: center;
   color: white;
-  font-family: Sans-Serif;
 }
 
 footer .legal {
