@@ -22,11 +22,8 @@ function assigning(){
     $('.skladnik').each(function(){
         var random;
         var temp;
-        // for (var i = 1;i < tablicaSkladnikow.length;){
-        random = Math.ceil(Math.random() * 12);
-        // console.log(random);
+        random = Math.round(Math.random() * 12);
         temp = tablicaSkladnikow[random];
-        // console.log(random);
         var $foodItem = $('<div>').addClass('food-icon').addClass(temp).attr('foodType', temp);
         $(this).append($foodItem);
     });
@@ -57,8 +54,7 @@ function pointCounting(){
         pointCounter=0;
         pointCounting();
     }
-};
-
+}
 function emptyPlateCounting(firstPlate){
     emptyPlateCounter.push(firstPlate);
     console.log("z counting" , firstPlate);
@@ -71,10 +67,10 @@ function emptyPlateCounting(firstPlate){
     }else if (emptyPlateCounter.length === 3){
         $('.face:not(".faceWon"):first').removeClass('happyFace').addClass('winFace').addClass('faceWon');
         pointCounting();
-        $('.points:first').addClass('winner')
+        $('.points:first').addClass('winner');
         emptyPlateCounter = [];
     }
-};
+}
 //***----------------------------------Checking Plate function ------------------------------***************
 function checkPlate() {
     $('.table--plate').each(function () {
