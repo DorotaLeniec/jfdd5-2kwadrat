@@ -17,18 +17,27 @@ times(6,function(x){
     });
 });
 // ********--------------------------Assigning icons into board--------------------------------------************
+
+
+
 var tablicaSkladnikow = ['bread','cheese','tomato','bun','burger','ketchup','pasta','meatball','salmon','egg','milk','flour','salad'];
-function assigning(){
-    $('.skladnik').each(function(){
-        var random;
-        var temp;
-        random = Math.round(Math.random() * 12);
-        temp = tablicaSkladnikow[random];
-        var $foodItem = $('<div>').addClass('food-icon').addClass(temp).attr('foodType', temp);
-        $(this).append($foodItem);
-    });
+function assigning2(){
+    var $emptyCells = 36;
+    while($emptyCells>0) {
+        for (var j = 0; j < tablicaSkladnikow.length; j++) {
+            var $Cells = $('td:empty');
+            var random = Math.round(Math.random() * $Cells.length);
+            var foodFromTable = tablicaSkladnikow[j];
+            var $randomCell = $($Cells[random]);
+            var $foodItem = $('<div>').addClass('food-icon').addClass(foodFromTable).attr('foodType', foodFromTable);
+            $randomCell.append($foodItem);
+            $emptyCells = $Cells.length;
+        }
+    }
+
 }
-assigning();
+assigning2();
+
 // **********---------------------------On icon click function definition--------------------------*********
 // ------------------------------------zmienne globalne-------------------------
 var emptyPlateCounter = [];
