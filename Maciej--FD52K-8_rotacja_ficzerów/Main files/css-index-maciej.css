@@ -6,19 +6,19 @@ body {
   background-color: red;
 }
 
-.slide-viewer {
+.feature-viewer {
   position: relative;
   overflow: hidden;
   height: 300px;
 }
 
-.slide-group {
+.feature-group {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.slide {
+.cecha {
   width: 100%;
   height: 100%;
   display: none;

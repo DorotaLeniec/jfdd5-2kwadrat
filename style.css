@@ -108,7 +108,7 @@ nav a:hover {
   align-content: center;
   align-items: center;
   padding-bottom: 50px;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 .sectionTree {
@@ -523,7 +523,6 @@ form {
   height: 300px;
   width: 375px;
   margin: 5px;
-  /*border: 2px solid black;*/
   border-radius: 10px;
   color: black;
   letter-spacing: 1px;
