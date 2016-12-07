@@ -127,7 +127,7 @@ function assigningClassesToPlates() {
         var random;
         random = Math.round(Math.random() * 12);
         var ingrClass = tablicaSkladnikow[random];
-        $(wartosc).addClass(ingrClass);
+        $(wartosc).addClass(ingrClass)s;;
         console.log("hehehhehehehhehehe" , ingrClass , wartosc );
 
     })
