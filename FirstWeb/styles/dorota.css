@@ -8,7 +8,7 @@
 #zajawkaText {
   position: relative;
   display: inline-block;
-  width: 49%;
+  width: 53%;
   height: 100vh;
   text-align: center;
 }
@@ -22,10 +22,18 @@
   line-height: 1.5;
 }
 
-#zajawkaText p span {
+#zajawkaText p .clouds {
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.showItOne {
+  display: none;
+}
+
+.showItTwo {
+  display: none;
 }
 
 #containerGraph {
@@ -50,6 +58,7 @@
 }
 
 .action-button {
+  display: none;
   position: relative;
   padding: 10px 40px;
   margin: 0px 10px 10px 0px;

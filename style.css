@@ -82,10 +82,10 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  border-bottom: 3px solid #55acee;
-  cursor: pointer;
-}
+/*nav a:hover {*/
+  /*border-bottom: 3px solid #55acee;*/
+  /*cursor: pointer;*/
+/*}*/
 
 .active {
   border-bottom: 3px solid #55acee;
