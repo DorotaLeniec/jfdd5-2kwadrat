@@ -13,7 +13,7 @@ header {
   width: 100%;
   background-color: #fff;
   padding: 20px;
-  z-index: 1;
+  z-index: 200;
 }
 
 .page-header .main-menu .main-menu-switch {
@@ -154,8 +154,7 @@ nav a:hover {
   font-size: 20px;
   display: block;
   padding: 20px;
-  margin: 0 auto;
-  margin-top: 6px;
+  margin: 6px auto 0;
   height: 10px;
   border-color: black;
   border-style: double solid;
@@ -165,7 +164,7 @@ nav a:hover {
 .submit {
   position: relative;
   padding: 5px 40px;
-  margin: 5px 10px 10px 0px;
+  margin: 5px 10px 10px 0;
   border-radius: 10px;
   font-family: 'Pacifico', cursive;
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
@@ -182,7 +181,7 @@ nav a:hover {
 .blue {
   background-color: #55acee;
   border-bottom: 3px solid #2980B9;
-  text-shadow: 0px -2px #2980B9;
+  text-shadow: 0 -2px #2980B9;
 }
 
 /*.submit:hover {*/
@@ -203,12 +202,12 @@ nav a:hover {
   margin: 0 auto;
   width: 60%;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 20px;
   background: #fff;
   font-family: 'Lato', sans-serif;
   color: #000;
   text-align: center;
-  border: 8px outset #00aced;
+  border: 5px solid #00aced;
 }
 
 form {
@@ -439,7 +438,6 @@ form {
 
   .page-header .main-menu .main-menu-switch:before {
     display: block;
-    width: 30px;
     height: 30px;
     font-size: 28px;
     line-height: 30px;
@@ -486,162 +484,6 @@ form {
   font-size: 20px;
 }
 
-.cecha {
-  opacity: 0.8;
-  background-repeat: no-repeat;
-  background-position: center top 10px;
-  background-size: 100px auto;
-  background-color: #ffffff;
-  padding: 140px 3px 3px 3px;
-  height: 105px;
-  width: 180px;
-  margin: 5px;
-  /*border: 2px solid black;*/
-  border-radius: 10px;
-  font-size: 22px;
-  color: black;
-  letter-spacing: 1px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  align-items: center;
-}
-
-.cecha:hover {
-  opacity: 1;
-  background-size: 120px auto;
-  background-position: center top 5px;
-  color: black;
-  box-shadow: 0 0 20px 5px black;
-  transition-duration: 0.5s;
-}
-
-.column-1,
-.column-2 {
-  opacity: 0.7;
-  background-color: #ffffff;
-  display: flex;
-  height: 300px;
-  width: 375px;
-  margin: 5px;
-  border-radius: 10px;
-  color: black;
-  letter-spacing: 1px;
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 22px;
-  align-items: center;
-  padding: 3px;
-}
-
-.column-1:hover,
-.column-2:hover {
-  opacity: 1;
-  color: black;
-  box-shadow: 5px 5px 20px 10px black;
-  z-index: 100;
-  transform: scale(1.3, 1.3) translate(-43px, -35px);
-  transition-duration: 0.5s;
-  border-color: black;
-}
-
-.column-1:hover {
-  transform: scale(1.3, 1.3) translate(43px, -35px);
-  /*box-shadow: -5px 5px 20px 10px black;*/
-}
-
-.column-1 ul,
-.column-2 ul {
-  list-style-type: disc;
-  padding: 3px 3px 3px 30px
-}
-
-.column-1 ul li,
-.column-2 ul li {
-  margin: 25px auto;
-}
-
-.save-money {
-  background-image: url('FirstWeb/images/save-money.svg');
-}
-
-.save-time {
-  background-image: url('FirstWeb/images/save-time.svg');
-}
-
-.wide-choice {
-  background-image: url('FirstWeb/images/wide-choice.svg');
-}
-
-.best-in-class {
-  background-image: url('FirstWeb/images/best-in-class.svg');
-}
-
-@media screen and (max-width: 840px) {
-  .features {
-    width: 400px;
-  }
-
-  .column-1:hover,
-  .column-2:hover {
-    transform: scale(1, 1) translate(0px, 0px);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .features {
-    width: 200px;
-  }
-
-  .cecha {
-    height: 60px;
-    width: 200px;
-    background-size: 60px auto;
-    padding-top: 95px;
-    font-size: 18px;
-  }
-
-  .cecha:hover {
-    opacity: 0.8;
-    background-size: 60px auto;
-    background-position: center top 10px;
-    box-shadow: 0 0 0 0;
-  }
-
-  .column-1 ul,
-  .column-2 ul {
-    font-size: 14px;
-    list-style-type: none;
-    padding-left: 3px;
-  }
-
-  .column-1:hover,
-  .column-2:hover {
-    opacity: 0.7;
-    box-shadow: 0 0 0 0;
-    z-index: 100;
-    border-color: black;
-  }
-}
-
-.copyright {
-  display: flex;
-  margin: 4px;
-  background-color: #ffffff;
-  color: black;
-  padding: 1px 2px;
-  border: 1px solid #ffffff;
-  border-radius: 7px;
-}
-
-.last-update-date {
-  display: flex;
-  margin: 4px;
-  background-color: #ffffff;
-  color: black;
-  padding: 1px 2px;
-  border: 1px solid #ffffff;
-  border-radius: 7px;
-}
-
 .team-name,
 .update-date {
   font-style: italic;
@@ -667,7 +509,6 @@ footer {
   font-size: 15px;
   align-content: center;
   color: white;
-  font-family: Sans-Serif;
 }
 
 footer .legal {
