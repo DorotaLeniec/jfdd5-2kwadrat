@@ -92,7 +92,12 @@ nav a {
   text-decoration: none;
 }
 
-nav ul li:hover {
+nav a:hover {
+  border-bottom: 3px solid #55acee;
+  cursor: pointer;
+}
+
+.active {
   border-bottom: 3px solid #55acee;
   cursor: pointer;
 }
@@ -113,7 +118,7 @@ nav ul li:hover {
   align-content: center;
   align-items: center;
   padding-bottom: 50px;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 .sectionTree {
@@ -529,7 +534,6 @@ form {
   height: 300px;
   width: 375px;
   margin: 5px;
-  /*border: 2px solid black;*/
   border-radius: 10px;
   color: black;
   letter-spacing: 1px;
