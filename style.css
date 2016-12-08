@@ -209,7 +209,8 @@ nav ul li:hover {
   width: 60%;
   padding: 5px;
   border-radius: 15px;
-  background: #fff;
+  background-image: url("FirstWeb/images/Ladies Finger.jpg");
+  background-size: cover;
   font-family: 'Lato', sans-serif;
   color: #000;
   text-align: center;
