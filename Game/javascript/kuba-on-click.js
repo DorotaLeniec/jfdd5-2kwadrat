@@ -211,8 +211,8 @@ $(".time").countdown(redirect, 5);
 
 function redirect () {
     this.html("TIME OVER!");
-    $(".theEndVisible").show();
-}
+    $(".theEndVisible").fadeTo("slow", 0.93).show();
+}   $(".gameOver").fadeTo("slow", 1).show();
 
 // var sec = 30;
 // counter = document.getElementById('.time');
