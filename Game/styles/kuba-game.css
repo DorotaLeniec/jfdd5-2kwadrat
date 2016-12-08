@@ -58,19 +58,19 @@
 .plateOne {
   position: absolute;
   bottom: 100px;
-  left: 40px;
+  left: 10px;
 }
 
 .plateTwo {
   position: absolute;
   bottom: 100px;
-  left: 320px;
+  left: 270px;
 }
 
 .plateThree {
   position: absolute;
   bottom: 100px;
-  left: 620px;
+  left: 540px;
 }
 
 .ingr11 {
@@ -94,6 +94,15 @@
   color:white;
   background-color: black;
   border:solid rebeccapurple 3px;
+}
+.pointsSum{
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  border:solid 2px rebeccapurple;
+  font-size: 20px;
+  background-color: black;
+  color: white;
 }
 .area--people {
   border:solid black 2px;

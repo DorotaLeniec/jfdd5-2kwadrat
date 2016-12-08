@@ -43,6 +43,8 @@ assigning2();
 var emptyPlateCounter = [];
 var pointCounter = 0;
 var oneClickPointsCollect = [];
+var onepoint = 0;
+var pointssum = 0;
 
 $('.food-icon').click(function () {
     var $firstEmptyPlate = $('.plate:empty:visible').first();
@@ -60,27 +62,36 @@ $('.food-icon').click(function () {
 function pointCounting(){
     if(pointCounter<3) {
         pointCounter+=1;
+        onepoint = 1;
         $('.points:not(".winner"):first').html(pointCounter);
         console.log("adding points" , pointCounter);
+        summingPoints(onepoint);
     }else {
         $('.points:not(".winner"):first').addClass('winner');
         pointCounter=0;
         pointCounting();
     }
 
+    function summingPoints (){
+
+        pointssum+=onepoint;
+        console.log("PUNKTYYYYYYYYYYYYYYYYY" , pointssum);
+        $('.pointsSum').text("score: " + pointssum);
+
+    }
     // ----------------POINTS COUNTING ---------------- //
 
-    function pointsCounting() {
-      oneClickPointsCollect.push(pointCounter);
-      console.log(oneClickPointsCollect);
-      function getSum(total, num) {
-        return total + num;
-      }
-
-      document.getElementById("totalScores").innerHTML = oneClickPointsCollect.reduce(getSum); // albo: .length... ale to daje przy nowym talerzu extra punkt
-    }
-
-pointsCounting()
+//     function pointsSumming() {
+//       oneClickPointsCollect.push(pointCounter);
+//       console.log(oneClickPointsCollect);
+//       function getSum(total, num) {
+//         return total + num;
+//       }
+//
+//       document.getElementById("totalScores").innerHTML = oneClickPointsCollect.reduce(getSum); // albo: .length... ale to daje przy nowym talerzu extra punkt
+//     }
+//
+// pointsSumming();
 
     // ---------------END OF POINTS COUNTING ---------------- //
 
@@ -110,7 +121,7 @@ function checkPlate() {
         if ($(this).find('.plate').length === $(this).find('.food-icon').length) {
             var $faceFirstPointSum = $('.points:first:visible').html();
             $('.points:not(".pointsCounted"):first:visible').fadeOut(700).addClass('pointsCounted');
-            $('.pointsSum').html($faceFirstPointSum);
+            // $('.pointsSum').html($faceFirstPointSum);
 
 
 
@@ -135,8 +146,9 @@ function gameRefresh(){
         if($('.table--plate:visible').length=== 0){
             $('.face').removeClass('winFace faceWon').addClass('sadFace');
             $('.face').stop().fadeIn(500);
-            $('.points').stop().fadeIn(500);
+            $('.points').removeClass('pointsCounted').removeClass('winner').stop().fadeIn(500);
             $('.points').text("0");
+            pointCounter = 0;
             $('.table--plate .plate').removeClass(tablicaSkladnikow.join(' '));
             $('.table--plate').show();
             assigningClassesToPlates();
@@ -148,7 +160,7 @@ function assigningClassesToPlates() {
         var random;
         random = Math.round(Math.random() * 12);
         var ingrClass = tablicaSkladnikow[random];
-        $(wartosc).addClass(ingrClass)s;;
+        $(wartosc).addClass(ingrClass);
         console.log("hehehhehehehhehehe" , ingrClass , wartosc );
 
     })
