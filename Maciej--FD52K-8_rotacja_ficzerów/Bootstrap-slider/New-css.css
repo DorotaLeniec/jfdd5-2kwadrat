@@ -286,8 +286,8 @@
 }
 
 .item img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   padding-top: 50px;
 }
 
@@ -332,7 +332,7 @@ a.right.carousel-control {
  text-shadow: none;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (min-width: 451px) and (max-width: 899px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -355,4 +355,39 @@ a.right.carousel-control {
   .ficzer-text {
     font-size: 26px;
   }
+  .item {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    /*display: none;*/
+    font-size: 30px;
+  }
+  .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+  }
+  .carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+  }
+  .item img {
+    width: 80px;
+    height: 80px;
+    padding-top: 40px;
+  }
+  .ficzer-text {
+    font-size: 18px;
+  }
+  .item {
+    height: 300px;
+  }
+  /*.carousel-control:hover,*/
+  /*.carousel-control:focus {*/
+    /*cursor: auto;*/
 }
