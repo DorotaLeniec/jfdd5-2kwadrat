@@ -47,12 +47,17 @@ var onepoint = 0;
 var pointssum = 0;
 
 $('.food-icon').click(function () {
-    var $firstEmptyPlate = $('.plate:empty:visible').first();
-    if ($firstEmptyPlate.hasClass($(this).attr('foodType'))) {
+    var $firstEmptyPlate = $('.table--plate:visible:first > div');
+    var foodTypeClass = $(this).attr('foodType');
+    console.log($firstEmptyPlate);
+    if ($firstEmptyPlate.hasClass(foodTypeClass)) {
         emptyPlateCounting($firstEmptyPlate);
-        $firstEmptyPlate.append(this).css("opacity","1");
+        $('.table--plate:visible:first > div.' + foodTypeClass + ":first").append(this).css("opacity","1");
 
     }else{
+        $('.face:visible:first').animate({
+            backgroundColor : "#2b669a"
+        });
         $(this).fadeTo("fast", 0);
         $(this).fadeTo("slow", 1);
     }
@@ -160,7 +165,7 @@ function assigningClassesToPlates() {
         var random;
         random = Math.round(Math.random() * 12);
         var ingrClass = tablicaSkladnikow[random];
-        $(wartosc).addClass(ingrClass);
+        $(wartosc).addClass(ingrClass).css("opacity" , '0.5');
         console.log("hehehhehehehhehehe" , ingrClass , wartosc );
 
     })

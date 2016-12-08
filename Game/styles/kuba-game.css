@@ -160,7 +160,9 @@
   background-image: url(../Images/faces/winFace.svg);
 
 }
-
+.angryFace {
+  background-image: url(../Images/faces/angry.svg);
+}
 .area--fridge {
   float: right;
   display: inline-block;
