@@ -272,3 +272,29 @@ table {
   font-weight: bold;
   color: gold;
 }
+
+.theEndVisible {
+  z-index: 500;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: #55acee;
+}
+
+#gameOver {
+  font-size: 100px;
+  margin-top: 200px;
+  margin-left: 320px;
+}
+
+.theEndPointSum {
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  margin-left: 520px;
+  font-size: 60px;
+  color: white;
+  border: none;
+}

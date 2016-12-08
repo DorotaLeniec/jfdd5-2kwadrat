@@ -724,3 +724,9 @@ footer div a {
 .social-wrapper-footer a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
+
+.time {
+  width: 70px;
+  height: 70px;
+}
+

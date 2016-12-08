@@ -166,8 +166,67 @@ function assigningClassesToPlates() {
     })
 
 }
+//___________________________>TIMER____________________________//
 
+// //
+// // var counter = 10;
+// // $(".time").html(counter);
+// var myInterval = setInterval(function () {
+//     --counter;
+// }, 1000);
+// myInterval();
+//
+//
+// // Let's just add a function so that you can get the value
+//
+// var timeee = 10;
+// $(".time").html(timeee);
+//  // Increment value every second
+//
+// $(document).ready(function () {
+//     $(".time").myInterval({
+//         $(".time").html(timeee);
+//     });
+// });
+//
+$.fn.countdown = function (callback, duration) {
+    var container = $(this[0]).html(duration);
+    var countdown = setInterval(function () {
+        if (--duration) {
+            container.html(duration);
+        } else {
+            clearInterval(countdown);
+            callback.call(container);
+        }
+    }, 1000);
 
+};
 
+$(".time").countdown(redirect, 5);
 
+function redirect () {
+    this.html("TIME OVER!");
+    $(".theEndVisible").show();
+}
+
+// var sec = 30;
+// counter = document.getElementById('.time');
+// counter.innerText = sec;
+// i = setInterval(function(){
+//     --sec;
+//
+//     if (sec === 1){
+//         clearInterval(i);
+//         window.location = document.getElementById('.time').href;
+//     }
+//     counter.innerText=sec;
+// },1000);
+
+// $(document).ready(function () {
+//     $('.time').countdown({
+//         until: 5,
+//         compact: true,
+//         onExpiry: function() { alert('bye!!'); }
+//     });
+// });
 
