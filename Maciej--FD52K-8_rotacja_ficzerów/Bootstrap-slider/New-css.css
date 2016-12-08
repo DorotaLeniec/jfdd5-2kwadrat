@@ -337,29 +337,9 @@ a.right.carousel-control {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    /*width: 30px;*/
-    /*height: 30px;*/
-    margin-top: -10px;
     font-size: 40px;
   }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-    margin-right: -10px;
-  }
-  .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
-  }
-  .carousel-indicators {
-    bottom: 20px;
-  }
   .carousel-indicators li {
-    display: inline-block;
     width: 10px;
     height: 10px;
   }
@@ -372,15 +352,7 @@ a.right.carousel-control {
     height: 100px;
     padding-top: 60px;
   }
-  .item {
-    height: 400px;
-    width: 100%;
-    background-size: 200px auto;
-  }
   .ficzer-text {
     font-size: 26px;
-    font-family: Lato, sans-serif;
-    color: black;
-    padding-bottom: 20px;
   }
 }
