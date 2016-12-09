@@ -1,5 +1,5 @@
 section {
-  min-height: 100vh;
+  height: 100vh;
   width: auto;
   padding-top: 60px;
 }
@@ -108,6 +108,8 @@ nav a:hover {
   align-content: center;
   align-items: center;
   padding-bottom: 50px;
+  padding-top: 60px;
+  max-height: 500px;
   /*opacity: 0.8;*/
 }
 
