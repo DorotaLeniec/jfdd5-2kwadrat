@@ -194,25 +194,29 @@ function assigningClassesToPlates() {
 //     });
 // });
 //
-$.fn.countdown = function (callback, duration) {
-    var container = $(this[0]).html(duration);
-    var countdown = setInterval(function () {
-        if (--duration) {
-            container.html(duration);
-        } else {
-            clearInterval(countdown);
-            callback.call(container);
-        }
-    }, 1000);
 
-};
+function CountingActivator(){
+    $.fn.countdown = function (callback, duration) {
+        var container = $(this[0]).html(duration);
+        var countdown = setInterval(function () {
+            if (--duration) {
+                container.html(duration);
+            } else {
+                clearInterval(countdown);
+                callback.call(container);
+            }
+        }, 1000);
 
-$(".time").countdown(redirect, 5);
+    };
 
-function redirect () {
-    this.html("TIME OVER!");
-    $(".theEndVisible").fadeTo("slow", 1).show();
-}   $(".gameOver").fadeTo("slow", 1).show();
+    $(".time").countdown(redirect, 5);
+
+    function redirect () {
+        this.html("TIME OVER!");
+        $(".theEndVisible").fadeTo("slow", 1).show();
+    }   $(".gameOver").fadeTo("slow", 1).show();
+}
+
 
 // var sec = 30;
 // counter = document.getElementById('.time');
