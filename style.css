@@ -113,6 +113,18 @@ nav a:hover {
   /*opacity: 0.8;*/
 }
 
+@media screen and (max-width: 450px) {
+  .sectionTwo {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 899px) {
+  .sectionTwo {
+    padding-top: 0px;
+  }
+}
+
 .sectionTree {
   padding-top: 80px;
   z-index: 5;
@@ -496,8 +508,6 @@ form {
   color: black;
   text-align: center;
 }
-
-@import url('http://weloveiconfonts.com/api/?family=entypo');
 
 footer {
   font-family: sans-serif;
