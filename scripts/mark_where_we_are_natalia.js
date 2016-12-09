@@ -16,7 +16,7 @@ $(function () {
   };
 
   var selectActiveSection = function () {
-    var currentScrollTop = $(window).scrollTop() + 11;
+    var currentScrollTop = $(window).scrollTop() + 51;
 
     // console.log('currentScrollTop', currentScrollTop);
     // console.log('homeOffset', homeOffset);
@@ -38,7 +38,7 @@ $(function () {
         clearActiveClasses();
         $("#navmenu a[href='" + contactId + "']").addClass('active');
         break;
-      case (currentScrollTop >= aboutUsOffset && currentScrollTop < areaIdOffset):
+      case (currentScrollTop <= aboutUsOffset && currentScrollTop < areaIdOffset):
         clearActiveClasses();
         $("#navmenu a[href='" + aboutUsId + "']").addClass('active');
         break;

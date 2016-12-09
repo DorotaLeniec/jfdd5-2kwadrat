@@ -215,6 +215,9 @@ function CountingActivator(){
         this.html("TIME OVER!");
         $(".theEndVisible").fadeTo("slow", 1).show();
     }   $(".gameOver").fadeTo("slow", 1).show();
+
+    $("#social").hide();
+    $("#autorzy").removeClass(".active")
 }
 
 

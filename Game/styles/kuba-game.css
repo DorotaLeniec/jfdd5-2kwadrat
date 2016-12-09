@@ -289,14 +289,17 @@ table {
   font-size: 100px;
   margin-top: 200px;
   margin-left: 320px;
+  font-family: 'Lato', sans-serif;
 }
 
 .theEndPointSum {
   text-align: center;
-  width: 200px;
+  width: auto;
   height: 60px;
   margin-left: 520px;
   font-size: 60px;
   color: white;
   border: none;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
 }
