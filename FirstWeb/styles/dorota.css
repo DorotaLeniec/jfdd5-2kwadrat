@@ -3,14 +3,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: white;
 }
 
 #zajawkaText {
   position: relative;
   display: inline-block;
-  width: 49%;
+  width: 53%;
   height: 100vh;
   text-align: center;
+  background-color: white;
 }
 
 #zajawkaText p {
@@ -22,10 +24,18 @@
   line-height: 1.5;
 }
 
-#zajawkaText p span {
+#zajawkaText p .clouds {
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.showItOne {
+  display: none;
+}
+
+.showItTwo {
+  display: none;
 }
 
 #containerGraph {
@@ -33,6 +43,7 @@
   width: 49%;
   padding: 3%;
   padding-top: 5%;
+  background-color: white;
 }
 
 #asideGraph {
@@ -50,6 +61,7 @@
 }
 
 .action-button {
+  display: none;
   position: relative;
   padding: 10px 40px;
   margin: 0px 10px 10px 0px;
@@ -81,7 +93,7 @@
 
 .section-banner h1 {
   color: black;
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Reem Kufi', sans-serif;
   font-size: 25px;
   letter-spacing: 4px;
   border-left: 3px solid #55acee;
@@ -98,7 +110,7 @@
 
 .btn-to-form {
   text-align: center;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Reem Kufi', sans-serif;
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
@@ -113,6 +125,13 @@
   opacity: 0.6;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.face-icons {
+  border: red solid 3px;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
 }
 
 .btn-to-form:hover {
@@ -172,15 +191,13 @@
 .podpis {
   margin-top: 20px;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
-  font-size: 35px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 25px;
   font-weight: 800;
   padding: 20px;
-  color: #000;
+  color: #56bcff;
   position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: url("http://faculty.samfox.wustl.edu/donnelly/donnelly/538a/ashwin_rami/Fractals/IMAGES/Fractal001.jpg");
+  text-shadow: -1px 1px  #00aced;
 }
 
 .wizytowka-box > .wizytowka-back {

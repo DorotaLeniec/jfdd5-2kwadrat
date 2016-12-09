@@ -1,9 +1,9 @@
 #area {
-  /*display: none;*/
+  display: none;
   position: absolute;
   background-color: #000;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  /*height: 100vh;*/
 }
 .widoczny {
   /*display: block;*/
@@ -12,12 +12,10 @@
 
 
 .plate {
-  margin: 20px ;
-  /*display: none;*/
-  /*width: 100px;*/
-  width: 100px;
-  height: 100px;
-  background-color: greenyellow;
+  opacity: 0.5;
+  width: 33px;
+  height: 33px;
+  /*background-color: greenyellow;*/
 }
 .meatburger {
   display: none;
@@ -40,20 +38,138 @@
   /*background-color: greenyellow;*/
 }
 .area--table {
-  padding-top: 200px;
-  padding-left: 100px;
   display: inline-block;
-  height: 100%;
-  width: 45%;
-  background-color: red;
+  height: 100vh;
+  width: 60%;
+  background: url(../../FirstWeb/images/table.jpg);
+  background-size: cover;
 }
 
+.area--plate {
+  /*width: 30%;*/
+  height: 300px;
+  bottom: 0;
+  border:3px red solid;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: space-around;*/
+}
+
+.plateOne {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+}
+
+.plateTwo {
+  position: absolute;
+  bottom: 100px;
+  left: 270px;
+}
+
+.plateThree {
+  position: absolute;
+  bottom: 100px;
+  left: 540px;
+}
+
+.ingr11 {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+
+.ingr12 {
+  position: absolute;
+  bottom: 62px;
+  left: 87px;
+}
+.ingr13 {
+  position: absolute;
+  bottom: 30px;
+  left: 125px;
+}
+
+.points {
+  color:white;
+  background-color: black;
+  border:solid rebeccapurple 3px;
+}
+.pointsSum{
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  border:solid 2px rebeccapurple;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+.area--people {
+  border:solid black 2px;
+  position: relative;
+  height: 346px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.person {
+  text-align: center ;
+  font-size: 30px;
+  height: 90px;
+  width: 50px;
+  /*background-color: red;*/
+}
+.personOne {
+  position: absolute;
+  bottom: 0;
+  left: 103px;
+}
+
+.personTwo {
+  position: absolute;
+  bottom: 0;
+  left: 380px;
+}
+
+.personThree {
+  position: absolute;
+  bottom: 0;
+  left: 678px;
+}
+ .face{
+   /*border:solid black 2px;*/
+   width: 100px;
+   height: 100px;
+   background-size: cover;
+   position: absolute;
+   bottom: 100px;
+   right: -26px;
+ }
+
+ .sadFace{
+   background-image: url(../Images/faces/sad.svg);
+
+ }
+.smileFace{
+  background-image: url(../Images/faces/happiness.svg);
+
+}
+.happyFace{
+  background-image: url(../Images/faces/happy.svg);
+}
+.winFace{
+  background-image: url(../Images/faces/winFace.svg);
+
+}
+.angryFace {
+  background-image: url(../Images/faces/angry.svg);
+}
 .area--fridge {
   float: right;
   display: inline-block;
-  height: 100%;
-  width: 45%;
-  background-color: hotpink;
+  height: 100vh;
+  width: 40%;
+  background-image: url("../../FirstWeb/images/empty-tlo.jpeg");
+  background-size: cover;
   text-align: center;
 }
 
@@ -66,10 +182,121 @@
 }
 
 .table--plate{
- /*margin: auto;*/
-  height: 300px;
-  width: 300px;
-  border-radius: 100%;
-  background-color: #56bcff;
+  border:solid red 3px;
+  display: inline;
+  width: 210px;
+  height: 105px;
+  background-image: url(../../FirstWeb/images/blue-plate.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 
+}
+/*----------------GRID----------------*/
+table {
+  height: 100vh;
+  width: 100%;
+}
+.cell {
+  width: 10%;
+  height: 10%;
+  /*border: 1px solid #000;*/
+  text-align: center;
+  /*padding:20px;*/
+}
+.burger {
+  background-image: url("../Images/icons/cutlet.svg");
+  width: 60px;
+  height: 60px;
+}
+.bun {
+  background-image: url("../Images/icons/burger.svg");
+  width: 60px;
+  height: 60px;
+}
+.cheese {
+  background-image: url("../Images/icons/cheese.svg");
+  width: 60px;
+  height: 60px;
+}
+.tomato {
+  background-image: url("../Images/icons/tomato.svg");
+  width: 60px;
+  height: 60px;
+}.pasta {
+  background-image: url("../Images/icons/pasta.svg");
+  width: 60px;
+  height: 60px;
+}
+.milk {
+  background-image: url("../Images/icons/milk.svg");
+  width: 60px;
+  height: 60px;
+}
+.egg {
+  background-image: url("../Images/icons/eggs.svg");
+  width: 60px;
+  height: 60px;
+}
+.ketchup {
+  background-image: url("../Images/icons/ketchup.svg");
+  width: 60px;
+  height: 60px;
+}
+.meatball {
+  background-image: url("../Images/icons/meatball.svg");
+  width: 60px;
+  height: 60px;
+}
+.flour {
+  background-image: url("../Images/icons/flour-bag.svg");
+  width: 60px;
+  height: 60px;
+}
+.bread {
+  background-image: url("../Images/icons/piece-of-bread.svg");
+  width: 60px;
+  height: 60px;
+}
+.salmon {
+  background-image: url("../Images/icons/salmon.svg");
+  width: 60px;
+  height: 60px;
+}
+.salad {
+  background-image: url("../Images/icons/salad.svg");
+  width: 60px;
+  height: 60px;
+}
+
+
+#totalScores {
+  font-size: 35px;
+  font-weight: bold;
+  color: gold;
+}
+
+.theEndVisible {
+  z-index: 500;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.92);
+  color: #55acee;
+}
+
+#gameOver {
+  font-size: 100px;
+  margin-top: 200px;
+  margin-left: 320px;
+}
+
+.theEndPointSum {
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  margin-left: 520px;
+  font-size: 60px;
+  color: white;
+  border: none;
 }

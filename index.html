@@ -65,9 +65,9 @@
 <div id="container">
   <section class="section-banner" id="navigation-handler-banner">`
     <div id="zajawkaText">
-      <p>YOU HAVE NO <span>INGREDIENTS?</span> <br><br>
-        Compare the ingredients that you have to find <span>recipes</span> you can make! <br><br>
-        <a href="#formularz" class="action-button shadow animate blue">Sign up!</a>
+      <p><span class="showItOne">YOU HAVE NO <span class="clouds">INGREDIENTS?</span></span> <br><br>
+        <span class="showItTwo"> Compare the ingredients that you have to find <span class="clouds">recipes</span> you can make!</span> <br><br>
+        <a href="#formularz" class="action-button blue">Sign up!</a>
       </p>
     </div>
 
@@ -153,7 +153,7 @@
         <span class="email">E-mail:</span>
         <input type="text" class="button" id="email" name="email">
         <a href="#area" class="animate">
-          <input onclick="startGame();"
+          <input onclick="startGame(); CountingActivator();"
                  type="submit"
                  class="submit"
                  name="submit1"
@@ -333,42 +333,70 @@
 </footer>
 
 <div id="area">
+  <div class="theEndVisible">
+    <p id="gameOver">GREAT JOB!</p>
+    <p class="pointsSum theEndPointSum"></p>
+  </div>
+
   <div class="area--table">
-    <div class="table--plate vegeburger">
-      <div class="plate need-burger"></div>
-      <div class="plate"></div>
-      <div class="plate"></div>
+    <div class="area--people">
+      <div class="punktownica">
+        <p class="pointsSum">score: </p>
+        <p class="time"></p>
+      </div>
+      <div class="person personOne">
+        <p class="points">0</p>
+        <div class="face sadFace"></div>
+      </div>
+      <div class="person personTwo">
+        <p class="points">0</p>
+        <div class="face sadFace"></div>
+      </div>
+      <div class="person personThree">
+        <p class="points">0</p>
+        <div class="face sadFace"></div>
+      </div>
     </div>
-    <div class="table--plate vegeburger">
-      <div class="plate"></div>
-      <div class="plate"></div>
-      <div class="plate"></div>
-    </div>
-    <div class="table--plate juniorburger">
-      <div class="plate"></div>
-      <div class="plate"></div>
-      <div class="plate"></div>
+
+
+
+    <div class="area--plate">
+      <div class="table--plate plateOne spagetti">
+        <div class="plate ingr11 pasta"></div>
+        <div class="plate ingr12 cheese"></div>
+        <div class="plate ingr13 meatball"></div>
+      </div>
+      <div class="table--plate plateTwo vegeburger">
+        <div class="plate ingr11 bun"></div>
+        <div class="plate ingr12 burger"></div>
+        <div class="plate ingr13 ketchup"></div>
+      </div>
+      <div class="table--plate plateThree juniorburger">
+        <div class="plate ingr11 egg"></div>
+        <div class="plate ingr12 milk"></div>
+        <div class="plate ingr13 flour"></div>
+      </div>
     </div>
   </div>
   <div class="area--fridge">
-    <div class="fridge--ingridient burger">
-      <span class="full-1">burger</span>
-    </div>
-    <div class="fridge--ingridient onion">
-      <span>onion</span>
-    </div>
-    <div class="fridge--ingridient bun">
-      <span>bun</span>
-    </div>
-    <div class="fridge--ingridient cucumber">
-      <span>cucumber</span>
-    </div>
-    <div class="fridge--ingridient tomato">
-      <span>tomato</span>
-    </div>
-    <div class="fridge--ingridient sause">
-      <span>sausage</span>
-    </div>
+    <!--<div class="fridge&#45;&#45;ingridient burger">-->
+      <!--<span class="full-1">burger</span>-->
+    <!--</div>-->
+    <!--<div class="fridge&#45;&#45;ingridient onion">-->
+      <!--<span>onion</span>-->
+    <!--</div>-->
+    <!--<div class="fridge&#45;&#45;ingridient bun">-->
+      <!--<span>bun</span>-->
+    <!--</div>-->
+    <!--<div class="fridge&#45;&#45;ingridient cucumber">-->
+      <!--<span>cucumber</span>-->
+    <!--</div>-->
+    <!--<div class="fridge&#45;&#45;ingridient tomato">-->
+      <!--<span>tomato</span>-->
+    <!--</div>-->
+    <!--<div class="fridge&#45;&#45;ingridient sause">-->
+      <!--<span>sausage</span>-->
+    <!--</div>-->
   </div>
 </div>
 
@@ -382,5 +410,9 @@
 <script src="scripts/mark_where_we_are_natalia.js"></script>
 <script src="Maciej--FD52K-8_rotacja_ficzerów/Bootstrap/jquery.min.js"></script>
 <script src="Maciej--FD52K-8_rotacja_ficzerów/Bootstrap/bootstrap.min.js"></script>
+<script src="scripts/zajawka-setTimeOut.js"></script>
+<script src="Game/javascript/grid-game.js"></script>
+<script src="Game/javascript/points-counter.js"></script>
+
 </body>
 </html>
