@@ -44,6 +44,7 @@
 }
 
 #asideGraph {
+  display: none;
   margin: 0 auto;
   width: 75%;
   height: 100vh;

@@ -8,5 +8,5 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".action-button").delay(3000).fadeIn(1400);
+  $(".action-button").delay(2500).fadeIn(1400);
 });
