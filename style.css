@@ -578,3 +578,16 @@ footer div a {
   height: 70px;
 }
 
+.dishes {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.dish {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 40px;
+  left: 50px;
+}
