@@ -23,6 +23,8 @@
 .area--plate {
   height: 300px;
   bottom: 0;
+  background-image: url(../../FirstWeb/images/woodentable.png);
+  background-size: cover;
 }
 
 .plateOne, .plateThree, .plateTwo {
@@ -76,6 +78,7 @@
   margin-bottom: 30px;
   width: 100%;
 }
+
 .person {
   text-align: center ;
   font-size: 30px;
