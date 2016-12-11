@@ -54,12 +54,27 @@ $('.food-icon').click(function () {
         emptyPlateCounting($firstEmptyPlate);
         $('.table--plate:visible:first > div.' + foodTypeClass + ":first").append(this).css("opacity","1");
 
+      function PlaySound() {                                // Play ok song
+        var sound = document.getElementById("audioOk");
+        sound.play()
+      }
+
+      PlaySound()
+
     }else{
         $('.face:visible:first').animate({
             backgroundColor : "#2b669a"
         });
         $(this).fadeTo("fast", 0);
         $(this).fadeTo("slow", 1);
+
+      function PlaySound() {                                // Play wrong song
+        var sound = document.getElementById("audioWrong");
+        sound.play()
+      }
+
+      PlaySound()
+
     }
     checkPlate();
 });
