@@ -52,27 +52,24 @@ background-color: white;
   border:3px red solid;
   /*display: flex;*/
   /*flex-direction: row;*/
-  /*justify-content: space-around;*/  background: url(../../FirstWeb/images/woodentable.png);
-  background-size: cover;
-  background-color: white;
-
+  /*justify-content: space-around;*/
 }
 
 .plateOne {
   position: absolute;
-  bottom: 200px;
+  bottom: 100px;
   left: 10px;
 }
 
 .plateTwo {
   position: absolute;
-  bottom: 200px;
+  bottom: 100px;
   left: 270px;
 }
 
 .plateThree {
   position: absolute;
-  bottom: 200px;
+  bottom: 100px;
   left: 540px;
 }
 
@@ -110,7 +107,8 @@ background-color: white;
 .area--people {
   border:solid black 2px;
   position: relative;
-  height: 250px;
+  height: 346px;
+  margin-bottom: 30px;
   width: 100%;
 }
 .person {
@@ -118,7 +116,9 @@ background-color: white;
   font-size: 30px;
   height: 90px;
   width: 50px;
-  /*background-color: red;*/
+  background-color: red;
+    text-align: center;
+    font-size: 30px;
 }
 .personOne {
   position: absolute;
@@ -146,7 +146,12 @@ background-color: white;
    bottom: 100px;
    right: -26px;
  }
-
+.face:after{
+    background: red;
+    border: 2px solid black;
+    width:100px;
+    height: 200px;
+}
  .sadFace{
    background-image: url(../Images/faces/sad.svg);
 

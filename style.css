@@ -3,6 +3,10 @@ section {
   width: auto;
   padding-top: 60px;
 }
+body {
+  background-image: url("");
+  background-size: cover;
+}
 
 header {
   height: 20px;
