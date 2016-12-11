@@ -323,7 +323,7 @@ a.right.carousel-control {
 
 .carousel {
   width: 61%;
-  border: 5px solid #00aced;
+  border: 10px outset #00aced;
   border-radius: 20px;
   padding-bottom: 20px;
 }

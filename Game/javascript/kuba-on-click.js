@@ -209,12 +209,15 @@ function CountingActivator(){
 
     };
 
-    $(".time").countdown(redirect, 5);
+    $(".time").countdown(redirect, 300);
 
     function redirect () {
         this.html("TIME OVER!");
         $(".theEndVisible").fadeTo("slow", 1).show();
     }   $(".gameOver").fadeTo("slow", 1).show();
+
+    $("#social").hide();
+    $("#autorzy").removeClass(".active")
 }
 
 
