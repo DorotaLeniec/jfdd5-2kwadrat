@@ -7,7 +7,6 @@
 }
 .section-banner {
   background: #00aced;
-  opacity: 0.6;
 }
 
 #zajawkaText {
@@ -196,11 +195,10 @@
   text-align: center;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
   padding: 20px;
   color: #56bcff;
   position: relative;
-  text-shadow: -1px 1px  #00aced;
 }
 
 .wizytowka-box > .wizytowka-back {
@@ -235,10 +233,7 @@
 }
 
 .text-opis-osoby {
-  /*-webkit-background-clip: text;*/
-  /*-webkit-text-fill-color: transparent;*/
   margin-top: 30px;
-  /*background-image: url("http://faculty.samfox.wustl.edu/donnelly/donnelly/538a/ashwin_rami/Fractals/IMAGES/Fractal001.jpg");*/
   padding: 30px;
   display: inline-block;
   color: black;

@@ -47,7 +47,7 @@ var onepoint = 0;
 var pointssum = 0;
 
 $('.food-icon').click(function () {
-    var $firstEmptyPlate = $('.table--plate:visible:first > div');
+    var $firstEmptyPlate = $('.table--plate:visible:first > div:empty');
     var foodTypeClass = $(this).attr('foodType');
     console.log($firstEmptyPlate);
     if ($firstEmptyPlate.hasClass(foodTypeClass)) {
@@ -78,30 +78,11 @@ function pointCounting(){
     }
 
     function summingPoints (){
-
         pointssum+=onepoint;
         console.log("PUNKTYYYYYYYYYYYYYYYYY" , pointssum);
         $('.pointsSum').text("score: " + pointssum);
-
     }
-    // ----------------POINTS COUNTING ---------------- //
-
-//     function pointsSumming() {
-//       oneClickPointsCollect.push(pointCounter);
-//       console.log(oneClickPointsCollect);
-//       function getSum(total, num) {
-//         return total + num;
-//       }
-//
-//       document.getElementById("totalScores").innerHTML = oneClickPointsCollect.reduce(getSum); // albo: .length... ale to daje przy nowym talerzu extra punkt
-//     }
-//
-// pointsSumming();
-
-    // ---------------END OF POINTS COUNTING ---------------- //
-
 }
-
 
 function emptyPlateCounting(firstPlate){
     emptyPlateCounter.push(firstPlate);
@@ -116,20 +97,14 @@ function emptyPlateCounting(firstPlate){
         $('.face:not(".faceWon"):first').removeClass('happyFace').addClass('faceWon').addClass('winFace');
         pointCounting();
         emptyPlateCounter = [];
-
-
     }
 }
 //***----------------------------------Checking Plate function ------------------------------***************
 function checkPlate() {
     $('.table--plate').each(function () {
         if ($(this).find('.plate').length === $(this).find('.food-icon').length) {
-            var $faceFirstPointSum = $('.points:first:visible').html();
+            // var $faceFirstPointSum = $('.points:first:visible').html();
             $('.points:not(".pointsCounted"):first:visible').fadeOut(700).addClass('pointsCounted');
-            // $('.pointsSum').html($faceFirstPointSum);
-
-
-
             $('.winFace').fadeOut(1000);
             $(this).fadeOut(1000,function (){
                 gameRefresh();
@@ -166,34 +141,8 @@ function assigningClassesToPlates() {
         random = Math.round(Math.random() * 12);
         var ingrClass = tablicaSkladnikow[random];
         $(wartosc).addClass(ingrClass).css("opacity" , '0.5');
-        console.log("hehehhehehehhehehe" , ingrClass , wartosc );
-
     })
-
 }
-//___________________________>TIMER____________________________//
-
-// //
-// // var counter = 10;
-// // $(".time").html(counter);
-// var myInterval = setInterval(function () {
-//     --counter;
-// }, 1000);
-// myInterval();
-//
-//
-// // Let's just add a function so that you can get the value
-//
-// var timeee = 10;
-// $(".time").html(timeee);
-//  // Increment value every second
-//
-// $(document).ready(function () {
-//     $(".time").myInterval({
-//         $(".time").html(timeee);
-//     });
-// });
-//
 
 function CountingActivator(){
     $.fn.countdown = function (callback, duration) {
@@ -206,10 +155,8 @@ function CountingActivator(){
                 callback.call(container);
             }
         }, 1000);
-
     };
-
-    $(".time").countdown(redirect, 5);
+    $(".time").countdown(redirect, 300);
 
     function redirect () {
         this.html("TIME OVER!");
@@ -229,26 +176,3 @@ function CountingActivator(){
 
 
 }
-
-
-// var sec = 30;
-// counter = document.getElementById('.time');
-// counter.innerText = sec;
-// i = setInterval(function(){
-//     --sec;
-//
-//     if (sec === 1){
-//         clearInterval(i);
-//         window.location = document.getElementById('.time').href;
-//     }
-//     counter.innerText=sec;
-// },1000);
-
-// $(document).ready(function () {
-//     $('.time').countdown({
-//         until: 5,
-//         compact: true,
-//         onExpiry: function() { alert('bye!!'); }
-//     });
-// });
-
