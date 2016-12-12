@@ -131,7 +131,7 @@ nav a {
 }
 
 .sectionTree {
-    padding-top: 160px;
+    padding-top: 130px;
     z-index: 5;
     border-style: solid;
     background-color: #fff;
@@ -142,7 +142,6 @@ nav a {
   font-size: 12px;
 
 }
-
 .font-form {
   color: white;
   opacity: 1;
