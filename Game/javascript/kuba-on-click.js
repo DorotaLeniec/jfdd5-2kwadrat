@@ -172,7 +172,7 @@ function CountingActivator(){
             }
         }, 1000);
     };
-    $(".time").countdown(redirect, 100);
+    $(".time").countdown(redirect, 30);
 
     function redirect () {
         this.html("TIME OVER!");
@@ -182,7 +182,7 @@ function CountingActivator(){
         sound.play()
       }
 
-      PlaySound()                                           // <-- the-end-sound
+      PlaySound();                                           // <-- the-end-sound
 
         $(".theEndVisible").fadeTo("slow", 1).show();
     }   $(".gameOver").fadeTo("slow", 1).show();
