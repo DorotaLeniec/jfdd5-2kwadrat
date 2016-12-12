@@ -118,17 +118,15 @@
    background-image: url(../Images/faces/sad.svg);
  }
 .smileFace{
-  background-image: url(../Images/faces/happiness.svg);
+  background-image: url(../Images/faces/happy2.svg);
 }
 .happyFace{
-  background-image: url(../Images/faces/happy.svg);
+  background-image: url(../Images/faces/rich.svg);
 }
 .winFace{
-  background-image: url(../Images/faces/winFace.svg);
+  background-image: url(../Images/faces/winner.svg);
 }
-.angryFace {
-  background-image: url(../Images/faces/angry.svg);
-}
+
 .area--fridge {
   float: right;
   display: inline-block;
