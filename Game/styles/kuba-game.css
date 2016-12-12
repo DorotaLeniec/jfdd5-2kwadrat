@@ -29,16 +29,16 @@
 
 .plateOne, .plateThree, .plateTwo {
   position: absolute;
-  bottom: 100px;
+  bottom: 250px;
 }
 .plateOne {
-  left: 10px;
+  left: 30px;
 }
 .plateTwo {
   left: 270px;
 }
 .plateThree {
-  left: 540px;
+  left: 520px;
 }
 
 .ingr11 {
@@ -118,17 +118,15 @@
    background-image: url(../Images/faces/sad.svg);
  }
 .smileFace{
-  background-image: url(../Images/faces/happiness.svg);
+  background-image: url(../Images/faces/happy2.svg);
 }
 .happyFace{
-  background-image: url(../Images/faces/happy.svg);
+  background-image: url(../Images/faces/rich.svg);
 }
 .winFace{
-  background-image: url(../Images/faces/winFace.svg);
+  background-image: url(../Images/faces/winner.svg);
 }
-.angryFace {
-  background-image: url(../Images/faces/angry.svg);
-}
+
 .area--fridge {
   float: right;
   display: inline-block;
@@ -245,4 +243,18 @@ table {
   border: none;
   background-color: transparent;
   font-family: 'Lato', sans-serif;
+}
+.angry-face{
+  background-image: url(../Images/faces/angry.svg);
+  width: inherit;
+  height: inherit;
+  display: none;
+}
+.time {
+    text-align: center;
+    border:solid rebeccapurple 3px;
+    background: black;
+    color: white;
+    height: 20px;
+    float: right;
 }

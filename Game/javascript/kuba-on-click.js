@@ -52,7 +52,7 @@ $('.food-icon').click(function () {
     console.log($firstEmptyPlate);
     if ($firstEmptyPlate.hasClass(foodTypeClass)) {
         emptyPlateCounting($firstEmptyPlate);
-        $('.table--plate:visible:first > div.' + foodTypeClass + ":first").append(this).css("opacity","1");
+        $('.table--plate:visible:first > div.' + foodTypeClass + ":empty:first").append(this).css("opacity","1");
 
       function PlaySound() {                                // Play ok song
         var sound = document.getElementById("audioOk");
@@ -65,6 +65,7 @@ $('.food-icon').click(function () {
         $('.face:visible:first').animate({
             backgroundColor : "#2b669a"
         });
+        $('.face:visible:first > .angry-face').fadeIn(100).delay(300).fadeOut(300);
         $(this).fadeTo("fast", 0);
         $(this).fadeTo("slow", 1);
 
@@ -171,7 +172,7 @@ function CountingActivator(){
             }
         }, 1000);
     };
-    $(".time").countdown(redirect, 300);
+    $(".time").countdown(redirect, 100);
 
     function redirect () {
         this.html("TIME OVER!");
