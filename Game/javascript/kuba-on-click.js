@@ -52,7 +52,7 @@ $('.food-icon').click(function () {
     console.log($firstEmptyPlate);
     if ($firstEmptyPlate.hasClass(foodTypeClass)) {
         emptyPlateCounting($firstEmptyPlate);
-        $('.table--plate:visible:first > div.' + foodTypeClass + ":first").append(this).css("opacity","1");
+        $('.table--plate:visible:first > div.' + foodTypeClass + ":empty:first").append(this).css("opacity","1");
 
       function PlaySound() {                                // Play ok song
         var sound = document.getElementById("audioOk");
