@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>InsideMyFridge</title>
+  <link rel="icon"
+        type="image/png"
+        href="Game/Images/icons/giraffe-face-front-outline.pngg">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Sigmar+One" rel="stylesheet">
   <link rel="stylesheet" href="reset.css"/>
   <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="Maciej--FD52K-8_rotacja_ficzerów/Bootstrap-slider/New-css.css"/>
+  <link rel="stylesheet" href="Maciej--rotacja_ficzerow/Bootstrap-slider/New-css.css"/>
   <link rel="stylesheet" href="FirstWeb/styles/dorota.css">
   <link rel="stylesheet" href="FirstWeb/styles/natalia.css">
   <link rel="stylesheet" href="fontello-c4ddfcb2/css/fontello.css"/>
@@ -20,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
@@ -65,14 +70,23 @@
 <div id="container">
   <section class="section-banner" id="navigation-handler-banner">`
     <div id="zajawkaText">
-      <p><span class="showItOne">YOU HAVE NO <span class="clouds">INGREDIENTS?</span></span> <br><br>
+      <p><span class="showItOne">YOU HAVE NO <span class="clouds">IDEA</span> WHAT TO EAT?</span> <br><br>
         <span class="showItTwo"> Compare the ingredients that you have to find <span class="clouds">recipes</span> you can make!</span> <br><br>
         <a href="#formularz" class="action-button blue">Sign up!</a>
       </p>
     </div>
 
     <div id="containerGraph">
-      <div id="asideGraph"></div>
+      <div id="asideGraph">
+        <div class="dishes">
+          <img class="dish" src="FirstWeb/images/dish1.png">
+          <img class="dish" src="FirstWeb/images/dish2.png">
+          <img class="dish" src="FirstWeb/images/dish3.png">
+          <img class="dish" src="FirstWeb/images/dish5.png">
+          <img class="dish" src="FirstWeb/images/dish6.png">
+          <img class="dish" src="FirstWeb/images/dish7.jpg">
+        </div>
+      </div>
     </div>
   </section>
 </div>
@@ -144,13 +158,12 @@
       <br>
 
       <div class="description">
-        <p>Please enter your email address and you will hear first about the opening of our website!<br>
-          E-mail with information about the launch of our website will be send to you.</p>
+        <p>Enter your email address and you will hear first about the opening of our website!</p>
       </div>
 
       <br>
       <div class="input">
-        <span class="email">E-mail:</span>
+        <span aria-required="true" class="email">E-mail:</span>
         <input type="text" class="button" id="email" name="email">
         <a href="#area" class="animate">
           <input onclick="startGame(); CountingActivator();"
@@ -162,8 +175,8 @@
 
       </div>
       <br>
-      <div class="checkbox1">
-        <input type="checkbox">
+      <div  class="checkbox1">
+        <input aria-required="true" type="checkbox">
         <span>I agree for terms and conditions</span>
       </div>
       <br>
@@ -292,7 +305,7 @@
   </div>
 </section>
 
-<footer>
+<footer id="footer">
   <div class="legal">
     <a href="terms_od_services.html"
        target="_blank">
@@ -344,62 +357,58 @@
         <p class="pointsSum">score: </p>
         <p class="time"></p>
       </div>
+
       <div class="person personOne">
-        <p class="points">0</p>
-        <div class="face sadFace"></div>
+          <p class="points">0</p>
+        <div class="face sadFace">
+          <div class="angry-face"></div>
+        </div>
       </div>
+
       <div class="person personTwo">
         <p class="points">0</p>
-        <div class="face sadFace"></div>
+        <div class="face sadFace">
+          <div class="angry-face"></div>
+        </div>
       </div>
+
       <div class="person personThree">
         <p class="points">0</p>
-        <div class="face sadFace"></div>
+        <div class="face sadFace">
+          <div class="angry-face"></div>
+        </div>
       </div>
     </div>
-
-
-
     <div class="area--plate">
       <div class="table--plate plateOne spagetti">
         <div class="plate ingr11 pasta"></div>
+
         <div class="plate ingr12 cheese"></div>
+
         <div class="plate ingr13 meatball"></div>
       </div>
       <div class="table--plate plateTwo vegeburger">
         <div class="plate ingr11 bun"></div>
+
         <div class="plate ingr12 burger"></div>
+
         <div class="plate ingr13 ketchup"></div>
       </div>
       <div class="table--plate plateThree juniorburger">
         <div class="plate ingr11 egg"></div>
+
         <div class="plate ingr12 milk"></div>
+
         <div class="plate ingr13 flour"></div>
       </div>
     </div>
   </div>
   <div class="area--fridge">
-    <!--<div class="fridge&#45;&#45;ingridient burger">-->
-      <!--<span class="full-1">burger</span>-->
-    <!--</div>-->
-    <!--<div class="fridge&#45;&#45;ingridient onion">-->
-      <!--<span>onion</span>-->
-    <!--</div>-->
-    <!--<div class="fridge&#45;&#45;ingridient bun">-->
-      <!--<span>bun</span>-->
-    <!--</div>-->
-    <!--<div class="fridge&#45;&#45;ingridient cucumber">-->
-      <!--<span>cucumber</span>-->
-    <!--</div>-->
-    <!--<div class="fridge&#45;&#45;ingridient tomato">-->
-      <!--<span>tomato</span>-->
-    <!--</div>-->
-    <!--<div class="fridge&#45;&#45;ingridient sause">-->
-      <!--<span>sausage</span>-->
-    <!--</div>-->
   </div>
 </div>
-
+<audio id="audio" src="Game/sounds/applause-2.mp3" autostart="false" ></audio>
+<audio id="audioWrong" src="Game/sounds/beep-wrong.mp3" autostart="false" ></audio>
+<audio id="audioOk" src="Game/sounds/button-ok.mp3" autostart="false" ></audio>
 <!--załaczenie biblioteki jQuery z pliku oraz ze strony.Zalaczenie mojego pliku js-->
 <script src="FirstWeb/javascript/jquery-3.1.1.js"></script>
 <script src="FirstWeb/javascript/dorota.js"></script>
@@ -408,11 +417,11 @@
 <script src="scripts/smooth_scrolling.js"></script>
 <script src="Game/javascript/kuba-on-click.js"></script>
 <script src="scripts/mark_where_we_are_natalia.js"></script>
-<script src="Maciej--FD52K-8_rotacja_ficzerów/Bootstrap/jquery.min.js"></script>
-<script src="Maciej--FD52K-8_rotacja_ficzerów/Bootstrap/bootstrap.min.js"></script>
+<script src="Maciej--rotacja_ficzerow/Bootstrap/jquery.min.js"></script>
+<script src="Maciej--rotacja_ficzerow/Bootstrap/bootstrap.min.js"></script>
 <script src="scripts/zajawka-setTimeOut.js"></script>
 <script src="Game/javascript/grid-game.js"></script>
 <script src="Game/javascript/points-counter.js"></script>
-
+<script src="scripts/dishes.js"></script>
 </body>
 </html>

@@ -1,7 +1,11 @@
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
   padding-top: 60px;
+}
+body {
+  background-image: url("");
+  background-size: cover;
 }
 
 header {
@@ -108,7 +112,7 @@ nav a {
   align-content: center;
   align-items: center;
   padding-bottom: 50px;
-  padding-top: 60px;
+  padding-top: 10px;
   max-height: 500px;
   /*opacity: 0.8;*/
   background-color: white;
@@ -127,7 +131,7 @@ nav a {
 }
 
 .sectionTree {
-    padding-top: 80px;
+    padding-top: 130px;
     z-index: 5;
     border-style: solid;
     background-color: #fff;
@@ -138,7 +142,6 @@ nav a {
   font-size: 12px;
 
 }
-
 .font-form {
   color: white;
   opacity: 1;
@@ -179,9 +182,9 @@ nav a {
 
 .submit {
   position: relative;
-  padding: 5px 40px;
+  padding: 2px 40px;
   margin: 5px 10px 10px 0;
-  border-radius: 10px;
+  border-radius: 30px;
   font-family: 'Pacifico', cursive;
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/21/4f/99/214f9967d75172fca5e4e5d47410cc28.jpg");
   font-size: 25px;
@@ -223,7 +226,7 @@ nav a {
   font-family: 'Lato', sans-serif;
   color: #000;
   text-align: center;
-  border: 5px solid #00aced;
+  border: 10px outset #00aced;
 }
 
 form {
@@ -238,10 +241,10 @@ form {
 }
 
 .description {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 1px;
   line-height: 1.3em;
-  margin: -2px 0 45px;
+  margin: -2px 0 25px;
 }
 
 .input {
@@ -268,9 +271,9 @@ form {
 }
 
 .email {
+  display: block;
+  margin-bottom: 10px;
   font-size: 20px;
-  font-weight: bold;
-  padding-right: 10px;
 }
 
 @media all and (max-width: 420px) {
@@ -373,7 +376,7 @@ form {
   }
 
   header #logo {
-    font-size: 18px;
+    font-size: 16px;
     position: absolute;
     top: 28px;
     right: 17%;
@@ -519,7 +522,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #f9fbff;
   align-items: center;
   font-size: 15px;
   align-content: center;
@@ -579,3 +581,16 @@ footer div a {
   height: 70px;
 }
 
+.dishes {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.dish {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 40px;
+  left: 40px;
+}
