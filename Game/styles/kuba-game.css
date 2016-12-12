@@ -246,3 +246,9 @@ table {
   background-color: transparent;
   font-family: 'Lato', sans-serif;
 }
+.angry-face{
+  background-image: url(../Images/faces/angry.svg);
+  width: inherit;
+  height: inherit;
+  display: none;
+}

@@ -65,6 +65,7 @@ $('.food-icon').click(function () {
         $('.face:visible:first').animate({
             backgroundColor : "#2b669a"
         });
+        $('.face:visible:first > .angry-face').fadeIn(100).delay(300).fadeOut(300);
         $(this).fadeTo("fast", 0);
         $(this).fadeTo("slow", 1);
 
