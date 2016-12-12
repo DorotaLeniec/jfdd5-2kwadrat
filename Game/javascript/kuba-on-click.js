@@ -172,7 +172,7 @@ function CountingActivator(){
             }
         }, 1000);
     };
-    $(".time").countdown(redirect, 300);
+    $(".time").countdown(redirect, 100);
 
     function redirect () {
         this.html("TIME OVER!");

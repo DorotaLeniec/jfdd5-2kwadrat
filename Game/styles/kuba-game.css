@@ -250,3 +250,11 @@ table {
   height: inherit;
   display: none;
 }
+.time {
+    text-align: center;
+    border:solid rebeccapurple 3px;
+    background: black;
+    color: white;
+    height: 20px;
+    float: right;
+}
